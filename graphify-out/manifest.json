@@ -1,0 +1,282 @@
+{
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/run.py": {
+    "mtime": 1783464592.9248579,
+    "ast_hash": "8899dbf2f25167d10489dc95b8d6eb73",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/app.py": {
+    "mtime": 1783025561.2693992,
+    "ast_hash": "daf700a8272a0fe098431d2a9d28b0d3",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/tests/test_signal_layer.py": {
+    "mtime": 1783023175.0,
+    "ast_hash": "b26f8d50afb256bf94ec2567265d8bc2",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/tests/test_alt_features.py": {
+    "mtime": 1783011723.1517198,
+    "ast_hash": "550c160824e7fb8ca3271a25baef4adf",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/tests/test_capacity.py": {
+    "mtime": 1783025577.971482,
+    "ast_hash": "6ca26262b840b53b0ed303c90eafdcd8",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/tests/test_analysis.py": {
+    "mtime": 1783024557.3664567,
+    "ast_hash": "4512b3b25f2df514fc62ff38703b9347",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/tests/test_loaders.py": {
+    "mtime": 1783010518.8238227,
+    "ast_hash": "2f07e4d72b41c5529d47d2bbad3ccf36",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/tests/test_pipeline.py": {
+    "mtime": 1783023565.0,
+    "ast_hash": "60d23982ee11be505dde8ea4ca844c30",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/scripts/repair_sessions.py": {
+    "mtime": 1783463637.9238842,
+    "ast_hash": "fe8b55fae9c1be7850b0f045f2401c2b",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/scripts/run_real_reference.py": {
+    "mtime": 1783463637.9326677,
+    "ast_hash": "c738f922aa69f0325e23400d6cc9410e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/scripts/ingest_browser_dump.py": {
+    "mtime": 1783463637.928812,
+    "ast_hash": "2f1f67471220c0cf545d7661da60491f",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/scripts/build_dataset.py": {
+    "mtime": 1783010763.986028,
+    "ast_hash": "8bcafe52f69c5e199217336866b505bf",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/scripts/analyze.py": {
+    "mtime": 1783024531.82174,
+    "ast_hash": "762f84f060e8a0d77b5229d8b1107891",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/metrics.py": {
+    "mtime": 1783023490.7420552,
+    "ast_hash": "6d7b54a773d0adb5eba0572f1bbb395c",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/__init__.py": {
+    "mtime": 1783010443.7816002,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/analysis/capacity.py": {
+    "mtime": 1783025524.6327243,
+    "ast_hash": "f7e836d238b45580581c5dbe8980a5ff",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/analysis/interpret.py": {
+    "mtime": 1783024494.7293813,
+    "ast_hash": "7139ef6620e0711e11dd92a19ff932cb",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/analysis/__init__.py": {
+    "mtime": 1783024443.646359,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/analysis/robustness.py": {
+    "mtime": 1783024463.0678918,
+    "ast_hash": "0028f1d6b09f77a449525718192fec67",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/analysis/calibration.py": {
+    "mtime": 1783024484.5750413,
+    "ast_hash": "f1b87dee94c90242f693cb665a9187a1",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/features/__init__.py": {
+    "mtime": 1783023110.8866394,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/features/alt_features.py": {
+    "mtime": 1783023139.2188158,
+    "ast_hash": "a51efb7b9f0ea9fe3148ecacaf8c426f",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/features/engineering.py": {
+    "mtime": 1783023440.8060021,
+    "ast_hash": "2e7581fcab2850c17417d1855870d0bd",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/models/baselines.py": {
+    "mtime": 1783023465.7809255,
+    "ast_hash": "09600c422e5c10309b8cb3964ffb7b6d",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/models/__init__.py": {
+    "mtime": 1783023458.0343037,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/backtest/__init__.py": {
+    "mtime": 1783023472.6101975,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/backtest/engine.py": {
+    "mtime": 1783023482.9072225,
+    "ast_hash": "e41eb07bb9035d7d585ebef243056c73",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/synthetic.py": {
+    "mtime": 1783023518.0,
+    "ast_hash": "6ebaeb8baacf9728daf46a94f77c5a70",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/comtrade.py": {
+    "mtime": 1783023090.0,
+    "ast_hash": "766444883a8af7e74822125a56bfa000",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/mcx_bhavcopy.py": {
+    "mtime": 1783010743.289514,
+    "ast_hash": "2a5e5cf43cd9cb7a5021783d046d841c",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/config.py": {
+    "mtime": 1783010231.0,
+    "ast_hash": "a2b11f9908a955e3684fa1d4cb2689ea",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/spices_board.py": {
+    "mtime": 1783010281.0,
+    "ast_hash": "2abec289d81ed10805914782dbd2ef75",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/loaders.py": {
+    "mtime": 1783010442.0,
+    "ast_hash": "fea028ef0b3d4a7314368d1ff0744b0a",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/__init__.py": {
+    "mtime": 1783010443.4594495,
+    "ast_hash": "6f3f5283b87e1877758a228ef3d31471",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/imd_rainfall.py": {
+    "mtime": 1783010419.0,
+    "ast_hash": "a1966f3a9e0d490266f1eef1137ad0dd",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/climate_indices.py": {
+    "mtime": 1783011696.2893836,
+    "ast_hash": "143cb6f822e846deb1ac3bbf4f41f2a8",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/fx.py": {
+    "mtime": 1783023110.0,
+    "ast_hash": "883263e0ce39f3fa9b4d92d026dfc66f",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/base.py": {
+    "mtime": 1783010248.0,
+    "ast_hash": "dfc1a6144085fca008a51bae16c5fb5e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/calendars.py": {
+    "mtime": 1783011665.1086266,
+    "ast_hash": "11367d81ac31b755bb31746fbffd7a09",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/validation/walkforward.py": {
+    "mtime": 1783023456.7984955,
+    "ast_hash": "105447ee62cf4c0027563cb9e913f561",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/validation/__init__.py": {
+    "mtime": 1783023448.7476368,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/LINKEDIN_POST.md": {
+    "mtime": 1783463408.9283304,
+    "ast_hash": "c1de4c9ece423247f2061e2d4ecdd84c",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/RESULTS_REAL.md": {
+    "mtime": 1783463391.3728287,
+    "ast_hash": "bb7c74d578104f0101c80b5a08299144",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/ALT_DATA_RESEARCH.md": {
+    "mtime": 1783023246.5695944,
+    "ast_hash": "addc0a42ccea61fb10c30cf3823045e7",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/requirements-data.txt": {
+    "mtime": 1783010751.9842877,
+    "ast_hash": "aeb03d0968a88c3037def001dde8b18f",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/README.md": {
+    "mtime": 1783025709.4240165,
+    "ast_hash": "5088753dd4ea0c0989bc0b4525dcead5",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/DATA_STATUS.md": {
+    "mtime": 1783463422.3142455,
+    "ast_hash": "9848ab1e4d0bd56549f2308d60f415e1",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/requirements-analysis.txt": {
+    "mtime": 1783463886.9722517,
+    "ast_hash": "296b5cc07a7c375e5f893c402999ca76",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/STEP1_RESEARCH_AND_PLAN.md": {
+    "mtime": 1783010106.7999568,
+    "ast_hash": "3e99da61f53922833a7fdd3a0d54efe1",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/HANDOFF.md": {
+    "mtime": 1783463678.713764,
+    "ast_hash": "e0e462447ad4cfbf9f9dd870803a9167",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/tests/fixtures/spices_page.html": {
+    "mtime": 1783010464.7151744,
+    "ast_hash": "2eb4f55fe40c4d074a365129e1763c7f",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/data/raw/climate/oni.ascii.txt": {
+    "mtime": 1783024156.0,
+    "ast_hash": "15526e8360288876f54ffa3241bfcd36",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/data/raw/spices_board/page_0000.html": {
+    "mtime": 1783024156.0149393,
+    "ast_hash": "1d8341b19e22920c70accec96083e3e6",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/data/raw/spices_board/page_0001.html": {
+    "mtime": 1783024156.0088568,
+    "ast_hash": "c0c8ce575914ece82e0c8eb312475612",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/data/raw/spices_board/page_0002.html": {
+    "mtime": 1783024156.0124066,
+    "ast_hash": "7873841697e502020c0e8c1a8684601b",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/README.md": {
+    "mtime": 1783010785.0,
+    "ast_hash": "1a63674ffdb64807dbdf4ea27b0704f7",
+    "semantic_hash": ""
+  }
+}
