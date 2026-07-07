@@ -1,0 +1,5 @@
+# Analysis layer (install alongside requirements-data.txt)
+scikit-learn>=1.3  # models
+scipy>=1.10        # robustness statistics
+shap>=0.44         # interpretability (optional; report degrades gracefully)
+streamlit>=1.30    # dashboard (app.py)

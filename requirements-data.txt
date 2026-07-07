@@ -1,0 +1,8 @@
+# Real-data ingestion layer (adds to the existing requirements.txt)
+pandas>=2.0
+numpy>=1.24
+requests>=2.31
+lxml>=4.9          # pandas.read_html backend
+pyarrow>=14.0      # parquet caching (optional but recommended)
+imdlib>=0.1.19     # IMD gridded rainfall (only needed for the rain backfill)
+pytest>=7.4        # tests
