@@ -598,6 +598,69 @@
       "norm_label": "the multiple-testing haircut must only ever hurt."
     },
     {
+      "label": "test_spices_refresh.py",
+      "file_type": "code",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L1",
+      "id": "tests_test_spices_refresh_py",
+      "community": 44,
+      "norm_label": "test_spices_refresh.py"
+    },
+    {
+      "label": "_page()",
+      "file_type": "code",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L23",
+      "id": "tests_test_spices_refresh_page",
+      "community": 44,
+      "norm_label": "_page()"
+    },
+    {
+      "label": "test_parse_th_header_markup()",
+      "file_type": "code",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L29",
+      "id": "tests_test_spices_refresh_test_parse_th_header_markup",
+      "community": 44,
+      "norm_label": "test_parse_th_header_markup()"
+    },
+    {
+      "label": "test_parse_plain_row_header_markup()",
+      "file_type": "code",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L36",
+      "id": "tests_test_spices_refresh_test_parse_plain_row_header_markup",
+      "community": 44,
+      "norm_label": "test_parse_plain_row_header_markup()"
+    },
+    {
+      "label": "test_canon_auctioneer_bridges_comma_semicolon()",
+      "file_type": "code",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L44",
+      "id": "tests_test_spices_refresh_test_canon_auctioneer_bridges_comma_semicolon",
+      "community": 44,
+      "norm_label": "test_canon_auctioneer_bridges_comma_semicolon()"
+    },
+    {
+      "label": "Tests for archive-page parsing across markup eras + refresh key matching (offlin",
+      "file_type": "rationale",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L1",
+      "id": "tests_test_spices_refresh_rationale_1",
+      "community": 44,
+      "norm_label": "tests for archive-page parsing across markup eras + refresh key matching (offlin"
+    },
+    {
+      "label": "The Jul-2026 site era: header cells are <td>, read_html sees ints.",
+      "file_type": "rationale",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L37",
+      "id": "tests_test_spices_refresh_rationale_37",
+      "community": 44,
+      "norm_label": "the jul-2026 site era: header cells are <td>, read_html sees ints."
+    },
+    {
       "label": "test_horizon_trading.py",
       "file_type": "code",
       "source_file": "tests/test_horizon_trading.py",
@@ -1030,6 +1093,60 @@
       "norm_label": "sanity: a clairvoyant signal must produce a positive sharpe."
     },
     {
+      "label": "refresh_spot.py",
+      "file_type": "code",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L1",
+      "id": "scripts_refresh_spot_py",
+      "community": 44,
+      "norm_label": "refresh_spot.py"
+    },
+    {
+      "label": "canon_auctioneer()",
+      "file_type": "code",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L52",
+      "id": "scripts_refresh_spot_canon_auctioneer",
+      "community": 44,
+      "norm_label": "canon_auctioneer()"
+    },
+    {
+      "label": "rebuild_market()",
+      "file_type": "code",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L65",
+      "id": "scripts_refresh_spot_rebuild_market",
+      "community": 44,
+      "norm_label": "rebuild_market()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L80",
+      "id": "scripts_refresh_spot_main",
+      "community": 44,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Extend the spot backbone with new auction days \u2014 THE lever.      python scripts/",
+      "file_type": "rationale",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L1",
+      "id": "scripts_refresh_spot_rationale_1",
+      "community": 44,
+      "norm_label": "extend the spot backbone with new auction days \u2014 the lever.      python scripts/"
+    },
+    {
+      "label": "Match keys across the site's commas and the repaired dump's semicolons.      The",
+      "file_type": "rationale",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L53",
+      "id": "scripts_refresh_spot_rationale_53",
+      "community": 44,
+      "norm_label": "match keys across the site's commas and the repaired dump's semicolons.      the"
+    },
+    {
       "label": "rain_trial.py",
       "file_type": "code",
       "source_file": "scripts/rain_trial.py",
@@ -1224,7 +1341,7 @@
       "source_file": "scripts/ingest_browser_dump.py",
       "source_location": "L1",
       "id": "scripts_ingest_browser_dump_py",
-      "community": 5,
+      "community": 3,
       "norm_label": "ingest_browser_dump.py"
     },
     {
@@ -1233,7 +1350,7 @@
       "source_file": "scripts/ingest_browser_dump.py",
       "source_location": "L19",
       "id": "scripts_ingest_browser_dump_main",
-      "community": 5,
+      "community": 3,
       "norm_label": "main()"
     },
     {
@@ -1242,7 +1359,7 @@
       "source_file": "scripts/ingest_browser_dump.py",
       "source_location": "L1",
       "id": "scripts_ingest_browser_dump_rationale_1",
-      "community": 5,
+      "community": 3,
       "norm_label": "ingest the browser-crawled sessions csv -> canonical daily + market.parquet."
     },
     {
@@ -2833,7 +2950,7 @@
       "label": ".parse_sessions()",
       "file_type": "code",
       "source_file": "src/data/spices_board.py",
-      "source_location": "L128",
+      "source_location": "L144",
       "id": "data_spices_board_spicesboardloader_parse_sessions",
       "community": 5,
       "norm_label": ".parse_sessions()"
@@ -2842,7 +2959,7 @@
       "label": ".parse()",
       "file_type": "code",
       "source_file": "src/data/spices_board.py",
-      "source_location": "L140",
+      "source_location": "L156",
       "id": "data_spices_board_spicesboardloader_parse",
       "community": 5,
       "norm_label": ".parse()"
@@ -2851,7 +2968,7 @@
       "label": "aggregate_daily()",
       "file_type": "code",
       "source_file": "src/data/spices_board.py",
-      "source_location": "L145",
+      "source_location": "L161",
       "id": "data_spices_board_aggregate_daily",
       "community": 5,
       "norm_label": "aggregate_daily()"
@@ -2860,9 +2977,9 @@
       "label": ".validate()",
       "file_type": "code",
       "source_file": "src/data/spices_board.py",
-      "source_location": "L165",
+      "source_location": "L181",
       "id": "data_spices_board_spicesboardloader_validate",
-      "community": 4,
+      "community": 5,
       "norm_label": ".validate()"
     },
     {
@@ -2884,20 +3001,20 @@
       "norm_label": "walk the archive pages, saving each as raw html.          incremental logic: the"
     },
     {
-      "label": "Extract the auction table from one archive page.",
+      "label": "Extract the auction table from one archive page.          Handles both markups t",
       "file_type": "rationale",
       "source_file": "src/data/spices_board.py",
       "source_location": "L112",
       "id": "data_spices_board_rationale_112",
       "community": 26,
-      "norm_label": "extract the auction table from one archive page."
+      "norm_label": "extract the auction table from one archive page.          handles both markups t"
     },
     {
       "label": "Session-level table across all cached pages, deduped.",
       "file_type": "rationale",
       "source_file": "src/data/spices_board.py",
-      "source_location": "L129",
-      "id": "data_spices_board_rationale_129",
+      "source_location": "L145",
+      "id": "data_spices_board_rationale_145",
       "community": 5,
       "norm_label": "session-level table across all cached pages, deduped."
     },
@@ -2905,8 +3022,8 @@
       "label": "Daily aggregate: quantity-weighted average price + supply columns.",
       "file_type": "rationale",
       "source_file": "src/data/spices_board.py",
-      "source_location": "L141",
-      "id": "data_spices_board_rationale_141",
+      "source_location": "L157",
+      "id": "data_spices_board_rationale_157",
       "community": 5,
       "norm_label": "daily aggregate: quantity-weighted average price + supply columns."
     },
@@ -3757,10 +3874,28 @@
       "norm_label": "\u2014 and cut"
     },
     {
-      "label": "Roadmap implied by the numbers",
+      "label": "Dataset v1.1 (15-Jul-2026): the lever, pulled \u2014 and a lesson in",
       "file_type": "document",
       "source_file": "RESULTS_REAL.md",
       "source_location": "L195",
+      "id": "cardamom_quant_results_real_dataset_v1_1_15_jul_2026_the_lever_pulled_and_a_lesson_in",
+      "community": 17,
+      "norm_label": "dataset v1.1 (15-jul-2026): the lever, pulled \u2014 and a lesson in"
+    },
+    {
+      "label": "estimator variance",
+      "file_type": "document",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L196",
+      "id": "cardamom_quant_results_real_estimator_variance",
+      "community": 17,
+      "norm_label": "estimator variance"
+    },
+    {
+      "label": "Roadmap implied by the numbers",
+      "file_type": "document",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L217",
       "id": "cardamom_quant_results_real_roadmap_implied_by_the_numbers",
       "community": 17,
       "norm_label": "roadmap implied by the numbers"
@@ -4261,13 +4396,22 @@
       "norm_label": "code:bash (.venv/bin/streamlit run app.py --server.headless true --serv)"
     },
     {
-      "label": "5. Honesty checklist (read RESULTS_REAL.md ledger line)",
+      "label": "5. Data lineage",
       "file_type": "document",
       "source_file": ".claude/skills/verify/SKILL.md",
       "source_location": "L56",
-      "id": "verify_skill_5_honesty_checklist_read_results_real_md_ledger_line",
+      "id": "verify_skill_5_data_lineage",
       "community": 32,
-      "norm_label": "5. honesty checklist (read results_real.md ledger line)"
+      "norm_label": "5. data lineage"
+    },
+    {
+      "label": "6. Honesty checklist (read RESULTS_REAL.md ledger line)",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L67",
+      "id": "verify_skill_6_honesty_checklist_read_results_real_md_ledger_line",
+      "community": 32,
+      "norm_label": "6. honesty checklist (read results_real.md ledger line)"
     },
     {
       "label": "SKILL.md",
@@ -4403,6 +4547,33 @@
       "id": "data_readme_known_limitations_also_candidates_for_the_linkedin_write_up",
       "community": 12,
       "norm_label": "known limitations (also candidates for the linkedin write-up)"
+    },
+    {
+      "label": "Session-level table across all cached pages, deduped.",
+      "file_type": "rationale",
+      "source_file": "src/data/spices_board.py",
+      "source_location": "L129",
+      "community": 5,
+      "norm_label": "session-level table across all cached pages, deduped.",
+      "id": "data_spices_board_rationale_129"
+    },
+    {
+      "label": "Daily aggregate: quantity-weighted average price + supply columns.",
+      "file_type": "rationale",
+      "source_file": "src/data/spices_board.py",
+      "source_location": "L141",
+      "community": 5,
+      "norm_label": "daily aggregate: quantity-weighted average price + supply columns.",
+      "id": "data_spices_board_rationale_141"
+    },
+    {
+      "label": "5. Honesty checklist (read RESULTS_REAL.md ledger line)",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L56",
+      "community": 32,
+      "norm_label": "5. honesty checklist (read results_real.md ledger line)",
+      "id": "verify_skill_5_honesty_checklist_read_results_real_md_ledger_line"
     },
     {
       "label": "elnino' (>= +0.5), 'lanina' (<= -0.5), else 'neutral'.",
@@ -5851,6 +6022,99 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "tests_test_spices_refresh_py",
+      "target": "tests_test_spices_refresh_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "tests_test_spices_refresh_py",
+      "target": "tests_test_spices_refresh_test_parse_th_header_markup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "tests_test_spices_refresh_py",
+      "target": "tests_test_spices_refresh_test_parse_plain_row_header_markup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "tests_test_spices_refresh_py",
+      "target": "tests_test_spices_refresh_test_canon_auctioneer_bridges_comma_semicolon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "tests_test_spices_refresh_rationale_1",
+      "target": "tests_test_spices_refresh_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "tests_test_spices_refresh_test_parse_th_header_markup",
+      "target": "tests_test_spices_refresh_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "tests_test_spices_refresh_test_parse_plain_row_header_markup",
+      "target": "tests_test_spices_refresh_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "tests_test_spices_refresh_rationale_37",
+      "target": "tests_test_spices_refresh_test_parse_plain_row_header_markup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_spices_refresh.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "tests_test_spices_refresh_test_canon_auctioneer_bridges_comma_semicolon",
+      "target": "scripts_refresh_spot_canon_auctioneer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L18",
       "weight": 1.0,
@@ -6401,9 +6665,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_py",
-      "target": "tests_test_banguat_annual",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_annual"
     },
     {
       "relation": "contains",
@@ -6411,9 +6675,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_py",
-      "target": "tests_test_banguat_test_deficit_norm_uses_prior_years_only",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_test_deficit_norm_uses_prior_years_only"
     },
     {
       "relation": "contains",
@@ -6421,9 +6685,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_py",
-      "target": "tests_test_banguat_test_collapse_reads_as_positive_deficit",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_test_collapse_reads_as_positive_deficit"
     },
     {
       "relation": "contains",
@@ -6431,9 +6695,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_py",
-      "target": "tests_test_banguat_test_publication_lag_is_enforced",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_test_publication_lag_is_enforced"
     },
     {
       "relation": "contains",
@@ -6441,9 +6705,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_py",
-      "target": "tests_test_banguat_test_daily_features_are_strictly_causal",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_test_daily_features_are_strictly_causal"
     },
     {
       "relation": "contains",
@@ -6451,9 +6715,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_py",
-      "target": "tests_test_banguat_test_real_extraction_parses_and_shows_the_collapse",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_test_real_extraction_parses_and_shows_the_collapse"
     },
     {
       "relation": "rationale_for",
@@ -6461,9 +6725,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_rationale_1",
-      "target": "tests_test_banguat_py",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_py"
     },
     {
       "relation": "calls",
@@ -6472,9 +6736,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_test_deficit_norm_uses_prior_years_only",
-      "target": "tests_test_banguat_annual",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_annual"
     },
     {
       "relation": "calls",
@@ -6483,9 +6747,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_test_collapse_reads_as_positive_deficit",
-      "target": "tests_test_banguat_annual",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_annual"
     },
     {
       "relation": "calls",
@@ -6494,9 +6758,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_test_publication_lag_is_enforced",
-      "target": "tests_test_banguat_annual",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_annual"
     },
     {
       "relation": "calls",
@@ -6505,9 +6769,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_test_daily_features_are_strictly_causal",
-      "target": "tests_test_banguat_annual",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_annual"
     },
     {
       "relation": "rationale_for",
@@ -6515,9 +6779,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_rationale_25",
-      "target": "tests_test_banguat_test_deficit_norm_uses_prior_years_only",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_test_deficit_norm_uses_prior_years_only"
     },
     {
       "relation": "calls",
@@ -6547,9 +6811,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_rationale_42",
-      "target": "tests_test_banguat_test_publication_lag_is_enforced",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_test_publication_lag_is_enforced"
     },
     {
       "relation": "rationale_for",
@@ -6557,9 +6821,9 @@
       "source_file": "tests/test_banguat.py",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_banguat_rationale_55",
-      "target": "tests_test_banguat_test_daily_features_are_strictly_causal",
-      "confidence_score": 1.0
+      "target": "tests_test_banguat_test_daily_features_are_strictly_causal"
     },
     {
       "relation": "calls",
@@ -6771,6 +7035,111 @@
       "weight": 1.0,
       "source": "tests_test_pipeline_test_backtest_perfect_foresight_wins",
       "target": "backtest_engine_backtestconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "scripts_refresh_spot_py",
+      "target": "scripts_refresh_spot_canon_auctioneer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "scripts_refresh_spot_py",
+      "target": "scripts_refresh_spot_rebuild_market",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "scripts_refresh_spot_py",
+      "target": "scripts_refresh_spot_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_refresh_spot_rationale_1",
+      "target": "scripts_refresh_spot_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "scripts_refresh_spot_main",
+      "target": "scripts_refresh_spot_canon_auctioneer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "scripts_refresh_spot_rationale_53",
+      "target": "scripts_refresh_spot_canon_auctioneer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "scripts_refresh_spot_main",
+      "target": "scripts_refresh_spot_rebuild_market",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "scripts_refresh_spot_rebuild_market",
+      "target": "data_climate_indices_parse_oni"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "scripts_refresh_spot_rebuild_market",
+      "target": "data_imd_rainfall_imdrainfallloader"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh_spot.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "scripts_refresh_spot_main",
+      "target": "data_spices_board_spicesboardloader"
     },
     {
       "relation": "contains",
@@ -7174,9 +7543,9 @@
       "source_file": "scripts/refresh_banguat.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_refresh_banguat_py",
-      "target": "scripts_refresh_banguat_main",
-      "confidence_score": 1.0
+      "target": "scripts_refresh_banguat_main"
     },
     {
       "relation": "rationale_for",
@@ -7184,9 +7553,9 @@
       "source_file": "scripts/refresh_banguat.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_refresh_banguat_rationale_1",
-      "target": "scripts_refresh_banguat_py",
-      "confidence_score": 1.0
+      "target": "scripts_refresh_banguat_py"
     },
     {
       "relation": "contains",
@@ -8108,9 +8477,9 @@
       "source_file": "scripts/gtm_trial.py",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_gtm_trial_py",
-      "target": "scripts_gtm_trial_main",
-      "confidence_score": 1.0
+      "target": "scripts_gtm_trial_main"
     },
     {
       "relation": "rationale_for",
@@ -8118,9 +8487,9 @@
       "source_file": "scripts/gtm_trial.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_gtm_trial_rationale_1",
-      "target": "scripts_gtm_trial_py",
-      "confidence_score": 1.0
+      "target": "scripts_gtm_trial_py"
     },
     {
       "relation": "calls",
@@ -10170,6 +10539,16 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/data/spices_board.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "data_spices_board_rationale_145",
+      "target": "data_spices_board_spicesboardloader_parse_sessions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/spices_board.py",
       "source_location": "L129",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -10186,6 +10565,16 @@
       "confidence_score": 1.0,
       "source": "data_spices_board_spicesboardloader_parse",
       "target": "data_spices_board_aggregate_daily"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/spices_board.py",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "data_spices_board_rationale_157",
+      "target": "data_spices_board_spicesboardloader_parse",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -10351,9 +10740,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_banguat_py",
-      "target": "src_data_init_py",
-      "confidence_score": 1.0
+      "target": "src_data_init_py"
     },
     {
       "relation": "imports_from",
@@ -10504,9 +10893,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_banguat_py",
-      "target": "data_banguat_load_annual_kg",
-      "confidence_score": 1.0
+      "target": "data_banguat_load_annual_kg"
     },
     {
       "relation": "contains",
@@ -10514,9 +10903,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_banguat_py",
-      "target": "data_banguat_annual_features",
-      "confidence_score": 1.0
+      "target": "data_banguat_annual_features"
     },
     {
       "relation": "contains",
@@ -10524,9 +10913,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_banguat_py",
-      "target": "data_banguat_to_daily_features",
-      "confidence_score": 1.0
+      "target": "data_banguat_to_daily_features"
     },
     {
       "relation": "contains",
@@ -10534,9 +10923,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_banguat_py",
-      "target": "data_banguat_build_gtm_features",
-      "confidence_score": 1.0
+      "target": "data_banguat_build_gtm_features"
     },
     {
       "relation": "rationale_for",
@@ -10544,9 +10933,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_banguat_rationale_1",
-      "target": "src_data_banguat_py",
-      "confidence_score": 1.0
+      "target": "src_data_banguat_py"
     },
     {
       "relation": "calls",
@@ -10555,9 +10944,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_banguat_build_gtm_features",
-      "target": "data_banguat_load_annual_kg",
-      "confidence_score": 1.0
+      "target": "data_banguat_load_annual_kg"
     },
     {
       "relation": "rationale_for",
@@ -10565,9 +10954,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_banguat_rationale_38",
-      "target": "data_banguat_load_annual_kg",
-      "confidence_score": 1.0
+      "target": "data_banguat_load_annual_kg"
     },
     {
       "relation": "calls",
@@ -10576,9 +10965,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_banguat_to_daily_features",
-      "target": "data_banguat_annual_features",
-      "confidence_score": 1.0
+      "target": "data_banguat_annual_features"
     },
     {
       "relation": "rationale_for",
@@ -10586,9 +10975,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_banguat_rationale_49",
-      "target": "data_banguat_annual_features",
-      "confidence_score": 1.0
+      "target": "data_banguat_annual_features"
     },
     {
       "relation": "calls",
@@ -10597,9 +10986,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_banguat_build_gtm_features",
-      "target": "data_banguat_to_daily_features",
-      "confidence_score": 1.0
+      "target": "data_banguat_to_daily_features"
     },
     {
       "relation": "rationale_for",
@@ -10607,9 +10996,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_banguat_rationale_62",
-      "target": "data_banguat_to_daily_features",
-      "confidence_score": 1.0
+      "target": "data_banguat_to_daily_features"
     },
     {
       "relation": "rationale_for",
@@ -10617,9 +11006,9 @@
       "source_file": "src/data/banguat.py",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_banguat_rationale_77",
-      "target": "data_banguat_build_gtm_features",
-      "confidence_score": 1.0
+      "target": "data_banguat_build_gtm_features"
     },
     {
       "relation": "contains",
@@ -11237,9 +11626,9 @@
       "source_file": "RESULTS_REAL.md",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
-      "target": "cardamom_quant_results_real_update_edge_hunt_round_4_first_displacement_trial_killed",
-      "confidence_score": 1.0
+      "target": "cardamom_quant_results_real_update_edge_hunt_round_4_first_displacement_trial_killed"
     },
     {
       "relation": "contains",
@@ -11247,9 +11636,9 @@
       "source_file": "RESULTS_REAL.md",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
-      "target": "cardamom_quant_results_real_update_edge_hunt_round_5_guatemala_supply_from_the_primary_source",
-      "confidence_score": 1.0
+      "target": "cardamom_quant_results_real_update_edge_hunt_round_5_guatemala_supply_from_the_primary_source"
     },
     {
       "relation": "contains",
@@ -11257,8 +11646,28 @@
       "source_file": "RESULTS_REAL.md",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
-      "target": "cardamom_quant_results_real_and_cut",
+      "target": "cardamom_quant_results_real_and_cut"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
+      "target": "cardamom_quant_results_real_dataset_v1_1_15_jul_2026_the_lever_pulled_and_a_lesson_in",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
+      "target": "cardamom_quant_results_real_estimator_variance",
       "confidence_score": 1.0
     },
     {
@@ -11725,6 +12134,26 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "verify_skill_verifying_cardamom_quant",
+      "target": "verify_skill_5_data_lineage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "verify_skill_verifying_cardamom_quant",
+      "target": "verify_skill_6_honesty_checklist_read_results_real_md_ledger_line",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
       "source_location": "L52",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -11903,5 +12332,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3ae7ece36dfca300a374250eae7f7a5132471fc0"
+  "built_at_commit": "81ee4c9965597a670de3a90f9cef178ac4853ae6"
 }

@@ -53,7 +53,18 @@ physics-gbm ≈ +0.79 are the headline anchors.
 # curl -s localhost:8601 → HTTP 200, no tracebacks in the log, then kill it
 ```
 
-## 5. Honesty checklist (read RESULTS_REAL.md ledger line)
+## 5. Data lineage
+
+`market.parquet` is rebuilt by `scripts/refresh_spot.py` (crawl → exact-
+overlap verification against the repaired history → append-only → rebuild
+with ONI + rain). Canonical mutable files: `sessions_canonical.csv` /
+`spot_daily_canonical.csv`. The 07-Jul-2026 browser dump
+(`sessions_full_repaired.csv` / `spot_daily_full.csv`) is the immutable
+provenance seed — macOS quarantine-locks it against rewriting; never try.
+If the refresh ABORTs on overlap mismatch, that is the comma-corruption
+tripwire doing its job — investigate, don't override.
+
+## 6. Honesty checklist (read RESULTS_REAL.md ledger line)
 
 - Every model/config ever evaluated appears in the DSR trial ledger
   (29 trials after round 2). If you evaluated anything new — even a failed

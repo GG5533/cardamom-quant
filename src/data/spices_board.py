@@ -109,12 +109,28 @@ class SpicesBoardLoader(BaseLoader):
     # ----------------------------------------------------------------- parse
     @staticmethod
     def _parse_html(html: str) -> pd.DataFrame:
-        """Extract the auction table from one archive page."""
+        """Extract the auction table from one archive page.
+
+        Handles both markups the site has shipped: header cells as <th>
+        (read_html yields named columns) and header as a plain first row
+        (read_html yields integer columns — seen live since Jul-2026).
+        """
         try:
             tables = pd.read_html(io.StringIO(html))
         except ValueError:  # no tables on page
             return pd.DataFrame()
         for t in tables:
+            if not ({"date of auction", "auctioneer"}
+                    <= {_normalise(c) for c in t.columns}):
+                header_row = (
+                    len(t) > 1
+                    and t.iloc[0].astype(str).map(_normalise)
+                        .isin(_COLMAP).sum() >= 4
+                )
+                if header_row:
+                    t = t.copy()
+                    t.columns = t.iloc[0]
+                    t = t.iloc[1:].reset_index(drop=True)
             cols = {_normalise(c) for c in t.columns}
             if {"date of auction", "auctioneer"} <= cols:
                 t = t.rename(columns={c: _COLMAP.get(_normalise(c), _normalise(c)) for c in t.columns})

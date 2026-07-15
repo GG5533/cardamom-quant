@@ -192,16 +192,38 @@ at the auction. The loader, data and tests stay in the repo (the series
 is the right cross-check for any future monthly wiring — SIECA/INE both
 bot-wall their monthly volume data); the feature enters no configuration.
 
+## Dataset v1.1 (15-Jul-2026): the lever, pulled — and a lesson in
+## estimator variance
+
+`scripts/refresh_spot.py` now operationalizes "more auction days": an
+incremental crawl with an exact-overlap tripwire against the repaired
+history (27/27 overlapping sessions matched to the paisa — no comma
+corruption re-entered), append-only writes, and a full canonical rebuild
+(ONI + rain preserved). It also survived a live site-markup change (the
+archive's header row stopped being `<th>`; `_parse_html` now handles both
+eras, regression-tested). Dataset: 3,148 → **3,155 auction days**,
+through 15-Jul-2026.
+
+Re-estimating the standing champion on v1.1 (same config — NOT a new
+trial): **Sharpe +0.69, 90% CI [+0.19, +1.21], p(SR≤0) 1.5%, AUC 0.553,
+DSR 0.51.** Seven added days can't move a Sharpe that much by themselves;
+what moved was the walk-forward re-slicing (fold boundaries shift with n,
+every GBM refits). Read it honestly: the +0.79 print carried fold-slicing
+sensitivity the wide CI was already pricing in. The stable statement is
+the one that survives re-slicing — *the physics book is positive with
+~98% bootstrap confidence, in the +0.2…+1.2 range, and does not clear the
+29-to-34-trial luck bar.* Point estimates are weather; the CI is climate.
+
 ## Roadmap implied by the numbers
 
 ~~Horizon-matched rebalancing + calibration~~ (done). ~~Auction physics~~
-(done — champion: **physics-gbm +0.79, DSR 0.63**). ~~Rain~~ (done — pays
-as signal, kept). ~~Naive displacement~~ (done — killed). ~~Guatemala
-supply~~ (done — cut; annual too coarse). Next: MCX basis (manual
-Bhavcopy drop into `data/raw/mcx/`) is the last unwired feed; beyond
-that, the honest lever is more auction days, not more features — five
-of five feature-addition rounds since the champion have failed to beat
-it. Every new configuration grows the 34-trial DSR ledger.
+(done — champion). ~~Rain~~ (done — pays as signal, kept). ~~Naive
+displacement~~ (done — killed). ~~Guatemala supply~~ (done — cut; annual
+too coarse). ~~Refresh pipeline~~ (done — run `scripts/refresh_spot.py`
+weekly; every run buys CI width). Still open: MCX basis (manual Bhavcopy
+drop into `data/raw/mcx/`), and time itself — at ~250 auction days/year
+the bootstrap CI narrows ~11%/year. Every new configuration grows the
+34-trial DSR ledger.
 
 *Machine-verifiable provenance: every number above regenerates from
 `data/processed/market.parquet` via `python run.py`, `scripts/analyze.py`,
