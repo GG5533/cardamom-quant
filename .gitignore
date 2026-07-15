@@ -4,4 +4,5 @@ __pycache__/
 .pytest_cache/
 .DS_Store
 .streamlit/
-figures/dashboard.png   # broken headless capture; TCC-locked — retake manually
+# broken headless capture; TCC-locked on disk — retake manually
+figures/dashboard.png
