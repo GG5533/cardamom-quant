@@ -29,6 +29,12 @@
 > classification of the project) pays solo; champion unchanged:
 > **physics-gbm +0.79, DSR 0.63 vs 31-trial ledger**. Third dilution
 > result — future features must displace, not stack.
+>
+> **ROUND 4 (displacement, agent-run):** T8 dropped mom_10/mom_63 from the
+> champion — KILLED (+0.63, signal left not variance; single-fold dAUC
+> diagnostics don't generalize). Ledger 32. Run end-to-end by the
+> `.claude/agents/quant-researcher` agent — the trial-discipline
+> automation works.
 
 ## What this is
 

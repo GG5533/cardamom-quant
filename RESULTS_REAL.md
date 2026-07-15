@@ -153,14 +153,28 @@ The rain feed STAYS (it pays solo; the data is real and wired); the
 champion configuration is unchanged. Verdict remains *strengthening
 maybe* — DSR must clear ~0.9 before anyone gets to say edge.
 
+## UPDATE (edge hunt, round 4): first displacement trial — killed
+
+T8 (`scripts/displacement_trial.py`, sequencing disclosed) dropped
+mom_10/mom_63 from the champion on the variance-reduction hypothesis the
+last-fold dAUC diagnostics suggested. Result: Sharpe +0.63 [+0.13, +1.12],
+AUC 0.549, hit +3.8pts — what left the book was *signal*, not variance
+(drawdown got slightly worse, −7.5% → −8.3%). The single-fold diagnostic
+did not generalize: the tree used the 10d/63d horizons as trend context
+for the physics block, not as duplicates. Kill; ledger 31 → 32. The
+lesson is now symmetric: stacking dilutes (T5, T7) and amputating on a
+single-fold diagnostic destroys — displacement must be earned with
+full-history evidence. (This trial was run end-to-end by the
+`quant-researcher` project agent as its validation run.)
+
 ## Roadmap implied by the numbers
 
 ~~Horizon-matched rebalancing + calibration~~ (done). ~~Auction physics~~
-(done — champion). ~~Rain~~ (done — pays as signal, kept). Next: MCX basis
+(done — champion: **physics-gbm +0.79, DSR 0.63**). ~~Rain~~ (done — pays
+as signal, kept). ~~Naive displacement~~ (done — killed). Next: MCX basis
 (manual Bhavcopy drop into `data/raw/mcx/`), Guatemala/FX via Comtrade
-key, and feature *selection* rather than feature *stacking* — three
-dilution results say the marginal feature must now displace a weaker one,
-not join it. Every new configuration grows the 31-trial DSR ledger.
+key; any future displacement gets nominated by all-fold evidence, not one
+fold. Every new configuration grows the 32-trial DSR ledger.
 
 *Machine-verifiable provenance: every number above regenerates from
 `data/processed/market.parquet` via `python run.py`, `scripts/analyze.py`,

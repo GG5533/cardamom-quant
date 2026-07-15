@@ -207,7 +207,7 @@
       "source_file": "tests/test_signal_layer.py",
       "source_location": "L41",
       "id": "tests_test_signal_layer_test_parse_comtrade_sums_hs_codes",
-      "community": 40,
+      "community": 4,
       "norm_label": "test_parse_comtrade_sums_hs_codes()"
     },
     {
@@ -522,7 +522,7 @@
       "source_file": "tests/test_analysis.py",
       "source_location": "L51",
       "id": "tests_test_analysis_test_expected_max_sharpe_grows_with_trials",
-      "community": 0,
+      "community": 2,
       "norm_label": "test_expected_max_sharpe_grows_with_trials()"
     },
     {
@@ -810,7 +810,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L166",
       "id": "tests_test_loaders_test_rain_validation_seasonality_guard",
-      "community": 39,
+      "community": 4,
       "norm_label": "test_rain_validation_seasonality_guard()"
     },
     {
@@ -958,6 +958,33 @@
       "norm_label": "edge hunt, round 3 \u2014 the rain feed, two pre-registered trials.      python scrip"
     },
     {
+      "label": "displacement_trial.py",
+      "file_type": "code",
+      "source_file": "scripts/displacement_trial.py",
+      "source_location": "L1",
+      "id": "scripts_displacement_trial_py",
+      "community": 0,
+      "norm_label": "displacement_trial.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/displacement_trial.py",
+      "source_location": "L66",
+      "id": "scripts_displacement_trial_main",
+      "community": 0,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Edge hunt, round 4 \u2014 feature displacement, ONE pre-registered trial.      python",
+      "file_type": "rationale",
+      "source_file": "scripts/displacement_trial.py",
+      "source_location": "L1",
+      "id": "scripts_displacement_trial_rationale_1",
+      "community": 0,
+      "norm_label": "edge hunt, round 4 \u2014 feature displacement, one pre-registered trial.      python"
+    },
+    {
       "label": "repair_sessions.py",
       "file_type": "code",
       "source_file": "scripts/repair_sessions.py",
@@ -1044,7 +1071,7 @@
       "source_file": "scripts/merge_rain.py",
       "source_location": "L1",
       "id": "scripts_merge_rain_py",
-      "community": 39,
+      "community": 4,
       "norm_label": "merge_rain.py"
     },
     {
@@ -1053,7 +1080,7 @@
       "source_file": "scripts/merge_rain.py",
       "source_location": "L28",
       "id": "scripts_merge_rain_main",
-      "community": 39,
+      "community": 4,
       "norm_label": "main()"
     },
     {
@@ -1062,7 +1089,7 @@
       "source_file": "scripts/merge_rain.py",
       "source_location": "L1",
       "id": "scripts_merge_rain_rationale_1",
-      "community": 39,
+      "community": 4,
       "norm_label": "merge imd rain features into the canonical market.parquet, in place.      python"
     },
     {
@@ -1224,7 +1251,7 @@
       "source_file": "scripts/build_dataset.py",
       "source_location": "L1",
       "id": "scripts_build_dataset_py",
-      "community": 38,
+      "community": 5,
       "norm_label": "build_dataset.py"
     },
     {
@@ -1233,7 +1260,7 @@
       "source_file": "scripts/build_dataset.py",
       "source_location": "L33",
       "id": "scripts_build_dataset_main",
-      "community": 38,
+      "community": 5,
       "norm_label": "main()"
     },
     {
@@ -1242,7 +1269,7 @@
       "source_file": "scripts/build_dataset.py",
       "source_location": "L1",
       "id": "scripts_build_dataset_rationale_1",
-      "community": 38,
+      "community": 5,
       "norm_label": "one-command real-data build.  usage:     python scripts/build_dataset.py"
     },
     {
@@ -1503,7 +1530,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L1",
       "id": "src_analysis_robustness_py",
-      "community": 0,
+      "community": 2,
       "norm_label": "robustness.py"
     },
     {
@@ -1512,7 +1539,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L24",
       "id": "analysis_robustness_block_bootstrap_sharpe",
-      "community": 0,
+      "community": 2,
       "norm_label": "block_bootstrap_sharpe()"
     },
     {
@@ -1521,7 +1548,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L55",
       "id": "analysis_robustness_probabilistic_sharpe",
-      "community": 0,
+      "community": 2,
       "norm_label": "probabilistic_sharpe()"
     },
     {
@@ -1530,7 +1557,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L73",
       "id": "analysis_robustness_expected_max_sharpe_annual",
-      "community": 0,
+      "community": 2,
       "norm_label": "expected_max_sharpe_annual()"
     },
     {
@@ -1557,7 +1584,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L1",
       "id": "analysis_robustness_rationale_1",
-      "community": 0,
+      "community": 2,
       "norm_label": "robustness statistics \u2014 is the sharpe distinguishable from luck?  three tools mo"
     },
     {
@@ -1566,7 +1593,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L30",
       "id": "analysis_robustness_rationale_30",
-      "community": 0,
+      "community": 2,
       "norm_label": "circular block bootstrap of the annualized sharpe ratio."
     },
     {
@@ -1575,7 +1602,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L58",
       "id": "analysis_robustness_rationale_58",
-      "community": 0,
+      "community": 2,
       "norm_label": "psr: p(true sr > benchmark), adjusting for skew/kurtosis (b&ldp 2012).      comp"
     },
     {
@@ -1584,7 +1611,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L74",
       "id": "analysis_robustness_rationale_74",
-      "community": 0,
+      "community": 2,
       "norm_label": "e[max sr] under n_trials of zero-true-skill strategies whose sr     estimates ha"
     },
     {
@@ -2295,7 +2322,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L1",
       "id": "src_data_comtrade_py",
-      "community": 40,
+      "community": 4,
       "norm_label": "comtrade.py"
     },
     {
@@ -2304,7 +2331,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L48",
       "id": "data_comtrade_parse_comtrade",
-      "community": 40,
+      "community": 4,
       "norm_label": "parse_comtrade()"
     },
     {
@@ -2349,7 +2376,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L117",
       "id": "data_comtrade_guatemalaexportsloader_parse",
-      "community": 40,
+      "community": 4,
       "norm_label": ".parse()"
     },
     {
@@ -2358,7 +2385,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L132",
       "id": "data_comtrade_add_features",
-      "community": 40,
+      "community": 4,
       "norm_label": "add_features()"
     },
     {
@@ -2367,7 +2394,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L142",
       "id": "data_comtrade_to_daily_features",
-      "community": 40,
+      "community": 4,
       "norm_label": "to_daily_features()"
     },
     {
@@ -2385,7 +2412,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L1",
       "id": "data_comtrade_rationale_1",
-      "community": 40,
+      "community": 4,
       "norm_label": "guatemala cardamom exports via un comtrade \u2014 the cross-market supply signal.  wh"
     },
     {
@@ -2394,7 +2421,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L49",
       "id": "data_comtrade_rationale_49",
-      "community": 40,
+      "community": 4,
       "norm_label": "comtrade json -> monthly frame [exp_kg, exp_usd], hs codes summed."
     },
     {
@@ -2412,7 +2439,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L1",
       "id": "src_data_mcx_bhavcopy_py",
-      "community": 37,
+      "community": 4,
       "norm_label": "mcx_bhavcopy.py"
     },
     {
@@ -2421,7 +2448,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L61",
       "id": "data_mcx_bhavcopy_norm",
-      "community": 37,
+      "community": 4,
       "norm_label": "_norm()"
     },
     {
@@ -2430,7 +2457,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L65",
       "id": "data_mcx_bhavcopy_to_date",
-      "community": 37,
+      "community": 4,
       "norm_label": "_to_date()"
     },
     {
@@ -2439,7 +2466,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L79",
       "id": "data_mcx_bhavcopy_map_columns",
-      "community": 37,
+      "community": 4,
       "norm_label": "_map_columns()"
     },
     {
@@ -2475,7 +2502,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L128",
       "id": "data_mcx_bhavcopy_mcxbhavcopyloader_read_any",
-      "community": 37,
+      "community": 4,
       "norm_label": "._read_any()"
     },
     {
@@ -2484,7 +2511,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L141",
       "id": "data_mcx_bhavcopy_mcxbhavcopyloader_parse_contracts",
-      "community": 37,
+      "community": 4,
       "norm_label": ".parse_contracts()"
     },
     {
@@ -2493,7 +2520,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L177",
       "id": "data_mcx_bhavcopy_mcxbhavcopyloader_parse",
-      "community": 37,
+      "community": 4,
       "norm_label": ".parse()"
     },
     {
@@ -2502,7 +2529,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L182",
       "id": "data_mcx_bhavcopy_build_continuous",
-      "community": 37,
+      "community": 4,
       "norm_label": "build_continuous()"
     },
     {
@@ -2520,7 +2547,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L1",
       "id": "data_mcx_bhavcopy_rationale_1",
-      "community": 37,
+      "community": 4,
       "norm_label": "mcxbhavcopyloader \u2014 cardamom futures from mcx bhavcopy files.  tier-1 strategy ("
     },
     {
@@ -2529,7 +2556,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L66",
       "id": "data_mcx_bhavcopy_rationale_66",
-      "community": 37,
+      "community": 4,
       "norm_label": "parse dates that may be iso (udiff: 2026-07-01) or indian     dd-mm-yyyy (classi"
     },
     {
@@ -2547,7 +2574,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L129",
       "id": "data_mcx_bhavcopy_rationale_129",
-      "community": 37,
+      "community": 4,
       "norm_label": "read a csv or a zip containing csvs."
     },
     {
@@ -2556,7 +2583,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L142",
       "id": "data_mcx_bhavcopy_rationale_142",
-      "community": 37,
+      "community": 4,
       "norm_label": "all cardamom contract-day rows across all cached files."
     },
     {
@@ -2736,7 +2763,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L1",
       "id": "src_data_loaders_py",
-      "community": 38,
+      "community": 5,
       "norm_label": "loaders.py"
     },
     {
@@ -2745,7 +2772,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L43",
       "id": "data_loaders_load_spot",
-      "community": 38,
+      "community": 5,
       "norm_label": "load_spot()"
     },
     {
@@ -2754,7 +2781,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L47",
       "id": "data_loaders_load_futures",
-      "community": 38,
+      "community": 5,
       "norm_label": "load_futures()"
     },
     {
@@ -2763,7 +2790,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L51",
       "id": "data_loaders_load_rain",
-      "community": 38,
+      "community": 5,
       "norm_label": "load_rain()"
     },
     {
@@ -2772,7 +2799,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L55",
       "id": "data_loaders_build_market_dataset",
-      "community": 38,
+      "community": 5,
       "norm_label": "build_market_dataset()"
     },
     {
@@ -2781,7 +2808,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L1",
       "id": "data_loaders_rationale_1",
-      "community": 38,
+      "community": 5,
       "norm_label": "real-data facade \u2014 the swap-in point that replaces synthetic.py.  public api (wh"
     },
     {
@@ -2790,7 +2817,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L61",
       "id": "data_loaders_rationale_61",
-      "community": 38,
+      "community": 5,
       "norm_label": "join the three feeds on a master calendar, compute basis honestly."
     },
     {
@@ -2799,7 +2826,7 @@
       "source_file": "src/data/__init__.py",
       "source_location": "L1",
       "id": "src_data_init_py",
-      "community": 41,
+      "community": 4,
       "norm_label": "__init__.py"
     },
     {
@@ -2808,7 +2835,7 @@
       "source_file": "src/data/__init__.py",
       "source_location": "L1",
       "id": "data_init_rationale_1",
-      "community": 41,
+      "community": 4,
       "norm_label": "real-data ingestion layer for cardamom-quant."
     },
     {
@@ -2817,7 +2844,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L1",
       "id": "src_data_imd_rainfall_py",
-      "community": 41,
+      "community": 4,
       "norm_label": "imd_rainfall.py"
     },
     {
@@ -2826,7 +2853,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L34",
       "id": "data_imd_rainfall_imdrainfallloader",
-      "community": 39,
+      "community": 4,
       "norm_label": "imdrainfallloader"
     },
     {
@@ -2835,7 +2862,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L43",
       "id": "data_imd_rainfall_imdrainfallloader_init",
-      "community": 39,
+      "community": 4,
       "norm_label": ".__init__()"
     },
     {
@@ -2844,7 +2871,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L58",
       "id": "data_imd_rainfall_imdrainfallloader_fetch",
-      "community": 39,
+      "community": 4,
       "norm_label": ".fetch()"
     },
     {
@@ -2853,7 +2880,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L71",
       "id": "data_imd_rainfall_imdrainfallloader_parse",
-      "community": 41,
+      "community": 4,
       "norm_label": ".parse()"
     },
     {
@@ -2862,7 +2889,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L95",
       "id": "data_imd_rainfall_add_anomaly",
-      "community": 41,
+      "community": 4,
       "norm_label": "add_anomaly()"
     },
     {
@@ -2871,7 +2898,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L119",
       "id": "data_imd_rainfall_imdrainfallloader_validate",
-      "community": 39,
+      "community": 4,
       "norm_label": ".validate()"
     },
     {
@@ -2880,7 +2907,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L1",
       "id": "data_imd_rainfall_rationale_1",
-      "community": 41,
+      "community": 4,
       "norm_label": "imdrainfallloader \u2014 idukki cardamom-belt rainfall with anomaly features.  histor"
     },
     {
@@ -2889,7 +2916,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L59",
       "id": "data_imd_rainfall_rationale_59",
-      "community": 39,
+      "community": 4,
       "norm_label": "download gridded rain via imdlib into raw_dir (idempotent)."
     },
     {
@@ -2898,7 +2925,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L72",
       "id": "data_imd_rainfall_rationale_72",
-      "community": 41,
+      "community": 4,
       "norm_label": "gridded binary -> idukki daily area-mean -> anomaly features."
     },
     {
@@ -3069,7 +3096,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L1",
       "id": "src_data_base_py",
-      "community": 35,
+      "community": 4,
       "norm_label": "base.py"
     },
     {
@@ -3096,7 +3123,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L26",
       "id": "data_base_baseloader",
-      "community": 35,
+      "community": 4,
       "norm_label": "baseloader"
     },
     {
@@ -3105,7 +3132,7 @@
       "source_file": "",
       "source_location": "",
       "id": "abc",
-      "community": 35,
+      "community": 4,
       "norm_label": "abc"
     },
     {
@@ -3114,7 +3141,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L34",
       "id": "data_base_baseloader_init",
-      "community": 35,
+      "community": 4,
       "norm_label": ".__init__()"
     },
     {
@@ -3123,7 +3150,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L42",
       "id": "data_base_fetch",
-      "community": 35,
+      "community": 4,
       "norm_label": "fetch()"
     },
     {
@@ -3132,7 +3159,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L50",
       "id": "data_base_parse",
-      "community": 35,
+      "community": 4,
       "norm_label": "parse()"
     },
     {
@@ -3141,7 +3168,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L53",
       "id": "data_base_baseloader_validate",
-      "community": 35,
+      "community": 4,
       "norm_label": ".validate()"
     },
     {
@@ -3150,7 +3177,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L64",
       "id": "data_base_baseloader_load",
-      "community": 35,
+      "community": 4,
       "norm_label": ".load()"
     },
     {
@@ -3159,7 +3186,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L1",
       "id": "data_base_rationale_1",
-      "community": 35,
+      "community": 4,
       "norm_label": "baseloader: the common contract every real-data feed implements.  design princip"
     },
     {
@@ -3177,7 +3204,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L27",
       "id": "data_base_rationale_27",
-      "community": 35,
+      "community": 4,
       "norm_label": "fetch \u2192 parse \u2192 validate \u2192 load, with an immutable raw cache."
     },
     {
@@ -3204,7 +3231,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L54",
       "id": "data_base_rationale_54",
-      "community": 35,
+      "community": 4,
       "norm_label": "generic schema checks; subclasses add source-specific rules."
     },
     {
@@ -3213,7 +3240,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L65",
       "id": "data_base_rationale_65",
-      "community": 35,
+      "community": 4,
       "norm_label": "cached-or-fetched, parsed, validated frame; also writes parquet."
     },
     {
@@ -6382,6 +6409,92 @@
       "source_location": "L79",
       "weight": 1.0,
       "source": "scripts_rain_trial_main",
+      "target": "analysis_robustness_deflated_sharpe"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/displacement_trial.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "scripts_displacement_trial_py",
+      "target": "scripts_displacement_trial_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/displacement_trial.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_displacement_trial_rationale_1",
+      "target": "scripts_displacement_trial_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/displacement_trial.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "scripts_displacement_trial_main",
+      "target": "features_engineering_build_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/displacement_trial.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "scripts_displacement_trial_main",
+      "target": "features_auction_physics_build_physics_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/displacement_trial.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "scripts_displacement_trial_main",
+      "target": "validation_walkforward_purgedwalkforward"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/displacement_trial.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "scripts_displacement_trial_main",
+      "target": "scripts_edge_hunt_evaluate_stream"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/displacement_trial.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "scripts_displacement_trial_main",
+      "target": "scripts_edge_hunt_calibrated_fold_proba"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/displacement_trial.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "scripts_displacement_trial_main",
       "target": "analysis_robustness_deflated_sharpe"
     },
     {
@@ -10406,9 +10519,9 @@
       "source_file": "RESULTS_REAL.md",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
-      "target": "cardamom_quant_results_real_update_edge_hunt_round_3_the_rain_feed_is_wired_and_it_pays_as",
-      "confidence_score": 1.0
+      "target": "cardamom_quant_results_real_update_edge_hunt_round_3_the_rain_feed_is_wired_and_it_pays_as"
     },
     {
       "relation": "contains",
@@ -10416,9 +10529,9 @@
       "source_file": "RESULTS_REAL.md",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
-      "target": "cardamom_quant_results_real_signal_not_as_the_champion",
-      "confidence_score": 1.0
+      "target": "cardamom_quant_results_real_signal_not_as_the_champion"
     },
     {
       "relation": "contains",
@@ -11062,5 +11175,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "521aaeb18209f8d85d3021eedcdbbae0ec9d30fa"
+  "built_at_commit": "338e031e0efd7890e16bdefdac6ccffe6ad88c73"
 }
