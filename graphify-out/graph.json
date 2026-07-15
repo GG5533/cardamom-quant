@@ -76,6 +76,123 @@
       "norm_label": "cardamom quant \u2014 interactive dashboard.      pip install streamlit     streamlit"
     },
     {
+      "label": "test_edge_hunt.py",
+      "file_type": "code",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L1",
+      "id": "tests_test_edge_hunt_py",
+      "community": 1,
+      "norm_label": "test_edge_hunt.py"
+    },
+    {
+      "label": "_market()",
+      "file_type": "code",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L22",
+      "id": "tests_test_edge_hunt_market",
+      "community": 1,
+      "norm_label": "_market()"
+    },
+    {
+      "label": "test_physics_features_are_strictly_causal()",
+      "file_type": "code",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L39",
+      "id": "tests_test_edge_hunt_test_physics_features_are_strictly_causal",
+      "community": 1,
+      "norm_label": "test_physics_features_are_strictly_causal()"
+    },
+    {
+      "label": "test_inventory_overhang_norm_is_past_years_only()",
+      "file_type": "code",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L52",
+      "id": "tests_test_edge_hunt_test_inventory_overhang_norm_is_past_years_only",
+      "community": 1,
+      "norm_label": "test_inventory_overhang_norm_is_past_years_only()"
+    },
+    {
+      "label": "test_hurst_separates_trending_from_reverting()",
+      "file_type": "code",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L67",
+      "id": "tests_test_edge_hunt_test_hurst_separates_trending_from_reverting",
+      "community": 1,
+      "norm_label": "test_hurst_separates_trending_from_reverting()"
+    },
+    {
+      "label": "_planted()",
+      "file_type": "code",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L78",
+      "id": "tests_test_edge_hunt_planted",
+      "community": 1,
+      "norm_label": "_planted()"
+    },
+    {
+      "label": "test_kalman_filter_is_causal()",
+      "file_type": "code",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L90",
+      "id": "tests_test_edge_hunt_test_kalman_filter_is_causal",
+      "community": 1,
+      "norm_label": "test_kalman_filter_is_causal()"
+    },
+    {
+      "label": "test_kalman_recovers_planted_anomaly()",
+      "file_type": "code",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L101",
+      "id": "tests_test_edge_hunt_test_kalman_recovers_planted_anomaly",
+      "community": 1,
+      "norm_label": "test_kalman_recovers_planted_anomaly()"
+    },
+    {
+      "label": "test_optimal_band_widens_with_cost()",
+      "file_type": "code",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L112",
+      "id": "tests_test_edge_hunt_test_optimal_band_widens_with_cost",
+      "community": 1,
+      "norm_label": "test_optimal_band_widens_with_cost()"
+    },
+    {
+      "label": "test_band_policy_enters_and_exits()",
+      "file_type": "code",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L120",
+      "id": "tests_test_edge_hunt_test_band_policy_enters_and_exits",
+      "community": 1,
+      "norm_label": "test_band_policy_enters_and_exits()"
+    },
+    {
+      "label": "test_run_weights_backtest_mechanics()",
+      "file_type": "code",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L127",
+      "id": "tests_test_edge_hunt_test_run_weights_backtest_mechanics",
+      "community": 31,
+      "norm_label": "test_run_weights_backtest_mechanics()"
+    },
+    {
+      "label": "Leakage + sanity tests for the edge-hunt round: auction physics, Kalman seasonal",
+      "file_type": "rationale",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L1",
+      "id": "tests_test_edge_hunt_rationale_1",
+      "community": 1,
+      "norm_label": "leakage + sanity tests for the edge-hunt round: auction physics, kalman seasonal"
+    },
+    {
+      "label": "Mutating TODAY's auction must not change TODAY's features.",
+      "file_type": "rationale",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L40",
+      "id": "tests_test_edge_hunt_rationale_40",
+      "community": 1,
+      "norm_label": "mutating today's auction must not change today's features."
+    },
+    {
       "label": "test_signal_layer.py",
       "file_type": "code",
       "source_file": "tests/test_signal_layer.py",
@@ -90,7 +207,7 @@
       "source_file": "tests/test_signal_layer.py",
       "source_location": "L41",
       "id": "tests_test_signal_layer_test_parse_comtrade_sums_hs_codes",
-      "community": 34,
+      "community": 4,
       "norm_label": "test_parse_comtrade_sums_hs_codes()"
     },
     {
@@ -693,7 +810,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L166",
       "id": "tests_test_loaders_test_rain_validation_seasonality_guard",
-      "community": 1,
+      "community": 5,
       "norm_label": "test_rain_validation_seasonality_guard()"
     },
     {
@@ -814,6 +931,33 @@
       "norm_label": "sanity: a clairvoyant signal must produce a positive sharpe."
     },
     {
+      "label": "rain_trial.py",
+      "file_type": "code",
+      "source_file": "scripts/rain_trial.py",
+      "source_location": "L1",
+      "id": "scripts_rain_trial_py",
+      "community": 0,
+      "norm_label": "rain_trial.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/rain_trial.py",
+      "source_location": "L42",
+      "id": "scripts_rain_trial_main",
+      "community": 0,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Edge hunt, round 3 \u2014 the rain feed, two pre-registered trials.      python scrip",
+      "file_type": "rationale",
+      "source_file": "scripts/rain_trial.py",
+      "source_location": "L1",
+      "id": "scripts_rain_trial_rationale_1",
+      "community": 0,
+      "norm_label": "edge hunt, round 3 \u2014 the rain feed, two pre-registered trials.      python scrip"
+    },
+    {
       "label": "repair_sessions.py",
       "file_type": "code",
       "source_file": "scripts/repair_sessions.py",
@@ -893,6 +1037,33 @@
       "id": "scripts_run_real_reference_main",
       "community": 0,
       "norm_label": "main()"
+    },
+    {
+      "label": "merge_rain.py",
+      "file_type": "code",
+      "source_file": "scripts/merge_rain.py",
+      "source_location": "L1",
+      "id": "scripts_merge_rain_py",
+      "community": 4,
+      "norm_label": "merge_rain.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/merge_rain.py",
+      "source_location": "L28",
+      "id": "scripts_merge_rain_main",
+      "community": 4,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Merge IMD rain features into the canonical market.parquet, in place.      python",
+      "file_type": "rationale",
+      "source_file": "scripts/merge_rain.py",
+      "source_location": "L1",
+      "id": "scripts_merge_rain_rationale_1",
+      "community": 4,
+      "norm_label": "merge imd rain features into the canonical market.parquet, in place.      python"
     },
     {
       "label": "ingest_browser_dump.py",
@@ -994,12 +1165,66 @@
       "norm_label": "staggered implementation: 1/reb of the book rebalances each day.      a single 5"
     },
     {
+      "label": "edge_hunt.py",
+      "file_type": "code",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L1",
+      "id": "scripts_edge_hunt_py",
+      "community": 0,
+      "norm_label": "edge_hunt.py"
+    },
+    {
+      "label": "calibrated_fold_proba()",
+      "file_type": "code",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L75",
+      "id": "scripts_edge_hunt_calibrated_fold_proba",
+      "community": 0,
+      "norm_label": "calibrated_fold_proba()"
+    },
+    {
+      "label": "evaluate_stream()",
+      "file_type": "code",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L96",
+      "id": "scripts_edge_hunt_evaluate_stream",
+      "community": 0,
+      "norm_label": "evaluate_stream()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L109",
+      "id": "scripts_edge_hunt_main",
+      "community": 0,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Edge hunt, round 2 \u2014 four pre-registered trials, counted before running.      py",
+      "file_type": "rationale",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L1",
+      "id": "scripts_edge_hunt_rationale_1",
+      "community": 0,
+      "norm_label": "edge hunt, round 2 \u2014 four pre-registered trials, counted before running.      py"
+    },
+    {
+      "label": "Per-fold isotonic-calibrated GBM stream for a fold-varying X builder.      X may",
+      "file_type": "rationale",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L76",
+      "id": "scripts_edge_hunt_rationale_76",
+      "community": 0,
+      "norm_label": "per-fold isotonic-calibrated gbm stream for a fold-varying x builder.      x may"
+    },
+    {
       "label": "build_dataset.py",
       "file_type": "code",
       "source_file": "scripts/build_dataset.py",
       "source_location": "L1",
       "id": "scripts_build_dataset_py",
-      "community": 33,
+      "community": 4,
       "norm_label": "build_dataset.py"
     },
     {
@@ -1008,7 +1233,7 @@
       "source_file": "scripts/build_dataset.py",
       "source_location": "L33",
       "id": "scripts_build_dataset_main",
-      "community": 33,
+      "community": 4,
       "norm_label": "main()"
     },
     {
@@ -1017,7 +1242,7 @@
       "source_file": "scripts/build_dataset.py",
       "source_location": "L1",
       "id": "scripts_build_dataset_rationale_1",
-      "community": 33,
+      "community": 4,
       "norm_label": "one-command real-data build.  usage:     python scripts/build_dataset.py"
     },
     {
@@ -1287,7 +1512,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L24",
       "id": "analysis_robustness_block_bootstrap_sharpe",
-      "community": 0,
+      "community": 2,
       "norm_label": "block_bootstrap_sharpe()"
     },
     {
@@ -1314,7 +1539,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L87",
       "id": "analysis_robustness_deflated_sharpe",
-      "community": 2,
+      "community": 0,
       "norm_label": "deflated_sharpe()"
     },
     {
@@ -1341,7 +1566,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L30",
       "id": "analysis_robustness_rationale_30",
-      "community": 0,
+      "community": 2,
       "norm_label": "circular block bootstrap of the annualized sharpe ratio."
     },
     {
@@ -1368,7 +1593,7 @@
       "source_file": "src/analysis/robustness.py",
       "source_location": "L90",
       "id": "analysis_robustness_rationale_90",
-      "community": 2,
+      "community": 0,
       "norm_label": "dsr: psr against the expected-max-sharpe of everything we tried.      all_trial_"
     },
     {
@@ -1597,6 +1822,105 @@
       "norm_label": "the realized forward return the backtest trades against."
     },
     {
+      "label": "auction_physics.py",
+      "file_type": "code",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L1",
+      "id": "src_features_auction_physics_py",
+      "community": 1,
+      "norm_label": "auction_physics.py"
+    },
+    {
+      "label": "hurst_rs()",
+      "file_type": "code",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L38",
+      "id": "features_auction_physics_hurst_rs",
+      "community": 1,
+      "norm_label": "hurst_rs()"
+    },
+    {
+      "label": "_crop_year()",
+      "file_type": "code",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L59",
+      "id": "features_auction_physics_crop_year",
+      "community": 1,
+      "norm_label": "_crop_year()"
+    },
+    {
+      "label": "_day_in_crop_year()",
+      "file_type": "code",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L64",
+      "id": "features_auction_physics_day_in_crop_year",
+      "community": 1,
+      "norm_label": "_day_in_crop_year()"
+    },
+    {
+      "label": "inventory_overhang()",
+      "file_type": "code",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L71",
+      "id": "features_auction_physics_inventory_overhang",
+      "community": 1,
+      "norm_label": "inventory_overhang()"
+    },
+    {
+      "label": "build_physics_features()",
+      "file_type": "code",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L99",
+      "id": "features_auction_physics_build_physics_features",
+      "community": 1,
+      "norm_label": "build_physics_features()"
+    },
+    {
+      "label": "Auction-physics features \u2014 signal mined from columns the pipeline never touched,",
+      "file_type": "rationale",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L1",
+      "id": "features_auction_physics_rationale_1",
+      "community": 1,
+      "norm_label": "auction-physics features \u2014 signal mined from columns the pipeline never touched,"
+    },
+    {
+      "label": "R/S Hurst exponent estimate (three-scale log-log slope).",
+      "file_type": "rationale",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L39",
+      "id": "features_auction_physics_rationale_39",
+      "community": 1,
+      "norm_label": "r/s hurst exponent estimate (three-scale log-log slope)."
+    },
+    {
+      "label": "Crop-year label: Aug-2019..Jul-2020 -> 2019.",
+      "file_type": "rationale",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L60",
+      "id": "features_auction_physics_rationale_60",
+      "community": 1,
+      "norm_label": "crop-year label: aug-2019..jul-2020 -> 2019."
+    },
+    {
+      "label": "log(crop-year-to-date arrivals / past-years' norm at the same point).      Posit",
+      "file_type": "rationale",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L72",
+      "id": "features_auction_physics_rationale_72",
+      "community": 1,
+      "norm_label": "log(crop-year-to-date arrivals / past-years' norm at the same point).      posit"
+    },
+    {
+      "label": "Assemble the block on the market calendar; all columns lag-safe.",
+      "file_type": "rationale",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L100",
+      "id": "features_auction_physics_rationale_100",
+      "community": 1,
+      "norm_label": "assemble the block on the market calendar; all columns lag-safe."
+    },
+    {
       "label": "baselines.py",
       "file_type": "code",
       "source_file": "src/models/baselines.py",
@@ -1687,6 +2011,186 @@
       "norm_label": "__init__.py"
     },
     {
+      "label": "kalman_seasonal.py",
+      "file_type": "code",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L1",
+      "id": "src_models_kalman_seasonal_py",
+      "community": 1,
+      "norm_label": "kalman_seasonal.py"
+    },
+    {
+      "label": "KalmanParams",
+      "file_type": "code",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L32",
+      "id": "models_kalman_seasonal_kalmanparams",
+      "community": 1,
+      "norm_label": "kalmanparams"
+    },
+    {
+      "label": "kappa()",
+      "file_type": "code",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L41",
+      "id": "models_kalman_seasonal_kappa",
+      "community": 1,
+      "norm_label": "kappa()"
+    },
+    {
+      "label": "half_life_days()",
+      "file_type": "code",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L45",
+      "id": "models_kalman_seasonal_half_life_days",
+      "community": 1,
+      "norm_label": "half_life_days()"
+    },
+    {
+      "label": "_fourier()",
+      "file_type": "code",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L49",
+      "id": "models_kalman_seasonal_fourier",
+      "community": 1,
+      "norm_label": "_fourier()"
+    },
+    {
+      "label": "fit_params()",
+      "file_type": "code",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L57",
+      "id": "models_kalman_seasonal_fit_params",
+      "community": 1,
+      "norm_label": "fit_params()"
+    },
+    {
+      "label": "filter_anomaly()",
+      "file_type": "code",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L81",
+      "id": "models_kalman_seasonal_filter_anomaly",
+      "community": 1,
+      "norm_label": "filter_anomaly()"
+    },
+    {
+      "label": "kalman_features()",
+      "file_type": "code",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L116",
+      "id": "models_kalman_seasonal_kalman_features",
+      "community": 1,
+      "norm_label": "kalman_features()"
+    },
+    {
+      "label": "Structural decomposition of log spot: level + seasonal + AR(1) anomaly.  Ported/",
+      "file_type": "rationale",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L1",
+      "id": "models_kalman_seasonal_rationale_1",
+      "community": 1,
+      "norm_label": "structural decomposition of log spot: level + seasonal + ar(1) anomaly.  ported/"
+    },
+    {
+      "label": "Fit seasonal beta + AR(1)/variance parameters on [:train_end] only.",
+      "file_type": "rationale",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L58",
+      "id": "models_kalman_seasonal_rationale_58",
+      "community": 1,
+      "norm_label": "fit seasonal beta + ar(1)/variance parameters on [:train_end] only."
+    },
+    {
+      "label": "Causal Kalman filter over the full series with train-fitted params.      Returns",
+      "file_type": "rationale",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L82",
+      "id": "models_kalman_seasonal_rationale_82",
+      "community": 1,
+      "norm_label": "causal kalman filter over the full series with train-fitted params.      returns"
+    },
+    {
+      "label": "Per-fold feature builder: fit on [:train_end], filter causally, lag 1.      kf_a",
+      "file_type": "rationale",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L117",
+      "id": "models_kalman_seasonal_rationale_117",
+      "community": 1,
+      "norm_label": "per-fold feature builder: fit on [:train_end], filter causally, lag 1.      kf_a"
+    },
+    {
+      "label": "ou_bands.py",
+      "file_type": "code",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L1",
+      "id": "src_models_ou_bands_py",
+      "community": 1,
+      "norm_label": "ou_bands.py"
+    },
+    {
+      "label": "expected_passage_time()",
+      "file_type": "code",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L26",
+      "id": "models_ou_bands_expected_passage_time",
+      "community": 1,
+      "norm_label": "expected_passage_time()"
+    },
+    {
+      "label": "optimal_band()",
+      "file_type": "code",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L45",
+      "id": "models_ou_bands_optimal_band",
+      "community": 1,
+      "norm_label": "optimal_band()"
+    },
+    {
+      "label": "band_policy_weights()",
+      "file_type": "code",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L75",
+      "id": "models_ou_bands_band_policy_weights",
+      "community": 1,
+      "norm_label": "band_policy_weights()"
+    },
+    {
+      "label": "Optimal entry bands for trading an Ornstein-Uhlenbeck anomaly.  The Kalman layer",
+      "file_type": "rationale",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L1",
+      "id": "models_ou_bands_rationale_1",
+      "community": 1,
+      "norm_label": "optimal entry bands for trading an ornstein-uhlenbeck anomaly.  the kalman layer"
+    },
+    {
+      "label": "E[time for OU to first hit b starting from a], a < b, in process time     units",
+      "file_type": "rationale",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L29",
+      "id": "models_ou_bands_rationale_29",
+      "community": 1,
+      "norm_label": "e[time for ou to first hit b starting from a], a < b, in process time     units"
+    },
+    {
+      "label": "Band maximizing net profit rate; (None, 0) if no band is profitable.      kappa:",
+      "file_type": "rationale",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L49",
+      "id": "models_ou_bands_rationale_49",
+      "community": 1,
+      "norm_label": "band maximizing net profit rate; (none, 0) if no band is profitable.      kappa:"
+    },
+    {
+      "label": "Enter -sign(anomaly) at |anomaly| >= band, exit at the zero-crossing.      Consu",
+      "file_type": "rationale",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L76",
+      "id": "models_ou_bands_rationale_76",
+      "community": 1,
+      "norm_label": "enter -sign(anomaly) at |anomaly| >= band, exit at the zero-crossing.      consu"
+    },
+    {
       "label": "__init__.py",
       "file_type": "code",
       "source_file": "src/backtest/__init__.py",
@@ -1723,6 +2227,15 @@
       "norm_label": "run_backtest()"
     },
     {
+      "label": "run_weights_backtest()",
+      "file_type": "code",
+      "source_file": "src/backtest/engine.py",
+      "source_location": "L82",
+      "id": "backtest_engine_run_weights_backtest",
+      "community": 31,
+      "norm_label": "run_weights_backtest()"
+    },
+    {
       "label": "Backtest engine: conviction sizing, vol targeting, leverage cap, costs.  Mechani",
       "file_type": "rationale",
       "source_file": "src/backtest/engine.py",
@@ -1739,6 +2252,15 @@
       "id": "backtest_engine_rationale_42",
       "community": 31,
       "norm_label": "proba_up: model p(up) indexed by date; daily_returns: same calendar."
+    },
+    {
+      "label": "Same execution/cost mechanics for a strategy that emits target weights     direc",
+      "file_type": "rationale",
+      "source_file": "src/backtest/engine.py",
+      "source_location": "L87",
+      "id": "backtest_engine_rationale_87",
+      "community": 31,
+      "norm_label": "same execution/cost mechanics for a strategy that emits target weights     direc"
     },
     {
       "label": "synthetic.py",
@@ -1773,7 +2295,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L1",
       "id": "src_data_comtrade_py",
-      "community": 34,
+      "community": 4,
       "norm_label": "comtrade.py"
     },
     {
@@ -1782,7 +2304,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L48",
       "id": "data_comtrade_parse_comtrade",
-      "community": 34,
+      "community": 4,
       "norm_label": "parse_comtrade()"
     },
     {
@@ -1791,7 +2313,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L68",
       "id": "data_comtrade_guatemalaexportsloader",
-      "community": 1,
+      "community": 4,
       "norm_label": "guatemalaexportsloader"
     },
     {
@@ -1800,7 +2322,7 @@
       "source_file": "",
       "source_location": "",
       "id": "baseloader",
-      "community": 1,
+      "community": 4,
       "norm_label": "baseloader"
     },
     {
@@ -1809,7 +2331,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L77",
       "id": "data_comtrade_guatemalaexportsloader_init",
-      "community": 1,
+      "community": 4,
       "norm_label": ".__init__()"
     },
     {
@@ -1818,7 +2340,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L85",
       "id": "data_comtrade_guatemalaexportsloader_fetch",
-      "community": 1,
+      "community": 4,
       "norm_label": ".fetch()"
     },
     {
@@ -1827,7 +2349,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L117",
       "id": "data_comtrade_guatemalaexportsloader_parse",
-      "community": 34,
+      "community": 4,
       "norm_label": ".parse()"
     },
     {
@@ -1836,7 +2358,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L132",
       "id": "data_comtrade_add_features",
-      "community": 34,
+      "community": 4,
       "norm_label": "add_features()"
     },
     {
@@ -1845,7 +2367,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L142",
       "id": "data_comtrade_to_daily_features",
-      "community": 34,
+      "community": 4,
       "norm_label": "to_daily_features()"
     },
     {
@@ -1854,7 +2376,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L160",
       "id": "data_comtrade_guatemalaexportsloader_validate",
-      "community": 1,
+      "community": 4,
       "norm_label": ".validate()"
     },
     {
@@ -1863,7 +2385,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L1",
       "id": "data_comtrade_rationale_1",
-      "community": 34,
+      "community": 4,
       "norm_label": "guatemala cardamom exports via un comtrade \u2014 the cross-market supply signal.  wh"
     },
     {
@@ -1872,7 +2394,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L49",
       "id": "data_comtrade_rationale_49",
-      "community": 34,
+      "community": 4,
       "norm_label": "comtrade json -> monthly frame [exp_kg, exp_usd], hs codes summed."
     },
     {
@@ -2160,7 +2682,7 @@
       "source_file": "src/data/spices_board.py",
       "source_location": "L165",
       "id": "data_spices_board_spicesboardloader_validate",
-      "community": 1,
+      "community": 5,
       "norm_label": ".validate()"
     },
     {
@@ -2214,7 +2736,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L1",
       "id": "src_data_loaders_py",
-      "community": 33,
+      "community": 5,
       "norm_label": "loaders.py"
     },
     {
@@ -2223,7 +2745,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L43",
       "id": "data_loaders_load_spot",
-      "community": 33,
+      "community": 5,
       "norm_label": "load_spot()"
     },
     {
@@ -2232,7 +2754,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L47",
       "id": "data_loaders_load_futures",
-      "community": 33,
+      "community": 5,
       "norm_label": "load_futures()"
     },
     {
@@ -2241,7 +2763,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L51",
       "id": "data_loaders_load_rain",
-      "community": 33,
+      "community": 5,
       "norm_label": "load_rain()"
     },
     {
@@ -2250,7 +2772,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L55",
       "id": "data_loaders_build_market_dataset",
-      "community": 33,
+      "community": 5,
       "norm_label": "build_market_dataset()"
     },
     {
@@ -2259,7 +2781,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L1",
       "id": "data_loaders_rationale_1",
-      "community": 33,
+      "community": 5,
       "norm_label": "real-data facade \u2014 the swap-in point that replaces synthetic.py.  public api (wh"
     },
     {
@@ -2268,7 +2790,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L61",
       "id": "data_loaders_rationale_61",
-      "community": 33,
+      "community": 5,
       "norm_label": "join the three feeds on a master calendar, compute basis honestly."
     },
     {
@@ -2277,7 +2799,7 @@
       "source_file": "src/data/__init__.py",
       "source_location": "L1",
       "id": "src_data_init_py",
-      "community": 35,
+      "community": 4,
       "norm_label": "__init__.py"
     },
     {
@@ -2286,7 +2808,7 @@
       "source_file": "src/data/__init__.py",
       "source_location": "L1",
       "id": "data_init_rationale_1",
-      "community": 35,
+      "community": 4,
       "norm_label": "real-data ingestion layer for cardamom-quant."
     },
     {
@@ -2295,7 +2817,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L1",
       "id": "src_data_imd_rainfall_py",
-      "community": 35,
+      "community": 4,
       "norm_label": "imd_rainfall.py"
     },
     {
@@ -2304,7 +2826,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L34",
       "id": "data_imd_rainfall_imdrainfallloader",
-      "community": 1,
+      "community": 4,
       "norm_label": "imdrainfallloader"
     },
     {
@@ -2313,7 +2835,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L43",
       "id": "data_imd_rainfall_imdrainfallloader_init",
-      "community": 1,
+      "community": 4,
       "norm_label": ".__init__()"
     },
     {
@@ -2322,7 +2844,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L58",
       "id": "data_imd_rainfall_imdrainfallloader_fetch",
-      "community": 1,
+      "community": 4,
       "norm_label": ".fetch()"
     },
     {
@@ -2331,7 +2853,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L71",
       "id": "data_imd_rainfall_imdrainfallloader_parse",
-      "community": 35,
+      "community": 4,
       "norm_label": ".parse()"
     },
     {
@@ -2340,7 +2862,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L95",
       "id": "data_imd_rainfall_add_anomaly",
-      "community": 35,
+      "community": 4,
       "norm_label": "add_anomaly()"
     },
     {
@@ -2349,7 +2871,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L119",
       "id": "data_imd_rainfall_imdrainfallloader_validate",
-      "community": 1,
+      "community": 4,
       "norm_label": ".validate()"
     },
     {
@@ -2358,7 +2880,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L1",
       "id": "data_imd_rainfall_rationale_1",
-      "community": 35,
+      "community": 4,
       "norm_label": "imdrainfallloader \u2014 idukki cardamom-belt rainfall with anomaly features.  histor"
     },
     {
@@ -2367,7 +2889,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L59",
       "id": "data_imd_rainfall_rationale_59",
-      "community": 1,
+      "community": 4,
       "norm_label": "download gridded rain via imdlib into raw_dir (idempotent)."
     },
     {
@@ -2376,7 +2898,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L72",
       "id": "data_imd_rainfall_rationale_72",
-      "community": 35,
+      "community": 4,
       "norm_label": "gridded binary -> idukki daily area-mean -> anomaly features."
     },
     {
@@ -2547,7 +3069,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L1",
       "id": "src_data_base_py",
-      "community": 32,
+      "community": 4,
       "norm_label": "base.py"
     },
     {
@@ -2556,7 +3078,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L22",
       "id": "data_base_validationerror",
-      "community": 1,
+      "community": 4,
       "norm_label": "validationerror"
     },
     {
@@ -2565,7 +3087,7 @@
       "source_file": "",
       "source_location": "",
       "id": "runtimeerror",
-      "community": 1,
+      "community": 4,
       "norm_label": "runtimeerror"
     },
     {
@@ -2574,7 +3096,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L26",
       "id": "data_base_baseloader",
-      "community": 32,
+      "community": 4,
       "norm_label": "baseloader"
     },
     {
@@ -2583,7 +3105,7 @@
       "source_file": "",
       "source_location": "",
       "id": "abc",
-      "community": 32,
+      "community": 4,
       "norm_label": "abc"
     },
     {
@@ -2592,7 +3114,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L34",
       "id": "data_base_baseloader_init",
-      "community": 32,
+      "community": 4,
       "norm_label": ".__init__()"
     },
     {
@@ -2601,7 +3123,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L42",
       "id": "data_base_fetch",
-      "community": 32,
+      "community": 4,
       "norm_label": "fetch()"
     },
     {
@@ -2610,7 +3132,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L50",
       "id": "data_base_parse",
-      "community": 32,
+      "community": 4,
       "norm_label": "parse()"
     },
     {
@@ -2619,7 +3141,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L53",
       "id": "data_base_baseloader_validate",
-      "community": 32,
+      "community": 4,
       "norm_label": ".validate()"
     },
     {
@@ -2628,7 +3150,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L64",
       "id": "data_base_baseloader_load",
-      "community": 32,
+      "community": 4,
       "norm_label": ".load()"
     },
     {
@@ -2637,7 +3159,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L1",
       "id": "data_base_rationale_1",
-      "community": 32,
+      "community": 4,
       "norm_label": "baseloader: the common contract every real-data feed implements.  design princip"
     },
     {
@@ -2646,7 +3168,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L23",
       "id": "data_base_rationale_23",
-      "community": 1,
+      "community": 4,
       "norm_label": "raised when a loader's output violates its schema contract."
     },
     {
@@ -2655,7 +3177,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L27",
       "id": "data_base_rationale_27",
-      "community": 32,
+      "community": 4,
       "norm_label": "fetch \u2192 parse \u2192 validate \u2192 load, with an immutable raw cache."
     },
     {
@@ -2682,7 +3204,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L54",
       "id": "data_base_rationale_54",
-      "community": 32,
+      "community": 4,
       "norm_label": "generic schema checks; subclasses add source-specific rules."
     },
     {
@@ -2691,7 +3213,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L65",
       "id": "data_base_rationale_65",
-      "community": 32,
+      "community": 4,
       "norm_label": "cached-or-fetched, parsed, validated frame; also writes parquet."
     },
     {
@@ -2911,10 +3433,19 @@
       "norm_label": "updated verdict"
     },
     {
-      "label": "Roadmap implied by the numbers",
+      "label": "UPDATE (edge hunt, round 2): auction physics is the new headline",
       "file_type": "document",
       "source_file": "RESULTS_REAL.md",
       "source_location": "L95",
+      "id": "cardamom_quant_results_real_update_edge_hunt_round_2_auction_physics_is_the_new_headline",
+      "community": 17,
+      "norm_label": "update (edge hunt, round 2): auction physics is the new headline"
+    },
+    {
+      "label": "Roadmap implied by the numbers",
+      "file_type": "document",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L128",
       "id": "cardamom_quant_results_real_roadmap_implied_by_the_numbers",
       "community": 17,
       "norm_label": "roadmap implied by the numbers"
@@ -3256,7 +3787,7 @@
       "label": "What this is",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L15",
+      "source_location": "L25",
       "id": "cardamom_quant_handoff_what_this_is",
       "community": 10,
       "norm_label": "what this is"
@@ -3265,7 +3796,7 @@
       "label": "State: what is DONE",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L24",
+      "source_location": "L34",
       "id": "cardamom_quant_handoff_state_what_is_done",
       "community": 10,
       "norm_label": "state: what is done"
@@ -3274,7 +3805,7 @@
       "label": "First 30 minutes in VS Code",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L43",
+      "source_location": "L53",
       "id": "cardamom_quant_handoff_first_30_minutes_in_vs_code",
       "community": 10,
       "norm_label": "first 30 minutes in vs code"
@@ -3283,7 +3814,7 @@
       "label": "code:bash (cd cardamom-quant)",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L45",
+      "source_location": "L55",
       "id": "cardamom_quant_handoff_codeblock_1",
       "community": 10,
       "norm_label": "code:bash (cd cardamom-quant)"
@@ -3292,7 +3823,7 @@
       "label": "Priority queue (in order of expected value)",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L61",
+      "source_location": "L71",
       "id": "cardamom_quant_handoff_priority_queue_in_order_of_expected_value",
       "community": 10,
       "norm_label": "priority queue (in order of expected value)"
@@ -3301,7 +3832,7 @@
       "label": "Gotchas / tribal knowledge",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L86",
+      "source_location": "L96",
       "id": "cardamom_quant_handoff_gotchas_tribal_knowledge",
       "community": 10,
       "norm_label": "gotchas / tribal knowledge"
@@ -3310,10 +3841,181 @@
       "label": "One-line status if anyone asks",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L113",
+      "source_location": "L123",
       "id": "cardamom_quant_handoff_one_line_status_if_anyone_asks",
       "community": 10,
       "norm_label": "one-line status if anyone asks"
+    },
+    {
+      "label": "quant-researcher.md",
+      "file_type": "document",
+      "source_file": ".claude/agents/quant-researcher.md",
+      "source_location": "L1",
+      "id": "claude_agents_quant_researcher_md",
+      "community": 34,
+      "norm_label": "quant-researcher.md"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L1",
+      "id": "claude_skills_verify_skill_md",
+      "community": 32,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Verifying cardamom-quant",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L6",
+      "id": "verify_skill_verifying_cardamom_quant",
+      "community": 32,
+      "norm_label": "verifying cardamom-quant"
+    },
+    {
+      "label": "1. Test suite (fast, always first)",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L11",
+      "id": "verify_skill_1_test_suite_fast_always_first",
+      "community": 32,
+      "norm_label": "1. test suite (fast, always first)"
+    },
+    {
+      "label": "code:bash (.venv/bin/python -m pytest tests/ -q)",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L13",
+      "id": "verify_skill_codeblock_1",
+      "community": 32,
+      "norm_label": "code:bash (.venv/bin/python -m pytest tests/ -q)"
+    },
+    {
+      "label": "2. Scorecard reproduction (the numbers are the product)",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L22",
+      "id": "verify_skill_2_scorecard_reproduction_the_numbers_are_the_product",
+      "community": 32,
+      "norm_label": "2. scorecard reproduction (the numbers are the product)"
+    },
+    {
+      "label": "code:bash (.venv/bin/python run.py            # [REAL] tag, not [SYNTHE)",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L24",
+      "id": "verify_skill_codeblock_2",
+      "community": 32,
+      "norm_label": "code:bash (.venv/bin/python run.py            # [real] tag, not [synthe)"
+    },
+    {
+      "label": "3. Experiment scripts regenerate their published tables",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L34",
+      "id": "verify_skill_3_experiment_scripts_regenerate_their_published_tables",
+      "community": 32,
+      "norm_label": "3. experiment scripts regenerate their published tables"
+    },
+    {
+      "label": "code:bash (.venv/bin/python scripts/analyze.py             # ablation/D)",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L36",
+      "id": "verify_skill_codeblock_3",
+      "community": 32,
+      "norm_label": "code:bash (.venv/bin/python scripts/analyze.py             # ablation/d)"
+    },
+    {
+      "label": "4. Dashboard boots with the REAL banner",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L45",
+      "id": "verify_skill_4_dashboard_boots_with_the_real_banner",
+      "community": 32,
+      "norm_label": "4. dashboard boots with the real banner"
+    },
+    {
+      "label": "code:bash (.venv/bin/streamlit run app.py --server.headless true --serv)",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L47",
+      "id": "verify_skill_codeblock_4",
+      "community": 32,
+      "norm_label": "code:bash (.venv/bin/streamlit run app.py --server.headless true --serv)"
+    },
+    {
+      "label": "5. Honesty checklist (read RESULTS_REAL.md ledger line)",
+      "file_type": "document",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L52",
+      "id": "verify_skill_5_honesty_checklist_read_results_real_md_ledger_line",
+      "community": 32,
+      "norm_label": "5. honesty checklist (read results_real.md ledger line)"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L1",
+      "id": "claude_skills_new_trial_skill_md",
+      "community": 33,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Adding a trial without lying to yourself",
+      "file_type": "document",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L6",
+      "id": "new_trial_skill_adding_a_trial_without_lying_to_yourself",
+      "community": 33,
+      "norm_label": "adding a trial without lying to yourself"
+    },
+    {
+      "label": "1. Pre-register before running",
+      "file_type": "document",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L12",
+      "id": "new_trial_skill_1_pre_register_before_running",
+      "community": 33,
+      "norm_label": "1. pre-register before running"
+    },
+    {
+      "label": "2. Leakage test first, feature second",
+      "file_type": "document",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L22",
+      "id": "new_trial_skill_2_leakage_test_first_feature_second",
+      "community": 33,
+      "norm_label": "2. leakage test first, feature second"
+    },
+    {
+      "label": "3. Evaluate in the standard vehicle",
+      "file_type": "document",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L32",
+      "id": "new_trial_skill_3_evaluate_in_the_standard_vehicle",
+      "community": 33,
+      "norm_label": "3. evaluate in the standard vehicle"
+    },
+    {
+      "label": "4. Grow the ledger \u2014 even for failures",
+      "file_type": "document",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L40",
+      "id": "new_trial_skill_4_grow_the_ledger_even_for_failures",
+      "community": 33,
+      "norm_label": "4. grow the ledger \u2014 even for failures"
+    },
+    {
+      "label": "5. Report as found",
+      "file_type": "document",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L48",
+      "id": "new_trial_skill_5_report_as_found",
+      "community": 33,
+      "norm_label": "5. report as found"
     },
     {
       "label": "README.md",
@@ -3706,6 +4408,280 @@
       "weight": 1.0,
       "source": "cardamom_quant_app_run_cv",
       "target": "src_metrics_backtest_metrics"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_py",
+      "target": "tests_test_edge_hunt_market",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_py",
+      "target": "tests_test_edge_hunt_test_physics_features_are_strictly_causal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_py",
+      "target": "tests_test_edge_hunt_test_inventory_overhang_norm_is_past_years_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_py",
+      "target": "tests_test_edge_hunt_test_hurst_separates_trending_from_reverting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_py",
+      "target": "tests_test_edge_hunt_planted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_py",
+      "target": "tests_test_edge_hunt_test_kalman_filter_is_causal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_py",
+      "target": "tests_test_edge_hunt_test_kalman_recovers_planted_anomaly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_py",
+      "target": "tests_test_edge_hunt_test_optimal_band_widens_with_cost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_py",
+      "target": "tests_test_edge_hunt_test_band_policy_enters_and_exits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_py",
+      "target": "tests_test_edge_hunt_test_run_weights_backtest_mechanics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_rationale_1",
+      "target": "tests_test_edge_hunt_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_physics_features_are_strictly_causal",
+      "target": "tests_test_edge_hunt_market",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_inventory_overhang_norm_is_past_years_only",
+      "target": "tests_test_edge_hunt_market",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_rationale_40",
+      "target": "tests_test_edge_hunt_test_physics_features_are_strictly_causal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_physics_features_are_strictly_causal",
+      "target": "features_auction_physics_build_physics_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_inventory_overhang_norm_is_past_years_only",
+      "target": "features_auction_physics_inventory_overhang"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_hurst_separates_trending_from_reverting",
+      "target": "features_auction_physics_hurst_rs"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_kalman_filter_is_causal",
+      "target": "tests_test_edge_hunt_planted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_kalman_recovers_planted_anomaly",
+      "target": "tests_test_edge_hunt_planted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_kalman_filter_is_causal",
+      "target": "models_kalman_seasonal_kalman_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_kalman_recovers_planted_anomaly",
+      "target": "models_kalman_seasonal_fit_params"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_kalman_recovers_planted_anomaly",
+      "target": "models_kalman_seasonal_filter_anomaly"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_optimal_band_widens_with_cost",
+      "target": "models_ou_bands_optimal_band"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_band_policy_enters_and_exits",
+      "target": "models_ou_bands_band_policy_weights"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_run_weights_backtest_mechanics",
+      "target": "backtest_engine_run_weights_backtest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_edge_hunt.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "tests_test_edge_hunt_test_run_weights_backtest_mechanics",
+      "target": "backtest_engine_backtestconfig"
     },
     {
       "relation": "contains",
@@ -4563,9 +5539,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_py",
-      "target": "tests_test_horizon_trading_inputs",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_inputs"
     },
     {
       "relation": "contains",
@@ -4573,9 +5549,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_py",
-      "target": "tests_test_horizon_trading_test_default_config_matches_daily_rebalance_spec",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_test_default_config_matches_daily_rebalance_spec"
     },
     {
       "relation": "contains",
@@ -4583,9 +5559,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_py",
-      "target": "tests_test_horizon_trading_test_rebalance_cadence_holds_position_between_trades",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_test_rebalance_cadence_holds_position_between_trades"
     },
     {
       "relation": "contains",
@@ -4593,9 +5569,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_py",
-      "target": "tests_test_horizon_trading_test_slower_cadence_cuts_turnover",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_test_slower_cadence_cuts_turnover"
     },
     {
       "relation": "contains",
@@ -4603,9 +5579,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_py",
-      "target": "tests_test_horizon_trading_test_conviction_gate_blocks_low_conviction",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_test_conviction_gate_blocks_low_conviction"
     },
     {
       "relation": "contains",
@@ -4613,9 +5589,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_py",
-      "target": "tests_test_horizon_trading_test_conviction_gate_trades_only_on_conviction",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_test_conviction_gate_trades_only_on_conviction"
     },
     {
       "relation": "contains",
@@ -4623,9 +5599,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_py",
-      "target": "tests_test_horizon_trading_test_execution_stays_next_day_causal",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_test_execution_stays_next_day_causal"
     },
     {
       "relation": "contains",
@@ -4633,9 +5609,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_py",
-      "target": "tests_test_horizon_trading_test_isotonic_calibrator_fixes_overconfidence",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_test_isotonic_calibrator_fixes_overconfidence"
     },
     {
       "relation": "rationale_for",
@@ -4643,9 +5619,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_rationale_1",
-      "target": "tests_test_horizon_trading_py",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_py"
     },
     {
       "relation": "calls",
@@ -4654,9 +5630,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_test_default_config_matches_daily_rebalance_spec",
-      "target": "tests_test_horizon_trading_inputs",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_inputs"
     },
     {
       "relation": "calls",
@@ -4665,9 +5641,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_test_rebalance_cadence_holds_position_between_trades",
-      "target": "tests_test_horizon_trading_inputs",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_inputs"
     },
     {
       "relation": "calls",
@@ -4676,9 +5652,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_test_slower_cadence_cuts_turnover",
-      "target": "tests_test_horizon_trading_inputs",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_inputs"
     },
     {
       "relation": "calls",
@@ -4687,9 +5663,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_test_conviction_gate_blocks_low_conviction",
-      "target": "tests_test_horizon_trading_inputs",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_inputs"
     },
     {
       "relation": "calls",
@@ -4698,9 +5674,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_test_conviction_gate_trades_only_on_conviction",
-      "target": "tests_test_horizon_trading_inputs",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_inputs"
     },
     {
       "relation": "calls",
@@ -4709,9 +5685,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_test_execution_stays_next_day_causal",
-      "target": "tests_test_horizon_trading_inputs",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_inputs"
     },
     {
       "relation": "rationale_for",
@@ -4719,9 +5695,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_rationale_28",
-      "target": "tests_test_horizon_trading_test_default_config_matches_daily_rebalance_spec",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_test_default_config_matches_daily_rebalance_spec"
     },
     {
       "relation": "calls",
@@ -4839,9 +5815,9 @@
       "source_file": "tests/test_horizon_trading.py",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_horizon_trading_rationale_77",
-      "target": "tests_test_horizon_trading_test_execution_stays_next_day_causal",
-      "confidence_score": 1.0
+      "target": "tests_test_horizon_trading_test_execution_stays_next_day_causal"
     },
     {
       "relation": "calls",
@@ -5307,6 +6283,92 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/rain_trial.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "scripts_rain_trial_py",
+      "target": "scripts_rain_trial_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rain_trial.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_rain_trial_rationale_1",
+      "target": "scripts_rain_trial_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/rain_trial.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "scripts_rain_trial_main",
+      "target": "features_auction_physics_build_physics_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/rain_trial.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "scripts_rain_trial_main",
+      "target": "features_engineering_build_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/rain_trial.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "scripts_rain_trial_main",
+      "target": "validation_walkforward_purgedwalkforward"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/rain_trial.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "scripts_rain_trial_main",
+      "target": "scripts_edge_hunt_evaluate_stream"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/rain_trial.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "scripts_rain_trial_main",
+      "target": "scripts_edge_hunt_calibrated_fold_proba"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/rain_trial.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "scripts_rain_trial_main",
+      "target": "analysis_robustness_deflated_sharpe"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/repair_sessions.py",
       "source_location": "L17",
       "weight": 1.0,
@@ -5531,6 +6593,37 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/merge_rain.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "scripts_merge_rain_py",
+      "target": "scripts_merge_rain_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/merge_rain.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_merge_rain_rationale_1",
+      "target": "scripts_merge_rain_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/merge_rain.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "scripts_merge_rain_main",
+      "target": "data_imd_rainfall_imdrainfallloader"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/ingest_browser_dump.py",
       "source_location": "L19",
       "weight": 1.0,
@@ -5576,9 +6669,9 @@
       "source_file": "scripts/horizon_experiment.py",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_horizon_experiment_py",
-      "target": "scripts_horizon_experiment_gbm_probability_streams",
-      "confidence_score": 1.0
+      "target": "scripts_horizon_experiment_gbm_probability_streams"
     },
     {
       "relation": "contains",
@@ -5586,9 +6679,9 @@
       "source_file": "scripts/horizon_experiment.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_horizon_experiment_py",
-      "target": "scripts_horizon_experiment_tranched_net_returns",
-      "confidence_score": 1.0
+      "target": "scripts_horizon_experiment_tranched_net_returns"
     },
     {
       "relation": "contains",
@@ -5596,9 +6689,9 @@
       "source_file": "scripts/horizon_experiment.py",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_horizon_experiment_py",
-      "target": "scripts_horizon_experiment_grid_cell",
-      "confidence_score": 1.0
+      "target": "scripts_horizon_experiment_grid_cell"
     },
     {
       "relation": "contains",
@@ -5606,9 +6699,9 @@
       "source_file": "scripts/horizon_experiment.py",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_horizon_experiment_py",
-      "target": "scripts_horizon_experiment_main",
-      "confidence_score": 1.0
+      "target": "scripts_horizon_experiment_main"
     },
     {
       "relation": "rationale_for",
@@ -5616,9 +6709,9 @@
       "source_file": "scripts/horizon_experiment.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_horizon_experiment_rationale_1",
-      "target": "scripts_horizon_experiment_py",
-      "confidence_score": 1.0
+      "target": "scripts_horizon_experiment_py"
     },
     {
       "relation": "calls",
@@ -5627,9 +6720,9 @@
       "source_file": "scripts/horizon_experiment.py",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_horizon_experiment_main",
-      "target": "scripts_horizon_experiment_gbm_probability_streams",
-      "confidence_score": 1.0
+      "target": "scripts_horizon_experiment_gbm_probability_streams"
     },
     {
       "relation": "rationale_for",
@@ -5637,9 +6730,9 @@
       "source_file": "scripts/horizon_experiment.py",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_horizon_experiment_rationale_60",
-      "target": "scripts_horizon_experiment_gbm_probability_streams",
-      "confidence_score": 1.0
+      "target": "scripts_horizon_experiment_gbm_probability_streams"
     },
     {
       "relation": "calls",
@@ -5670,9 +6763,9 @@
       "source_file": "scripts/horizon_experiment.py",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_horizon_experiment_main",
-      "target": "scripts_horizon_experiment_tranched_net_returns",
-      "confidence_score": 1.0
+      "target": "scripts_horizon_experiment_tranched_net_returns"
     },
     {
       "relation": "rationale_for",
@@ -5680,9 +6773,9 @@
       "source_file": "scripts/horizon_experiment.py",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_horizon_experiment_rationale_88",
-      "target": "scripts_horizon_experiment_tranched_net_returns",
-      "confidence_score": 1.0
+      "target": "scripts_horizon_experiment_tranched_net_returns"
     },
     {
       "relation": "calls",
@@ -5720,13 +6813,24 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_evaluate_stream",
+      "target": "scripts_horizon_experiment_tranched_net_returns"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/horizon_experiment.py",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_horizon_experiment_main",
-      "target": "scripts_horizon_experiment_grid_cell",
-      "confidence_score": 1.0
+      "target": "scripts_horizon_experiment_grid_cell"
     },
     {
       "relation": "calls",
@@ -5847,6 +6951,265 @@
       "source_location": "L189",
       "weight": 1.0,
       "source": "scripts_horizon_experiment_main",
+      "target": "analysis_robustness_deflated_sharpe"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_py",
+      "target": "scripts_edge_hunt_calibrated_fold_proba",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_py",
+      "target": "scripts_edge_hunt_evaluate_stream",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_py",
+      "target": "scripts_edge_hunt_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_rationale_1",
+      "target": "scripts_edge_hunt_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "scripts_edge_hunt_calibrated_fold_proba",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_rationale_76",
+      "target": "scripts_edge_hunt_calibrated_fold_proba",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_calibrated_fold_proba",
+      "target": "models_baselines_make_gbm"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "scripts_edge_hunt_evaluate_stream",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_evaluate_stream",
+      "target": "src_metrics_backtest_metrics"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_evaluate_stream",
+      "target": "analysis_robustness_block_bootstrap_sharpe"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_evaluate_stream",
+      "target": "src_metrics_classification_metrics"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "features_engineering_build_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "features_engineering_forward_returns"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "validation_walkforward_purgedwalkforward"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "features_auction_physics_build_physics_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "models_kalman_seasonal_fit_params"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "models_kalman_seasonal_filter_anomaly"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "models_ou_bands_optimal_band"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "models_ou_bands_band_policy_weights"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "backtest_engine_run_weights_backtest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "backtest_engine_backtestconfig"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "src_metrics_backtest_metrics"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
+      "target": "analysis_robustness_block_bootstrap_sharpe"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/edge_hunt.py",
+      "source_location": "L219",
+      "weight": 1.0,
+      "source": "scripts_edge_hunt_main",
       "target": "analysis_robustness_deflated_sharpe"
     },
     {
@@ -6125,9 +7488,9 @@
       "source_file": "scripts/make_flagship_chart.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_make_flagship_chart_py",
-      "target": "scripts_make_flagship_chart_main",
-      "confidence_score": 1.0
+      "target": "scripts_make_flagship_chart_main"
     },
     {
       "relation": "rationale_for",
@@ -6135,9 +7498,9 @@
       "source_file": "scripts/make_flagship_chart.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_make_flagship_chart_rationale_1",
-      "target": "scripts_make_flagship_chart_py",
-      "confidence_score": 1.0
+      "target": "scripts_make_flagship_chart_py"
     },
     {
       "relation": "contains",
@@ -6481,9 +7844,9 @@
       "source_file": "src/analysis/calibration.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_analysis_calibration_py",
-      "target": "analysis_calibration_isotonic_calibrator",
-      "confidence_score": 1.0
+      "target": "analysis_calibration_isotonic_calibrator"
     },
     {
       "relation": "contains",
@@ -6551,9 +7914,9 @@
       "source_file": "src/analysis/calibration.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_calibration_rationale_20",
-      "target": "analysis_calibration_isotonic_calibrator",
-      "confidence_score": 1.0
+      "target": "analysis_calibration_isotonic_calibrator"
     },
     {
       "relation": "calls",
@@ -6583,9 +7946,9 @@
       "source_file": "src/analysis/calibration.py",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_calibration_rationale_69",
-      "target": "analysis_calibration_enso_phase",
-      "confidence_score": 1.0
+      "target": "analysis_calibration_enso_phase"
     },
     {
       "relation": "rationale_for",
@@ -6603,9 +7966,9 @@
       "source_file": "src/analysis/calibration.py",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "analysis_calibration_rationale_83",
-      "target": "analysis_calibration_regime_performance",
-      "confidence_score": 1.0
+      "target": "analysis_calibration_regime_performance"
     },
     {
       "relation": "rationale_for",
@@ -6764,6 +8127,161 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "src_features_auction_physics_py",
+      "target": "features_auction_physics_hurst_rs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "src_features_auction_physics_py",
+      "target": "features_auction_physics_crop_year",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "src_features_auction_physics_py",
+      "target": "features_auction_physics_day_in_crop_year",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "src_features_auction_physics_py",
+      "target": "features_auction_physics_inventory_overhang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "src_features_auction_physics_py",
+      "target": "features_auction_physics_build_physics_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "features_auction_physics_rationale_1",
+      "target": "src_features_auction_physics_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "features_auction_physics_build_physics_features",
+      "target": "features_auction_physics_hurst_rs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "features_auction_physics_rationale_39",
+      "target": "features_auction_physics_hurst_rs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "features_auction_physics_day_in_crop_year",
+      "target": "features_auction_physics_crop_year",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "features_auction_physics_inventory_overhang",
+      "target": "features_auction_physics_crop_year",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "features_auction_physics_rationale_60",
+      "target": "features_auction_physics_crop_year",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "features_auction_physics_inventory_overhang",
+      "target": "features_auction_physics_day_in_crop_year",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "features_auction_physics_build_physics_features",
+      "target": "features_auction_physics_inventory_overhang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "features_auction_physics_rationale_72",
+      "target": "features_auction_physics_inventory_overhang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/features/auction_physics.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "features_auction_physics_rationale_100",
+      "target": "features_auction_physics_build_physics_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/models/baselines.py",
       "source_location": "L20",
       "weight": 1.0,
@@ -6844,6 +8362,252 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "src_models_kalman_seasonal_py",
+      "target": "models_kalman_seasonal_kalmanparams",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "src_models_kalman_seasonal_py",
+      "target": "models_kalman_seasonal_kappa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "src_models_kalman_seasonal_py",
+      "target": "models_kalman_seasonal_half_life_days",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "src_models_kalman_seasonal_py",
+      "target": "models_kalman_seasonal_fourier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "src_models_kalman_seasonal_py",
+      "target": "models_kalman_seasonal_fit_params",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "src_models_kalman_seasonal_py",
+      "target": "models_kalman_seasonal_filter_anomaly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "src_models_kalman_seasonal_py",
+      "target": "models_kalman_seasonal_kalman_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "models_kalman_seasonal_rationale_1",
+      "target": "src_models_kalman_seasonal_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "models_kalman_seasonal_fit_params",
+      "target": "models_kalman_seasonal_kalmanparams",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "models_kalman_seasonal_fit_params",
+      "target": "models_kalman_seasonal_fourier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "models_kalman_seasonal_filter_anomaly",
+      "target": "models_kalman_seasonal_fourier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "models_kalman_seasonal_kalman_features",
+      "target": "models_kalman_seasonal_fit_params",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "models_kalman_seasonal_rationale_58",
+      "target": "models_kalman_seasonal_fit_params",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "models_kalman_seasonal_kalman_features",
+      "target": "models_kalman_seasonal_filter_anomaly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "models_kalman_seasonal_rationale_82",
+      "target": "models_kalman_seasonal_filter_anomaly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/kalman_seasonal.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "models_kalman_seasonal_rationale_117",
+      "target": "models_kalman_seasonal_kalman_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_models_ou_bands_py",
+      "target": "models_ou_bands_expected_passage_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "src_models_ou_bands_py",
+      "target": "models_ou_bands_optimal_band",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "src_models_ou_bands_py",
+      "target": "models_ou_bands_band_policy_weights",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "models_ou_bands_rationale_1",
+      "target": "src_models_ou_bands_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "models_ou_bands_optimal_band",
+      "target": "models_ou_bands_expected_passage_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "models_ou_bands_rationale_29",
+      "target": "models_ou_bands_expected_passage_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "models_ou_bands_rationale_49",
+      "target": "models_ou_bands_optimal_band",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/models/ou_bands.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "models_ou_bands_rationale_76",
+      "target": "models_ou_bands_band_policy_weights",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/backtest/engine.py",
       "source_location": "L23",
       "weight": 1.0,
@@ -6862,6 +8626,16 @@
       "target": "backtest_engine_run_backtest"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/backtest/engine.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "src_backtest_engine_py",
+      "target": "backtest_engine_run_weights_backtest",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/backtest/engine.py",
@@ -6877,9 +8651,9 @@
       "source_file": "src/backtest/engine.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_engine_rationale_42",
-      "target": "backtest_engine_run_backtest",
-      "confidence_score": 1.0
+      "target": "backtest_engine_run_backtest"
     },
     {
       "relation": "rationale_for",
@@ -6890,6 +8664,16 @@
       "confidence_score": 1.0,
       "source": "backtest_engine_rationale_35",
       "target": "backtest_engine_run_backtest"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/backtest/engine.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "backtest_engine_rationale_87",
+      "target": "backtest_engine_run_weights_backtest",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -8584,8 +10368,18 @@
       "source_file": "RESULTS_REAL.md",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
-      "target": "cardamom_quant_results_real_update_07_jul_2026_local_horizon_matched_trading_the_maybe",
+      "target": "cardamom_quant_results_real_update_07_jul_2026_local_horizon_matched_trading_the_maybe"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
+      "target": "cardamom_quant_results_real_update_edge_hunt_round_2_auction_physics_is_the_new_headline",
       "confidence_score": 1.0
     },
     {
@@ -8604,9 +10398,9 @@
       "source_file": "RESULTS_REAL.md",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cardamom_quant_results_real_update_07_jul_2026_local_horizon_matched_trading_the_maybe",
-      "target": "cardamom_quant_results_real_updated_verdict",
-      "confidence_score": 1.0
+      "target": "cardamom_quant_results_real_updated_verdict"
     },
     {
       "relation": "contains",
@@ -9001,6 +10795,166 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_skills_verify_skill_md",
+      "target": "verify_skill_verifying_cardamom_quant",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "verify_skill_verifying_cardamom_quant",
+      "target": "verify_skill_1_test_suite_fast_always_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "verify_skill_verifying_cardamom_quant",
+      "target": "verify_skill_2_scorecard_reproduction_the_numbers_are_the_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "verify_skill_verifying_cardamom_quant",
+      "target": "verify_skill_3_experiment_scripts_regenerate_their_published_tables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "verify_skill_verifying_cardamom_quant",
+      "target": "verify_skill_4_dashboard_boots_with_the_real_banner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "verify_skill_verifying_cardamom_quant",
+      "target": "verify_skill_5_honesty_checklist_read_results_real_md_ledger_line",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "verify_skill_1_test_suite_fast_always_first",
+      "target": "verify_skill_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "verify_skill_2_scorecard_reproduction_the_numbers_are_the_product",
+      "target": "verify_skill_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "verify_skill_3_experiment_scripts_regenerate_their_published_tables",
+      "target": "verify_skill_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/verify/SKILL.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "verify_skill_4_dashboard_boots_with_the_real_banner",
+      "target": "verify_skill_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_skills_new_trial_skill_md",
+      "target": "new_trial_skill_adding_a_trial_without_lying_to_yourself",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "new_trial_skill_adding_a_trial_without_lying_to_yourself",
+      "target": "new_trial_skill_1_pre_register_before_running",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "new_trial_skill_adding_a_trial_without_lying_to_yourself",
+      "target": "new_trial_skill_2_leakage_test_first_feature_second",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "new_trial_skill_adding_a_trial_without_lying_to_yourself",
+      "target": "new_trial_skill_3_evaluate_in_the_standard_vehicle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "new_trial_skill_adding_a_trial_without_lying_to_yourself",
+      "target": "new_trial_skill_4_grow_the_ledger_even_for_failures",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/new-trial/SKILL.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "new_trial_skill_adding_a_trial_without_lying_to_yourself",
+      "target": "new_trial_skill_5_report_as_found",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/data/README.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -9070,5 +11024,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0ee90d7bfe179db51fcd43355b44d856bff12f6c"
+  "built_at_commit": "32b792859ad4df2128fb5e6d31b5e32474008dae"
 }

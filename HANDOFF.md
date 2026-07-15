@@ -11,6 +11,16 @@
 > over the now-24-trial ledger — "a defensible maybe." LINKEDIN_POST.md
 > numbers updated to match. Remaining: priority #3 (wire feeds one at a
 > time) and #4 (ship).
+>
+> **ROUND 2 (edge hunt):** `scripts/edge_hunt.py` — 5 more counted trials.
+> New headline: **physics-gbm** (bid dispersion + inventory overhang +
+> Hurst, calibrated, tranched 5d) **Sharpe +0.79, 90% CI [+0.28, +1.29],
+> DSR 0.63 over 29 trials** — "strengthening maybe." Kalman anomaly helps
+> alone (+0.67) but not on top; OU bands and conformal gate killed and
+> ledgered. New machinery: `src/features/auction_physics.py`,
+> `src/models/kalman_seasonal.py`, `src/models/ou_bands.py`,
+> `run_weights_backtest`, 8 new tests (64 total). Project skills/agents in
+> `.claude/` (verify, new-trial, quant-researcher).
 
 ## What this is
 

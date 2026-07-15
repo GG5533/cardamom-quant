@@ -77,3 +77,35 @@ def run_backtest(
     )
     out.index.name = "date"
     return out
+
+
+def run_weights_backtest(
+    weights: pd.Series,
+    daily_returns: pd.Series,
+    cfg: BacktestConfig = BacktestConfig(),
+) -> pd.DataFrame:
+    """Same execution/cost mechanics for a strategy that emits target weights
+    directly (e.g. the OU band policy) instead of probabilities. Weights are
+    still lagged one day for execution realism; costs on turnover."""
+    idx = weights.index.intersection(daily_returns.index)
+    w = weights.reindex(idx).fillna(0.0).clip(-cfg.max_leverage, cfg.max_leverage)
+    r = daily_returns.reindex(idx)
+
+    pos = w.shift(1).fillna(0.0)
+    gross = pos * r
+    turnover = pos.diff().abs().fillna(pos.abs())
+    costs = turnover * cfg.cost_bps / 10_000.0
+    net = gross - costs
+
+    out = pd.DataFrame(
+        {
+            "position": pos,
+            "turnover": turnover,
+            "gross_ret": gross,
+            "cost": costs,
+            "net_ret": net,
+            "equity": (1 + net.fillna(0)).cumprod(),
+        }
+    )
+    out.index.name = "date"
+    return out

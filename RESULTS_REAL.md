@@ -92,14 +92,48 @@ survive the multiple-testing haircut. Honest label: *a defensible maybe,
 not a discovery.* What would settle it: the unwired feeds paying OOS, or
 simply more history (the CI narrows as √T with live auction days).
 
+## UPDATE (edge hunt, round 2): auction physics is the new headline
+
+Five trials pre-registered in `scripts/edge_hunt.py` (T5's sequencing
+disclosed there), all in the tranched-5d calibrated vehicle, all counted:
+
+| trial | ingredient | Sharpe | 90% CI | p(SR≤0) |
+|---|---|---|---|---|
+| **T1 physics-gbm** | bid dispersion + inventory overhang + Hurst | **+0.79** | [+0.28, +1.29] | **0.006** |
+| T2 kalman-gbm | causal Kalman anomaly features | +0.67 | [+0.11, +1.21] | 0.025 |
+| T3 ou-bands | OU first-passage band policy, standalone | −0.22 | [−0.73, +0.28] | 0.78 |
+| T4 conformal-gbm | split-conformal gate on a 5d regressor | −0.17 | [−0.51, +0.09] | 0.87 |
+| T5 physics+kalman | both feature blocks | +0.71 | [+0.20, +1.20] | 0.012 |
+
+What the round taught, reported as found:
+
+1. **The unexploited auction columns carried real signal.** `spot_max /
+   spot_avg` (competition intensity at the auction), crop-year inventory
+   overhang (Kaldor–Working storage state, past-years-only norm), and a
+   rolling Hurst regime dial lift the calibrated tranched book from +0.57
+   to **+0.79** (hit vs base +5.6pts, AUC 0.555) with max drawdown −7.5%.
+2. **The Kalman anomaly helps alone (+0.67) but adds nothing on top of
+   physics** (T5 +0.71 < T1 +0.79) — the tree was already finding the
+   reversion through the physics block.
+3. **Two clean kills.** The standalone OU band policy dies because the
+   anomaly's fitted half-life is ~138 days — far too slow to band-trade
+   at 15bps (and unit-weight entries produced a −92% drawdown path). The
+   conformal gate throttled the signal to nothing (AUC 0.499). Both stay
+   in the ledger.
+4. **Deflated Sharpe: 0.63** for T1 against all **29** trials ever run
+   (expected max from luck alone: 0.68). Better than 0.49, still short of
+   discovery grade. The verdict upgrades from "defensible maybe" to
+   "strengthening maybe" — nothing more.
+
 ## Roadmap implied by the numbers
 
 ~~Horizon-matched rebalancing + conviction thresholds + probability
-calibration~~ (done, above), then the unwired feeds (rain, basis once MCX
-files are dropped, Guatemala) evaluated one at a time against the ablation
-harness — each addition must pay for itself out-of-sample or it goes. Every
-new configuration grows the 24-trial DSR ledger.
+calibration~~ (done). ~~Mine the unexploited auction columns~~ (done —
+paid). Next: the unwired feeds (rain, basis once MCX files are dropped,
+Guatemala) evaluated one at a time against the ablation harness — each
+addition must pay for itself out-of-sample or it goes. Every new
+configuration grows the 29-trial DSR ledger.
 
 *Machine-verifiable provenance: every number above regenerates from
-`data/processed/market.parquet` via `python run.py`, `scripts/analyze.py`
-and `scripts/horizon_experiment.py`.*
+`data/processed/market.parquet` via `python run.py`, `scripts/analyze.py`,
+`scripts/horizon_experiment.py` and `scripts/edge_hunt.py`.*
