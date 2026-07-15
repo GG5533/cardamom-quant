@@ -21,6 +21,14 @@
 > `src/models/kalman_seasonal.py`, `src/models/ou_bands.py`,
 > `run_weights_backtest`, 8 new tests (64 total). Project skills/agents in
 > `.claude/` (verify, new-trial, quant-researcher).
+>
+> **ROUND 3 (rain):** IMD gridded rain 2010–2025 wired into market.parquet
+> via `scripts/merge_rain.py` (do NOT use `build_dataset.py --refresh` — it
+> would rebuild spot from the unrepaired loader cache). Kerala-flood
+> acceptance check passed. T6 rain-gbm +0.64 (AUC 0.572, +6.3pts — best
+> classification of the project) pays solo; champion unchanged:
+> **physics-gbm +0.79, DSR 0.63 vs 31-trial ledger**. Third dilution
+> result — future features must displace, not stack.
 
 ## What this is
 

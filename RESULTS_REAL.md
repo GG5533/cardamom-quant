@@ -125,14 +125,42 @@ What the round taught, reported as found:
    discovery grade. The verdict upgrades from "defensible maybe" to
    "strengthening maybe" — nothing more.
 
+## UPDATE (edge hunt, round 3): the rain feed is wired — and it pays as
+## signal, not as the champion
+
+IMD gridded rainfall (2010–2025, Idukki box) downloaded, validated and
+merged (`scripts/merge_rain.py`; 2,997 of 3,148 auction days covered, 2026
+NaN — the feed's real publication lag). Free natural-experiment check: the
+largest anomaly in 16 years is **+164 mm/day on 2018-08-16 — the Kerala
+flood peak**, exactly where STEP1's acceptance criterion asked for it.
+
+Two pre-registered trials (`scripts/rain_trial.py`), ledger 29 → 31:
+
+| trial | Sharpe | 90% CI | p(SR≤0) | AUC | hit vs base |
+|---|---|---|---|---|---|
+| T6 rain-gbm | +0.64 | [+0.06, +1.24] | 0.039 | **0.572** | **+6.3pts** |
+| T7 physics+rain-gbm | +0.55 | [−0.03, +1.14] | 0.056 | 0.560 | +4.4pts |
+
+Read honestly: the weather thesis validates *predictively* — rain gives
+the best classification numbers of the whole project (AUC 0.572, +6.3pts)
+and clears zero on its own — but it does not beat the physics champion in
+the money metric, and stacking blocks dilutes again (third time: T5, T7).
+On ~500 effective independent 5d bets, more features ≠ more Sharpe.
+
+**Standing champion, re-verified against the full 31-trial ledger:**
+physics-gbm Sharpe **+0.79**, DSR **0.63** (expected max from luck 0.68).
+The rain feed STAYS (it pays solo; the data is real and wired); the
+champion configuration is unchanged. Verdict remains *strengthening
+maybe* — DSR must clear ~0.9 before anyone gets to say edge.
+
 ## Roadmap implied by the numbers
 
-~~Horizon-matched rebalancing + conviction thresholds + probability
-calibration~~ (done). ~~Mine the unexploited auction columns~~ (done —
-paid). Next: the unwired feeds (rain, basis once MCX files are dropped,
-Guatemala) evaluated one at a time against the ablation harness — each
-addition must pay for itself out-of-sample or it goes. Every new
-configuration grows the 29-trial DSR ledger.
+~~Horizon-matched rebalancing + calibration~~ (done). ~~Auction physics~~
+(done — champion). ~~Rain~~ (done — pays as signal, kept). Next: MCX basis
+(manual Bhavcopy drop into `data/raw/mcx/`), Guatemala/FX via Comtrade
+key, and feature *selection* rather than feature *stacking* — three
+dilution results say the marginal feature must now displace a weaker one,
+not join it. Every new configuration grows the 31-trial DSR ledger.
 
 *Machine-verifiable provenance: every number above regenerates from
 `data/processed/market.parquet` via `python run.py`, `scripts/analyze.py`,

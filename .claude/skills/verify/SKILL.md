@@ -27,7 +27,11 @@ rerun. (This actually happened; it silently hid 9 tests.)
 
 Anchors (sklearn-version wiggle ±0.05 Sharpe / ±0.5pt hit is known and OK):
 - seasonal_baseline Sharpe ≈ +0.30
-- core/gbm (run with --no-alt) hit vs base ≈ +3.6…+4.2pts, AUC ≈ 0.55
+- Since round 3, `market.parquet` carries real rain, so run.py's "core"
+  includes rain_anom_30/90 — expect T6-like numbers (AUC ≈ 0.57, hit
+  ≈ +6pts). For the PRE-rain core/gbm anchor (+3.6…+4.2pts, AUC ≈ 0.55),
+  drop the three rain columns first (see the champion re-verification
+  snippet in git history).
 - If anything moved more than the wiggle: STOP and find out why before
   trusting any new result produced in the same session.
 
