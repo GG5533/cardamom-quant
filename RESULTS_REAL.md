@@ -44,13 +44,62 @@ haircut for all 6 trials, **DSR = 0.383**.
    probabilities compounds the cost problem. Platt/isotonic calibration is
    a cheap next step.
 
+## UPDATE 07-Jul-2026 (local): horizon-matched trading — the "maybe"
+
+Finding 2's next experiment has been run (`scripts/horizon_experiment.py`):
+core/gbm probabilities, raw and per-fold isotonic-calibrated (fit on a
+purged tail slice of each training window), traded through a grid of
+rebalance cadence ∈ {1d, 5d} × conviction threshold ∈ {0, .05, .10, .15}.
+Every cell is a counted trial; the ledger below reflects all of them.
+
+Calibration first (it feeds 2p−1 sizing, so it is a sizing fix): OOS Brier
+0.2667 → 0.2541 (climatology 0.2500), max bin gap +0.234 → +0.175.
+
+| trial (core/gbm) | Sharpe | 90% CI | p(SR≤0) | ann. turnover |
+|---|---|---|---|---|
+| raw / 1d / thr 0 (= published) | +0.12 | [−0.38, +0.64] | 0.33 | 16.6× |
+| raw / 5d / thr 0 | +0.77 | [+0.32, +1.24] | 0.006 | 6.0× |
+| calibrated / 5d / thr 0 | +0.93 | [+0.46, +1.41] | 0.001 | 2.8× |
+| …13 more cells in the script output | | | | |
+
+Five of sixteen cells clear zero at 90% — all five at 5d rebalancing, none
+at 1d. Conviction thresholds only shave turnover; they never add Sharpe once
+the cadence is horizon-matched. Turnover, not skill, was the whole story.
+
+**The anchor-day catch (reported because it bites):** a single 5d-rebalance
+backtest silently picks 1 of 5 possible anchor days. Sweeping the anchor:
+raw {+0.77, +0.07, +0.31, +0.28, +0.63}, calibrated {+0.93, +0.24, +0.20,
++0.62, +0.49}. All ten positive, but the headline cells above are the
+luckiest anchors. The deliverable is therefore the anchor-free **tranched
+book** (1/5 of capital rebalances each day, Jegadeesh-Titman overlap fix;
+costs paid per tranche, no internal netting — conservative):
+
+| trial | Sharpe | 90% CI | p(SR≤0) | MaxDD | DSR (all trials) |
+|---|---|---|---|---|---|
+| tranched 5d / raw | +0.48 | [+0.00, +0.96] | 0.049 | −8.7% | 0.38 (23 trials) |
+| tranched 5d / calibrated | **+0.57** | [+0.05, +1.12] | 0.036 | −9.6% | **0.49** (24 trials) |
+
+**Trial ledger: 6 (original scorecard) + 16 (grid) + 2 (tranched) = 24.**
+Expected max Sharpe from luck alone across 24 zero-skill trials: 0.58.
+
+### Updated verdict
+
+The calibrated, horizon-matched, anchor-free book beats the seasonal
+baseline (+0.57 vs +0.30), its bootstrap CI clears zero, and p(SR≤0) is
+3.6% — the first configuration in this project to manage any of that. But
+DSR = 0.49 against the 24-trial search: the result does **not** decisively
+survive the multiple-testing haircut. Honest label: *a defensible maybe,
+not a discovery.* What would settle it: the unwired feeds paying OOS, or
+simply more history (the CI narrows as √T with live auction days).
+
 ## Roadmap implied by the numbers
 
-Horizon-matched rebalancing + conviction thresholds + probability
-calibration, then the unwired feeds (rain, basis once MCX files are dropped,
-Guatemala) evaluated one at a time against the ablation harness — each
-addition must pay for itself out-of-sample or it goes.
+~~Horizon-matched rebalancing + conviction thresholds + probability
+calibration~~ (done, above), then the unwired feeds (rain, basis once MCX
+files are dropped, Guatemala) evaluated one at a time against the ablation
+harness — each addition must pay for itself out-of-sample or it goes. Every
+new configuration grows the 24-trial DSR ledger.
 
 *Machine-verifiable provenance: every number above regenerates from
-`data/processed/market.parquet` via `python run.py` and the analysis
-snippet in git history.*
+`data/processed/market.parquet` via `python run.py`, `scripts/analyze.py`
+and `scripts/horizon_experiment.py`.*

@@ -43,19 +43,26 @@ good number selected from six attempts is often just the luckiest of six.
 **The result.** On 3,148 real auction days (2014–2026): the gradient
 booster found genuine predictive signal — +4.2pts hit rate over base, AUC
 0.553, out-of-sample — and still lost to a one-line seasonal rule after
-15bps costs (Sharpe +0.20 vs +0.30, both with bootstrap CIs straddling
-zero; best deflated Sharpe 0.38). Adding my carefully-built alt-data
-features made the ML *worse* — on 3,000 noisy samples, complexity isn't
-free, it's negative. So the honest conclusion is: no deployable edge at
-daily rebalancing; the signal exists but turnover eats it. That
-conclusion — with the confidence intervals to back it — is the deliverable.
-A backtest that can say "no" is the only kind whose "yes" means anything.
+15bps costs at daily rebalancing (Sharpe +0.12, CI straddling zero).
+Adding my carefully-built alt-data features made the ML *worse* — on
+3,000 noisy samples, complexity isn't free, it's negative. The autopsy
+said turnover, not skill, was the killer: 16.6× annual turnover trading a
+5-day signal daily. So I matched the trading to the label — isotonic-
+calibrated probabilities, rebalanced at the 5-day horizon, implemented as
+five staggered tranches so no lucky anchor day flatters the number.
+That book earns Sharpe +0.57, 90% CI [+0.05, +1.12], p(Sharpe≤0) 3.6% —
+and I still won't call it an edge, because the Deflated Sharpe against
+all 24 configurations I ever evaluated is 0.49. The honest label is *a
+defensible maybe*: the first configuration to beat the seasonal rule and
+clear zero, reported with the multiple-testing haircut that says it isn't
+yet a discovery. A backtest that can say "no" is the only kind whose
+"maybe" means anything.
 
 Capacity caveat up front: this is a niche market (~₹25 crore/day through the
 auctions). The point was never scale — it was demonstrating desk-grade
 process on a market nobody else models.
 
-Repo: [link]. Stack: Python, pandas, scikit-learn, Streamlit. 49 tests,
+Repo: [link]. Stack: Python, pandas, scikit-learn, Streamlit. 56 tests,
 no notebook heroics.
 
 ---
@@ -67,9 +74,11 @@ lesson: the futures contract I planned to model had only 11 months of history
 (suspended 2021, relaunched 2025) — so the real work was rebuilding the
 problem around 12 years of cash-market e-auction data, with the future as a
 tradability overlay. Purged walk-forward, honest seasonal baseline, bootstrap
-CIs, deflated Sharpe. Result: real predictive signal (AUC 0.55 OOS), no
-deployable edge after costs — and the ML lost to a one-line seasonal rule.
-Reporting that number honestly IS the portfolio piece. Repo in comments.
+CIs, deflated Sharpe. Result: real predictive signal (AUC 0.55 OOS) that dies
+at daily rebalancing and revives when traded at its own 5-day horizon in
+staggered tranches — Sharpe +0.57, CI clear of zero, and a deflated Sharpe
+of 0.49 that says I still can't call it an edge. Reporting that number with
+its haircut IS the portfolio piece. Repo in comments.
 
 ---
 
@@ -77,7 +86,9 @@ Reporting that number honestly IS the portfolio piece. Repo in comments.
 
 1. Full spot history chart, suspension/relaunch window shaded — *the* visual
    of the data-regime story (generate after backfill).
-2. Ablation × robustness table from `scripts/analyze.py` (core vs core+alt,
+2. The horizon grid + tranched table from `scripts/horizon_experiment.py` —
+   the turnover-was-the-killer story in one screenshot.
+3. Ablation × robustness table from `scripts/analyze.py` (core vs core+alt,
    with p(Sharpe≤0) column).
 3. Dashboard screenshot (equity tab, REAL banner visible).
 4. Calibration table or SHAP bar chart — pick whichever tells the cleaner story.

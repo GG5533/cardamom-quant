@@ -2,6 +2,16 @@
 
 **Date:** July 7, 2026. Everything below is current as of this session's end.
 
+> **STATUS UPDATE (local VS Code session):** first-30-minutes done (py3.12
+> venv, 49→56 tests green, ONI ported into root `run.py`, stale sample CSVs
+> deleted, git initialized). Priority #1 + #2 are DONE — see
+> `scripts/horizon_experiment.py` and the 07-Jul update section in
+> `RESULTS_REAL.md`: horizon-matched 5d rebalancing + isotonic calibration,
+> anchor-free tranched book Sharpe +0.57, 90% CI [+0.05, +1.12], DSR 0.49
+> over the now-24-trial ledger — "a defensible maybe." LINKEDIN_POST.md
+> numbers updated to match. Remaining: priority #3 (wire feeds one at a
+> time) and #4 (ship).
+
 ## What this is
 
 AI price-direction model for Indian small cardamom, built as a quant-AI

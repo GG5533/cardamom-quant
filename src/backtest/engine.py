@@ -1,8 +1,13 @@
 """Backtest engine: conviction sizing, vol targeting, leverage cap, costs.
 
-Mechanics (daily rebalanced, next-day execution):
+Mechanics (next-day execution):
   raw signal      s_t = 2*p_up - 1                      in [-1, 1]
   vol targeting   w_t = s_t * (target_vol / realized_vol_t), capped
+  rebalancing     the target weight is adopted only on scheduled days
+                  (every `rebalance_every` days) AND only when conviction
+                  clears the gate (|p_t - 0.5| > conviction_threshold);
+                  otherwise the previous weight is held. Defaults
+                  (1, 0.0) reproduce plain daily rebalancing.
   execution       position held over t+1 uses info through t (signal is
                   already built from lagged features; we still lag the
                   position one more day for execution realism)
@@ -25,6 +30,8 @@ class BacktestConfig:
     max_leverage: float = 2.0
     cost_bps: float = 15.0
     vol_lookback: int = 21
+    rebalance_every: int = 1           # adopt new target every N days only
+    conviction_threshold: float = 0.0  # trade only if |p - 0.5| > threshold
 
 
 def run_backtest(
@@ -41,7 +48,14 @@ def run_backtest(
 
     realized = r.rolling(cfg.vol_lookback, min_periods=15).std() * np.sqrt(252)
     scale = (cfg.target_vol_annual / realized).clip(upper=cfg.max_leverage)
-    weight = (signal * scale).clip(-cfg.max_leverage, cfg.max_leverage)
+    target = (signal * scale).clip(-cfg.max_leverage, cfg.max_leverage)
+
+    scheduled = np.zeros(len(idx), dtype=bool)
+    scheduled[:: max(cfg.rebalance_every, 1)] = True
+    trade = pd.Series(scheduled, index=idx) & target.notna()
+    if cfg.conviction_threshold > 0:
+        trade &= (p - 0.5).abs() > cfg.conviction_threshold
+    weight = target.where(trade).ffill().fillna(0.0)
 
     pos = weight.shift(1).fillna(0.0)          # execute next day
     gross = pos * r
@@ -54,6 +68,7 @@ def run_backtest(
             "proba_up": p,
             "signal": signal,
             "position": pos,
+            "turnover": turnover,
             "gross_ret": gross,
             "cost": costs,
             "net_ret": net,

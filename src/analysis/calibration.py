@@ -12,9 +12,26 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
+from sklearn.isotonic import IsotonicRegression
 
 
 # --------------------------------------------------------------- calibration
+def isotonic_calibrator(p_holdout: pd.Series, y_holdout: pd.Series) -> IsotonicRegression:
+    """Fit an isotonic map raw p -> calibrated p on a held-out slice.
+
+    The slice must be data the base model never trained on and must be
+    purged from the training window by >= the label horizon. Fit one per
+    walk-forward fold; apply only to that fold's test probabilities.
+    (Equivalent to CalibratedClassifierCV(cv="prefit", method="isotonic")
+    without the deprecated prefit API.)
+    """
+    df = pd.DataFrame({"p": p_holdout, "y": y_holdout}).dropna()
+    iso = IsotonicRegression(y_min=0.0, y_max=1.0, out_of_bounds="clip")
+    iso.fit(df["p"].to_numpy(), df["y"].to_numpy())
+    return iso
+
+
+
 def calibration_table(y_true: pd.Series, proba_up: pd.Series, n_bins: int = 8) -> pd.DataFrame:
     df = pd.DataFrame({"y": y_true, "p": proba_up}).dropna()
     # quantile bins so each row has comparable sample size
