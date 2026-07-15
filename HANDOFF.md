@@ -35,6 +35,15 @@
 > diagnostics don't generalize). Ledger 32. Run end-to-end by the
 > `.claude/agents/quant-researcher` agent — the trial-discipline
 > automation works.
+>
+> **ROUND 5 (Guatemala, primary source):** Comtrade paywalled its keyless
+> tier, so the feed was rebuilt from Banco de Guatemala's annual volume
+> series (`src/data/banguat.py`, 69 tests total). Real data, right story
+> (−45%/−42% crop collapse), but T9 solo straddles zero and T10 is the
+> fourth dilution — CUT per the pre-registered rule. Ledger 34. Champion
+> unchanged: **physics-gbm +0.79, DSR 0.63**. INE/SIECA bot-wall their
+> monthly volume; MCX Bhavcopy (manual browser download) is the last
+> unwired feed.
 
 ## What this is
 

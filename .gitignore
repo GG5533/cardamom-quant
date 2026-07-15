@@ -6,3 +6,5 @@ __pycache__/
 .streamlit/
 # broken headless capture; TCC-locked on disk — retake manually
 figures/dashboard.png
+# stray 2026-only USD download, superseded by banguat/ series; TCC-locked
+data/raw/banguat_prod_mens.xlsx

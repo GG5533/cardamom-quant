@@ -167,14 +167,41 @@ single-fold diagnostic destroys — displacement must be earned with
 full-history evidence. (This trial was run end-to-end by the
 `quant-researcher` project agent as its validation run.)
 
+## UPDATE (edge hunt, round 5): Guatemala supply, from the primary source
+## — and cut
+
+UN Comtrade paywalled its keyless tier, so the feed was rebuilt from the
+origin: Banco de Guatemala's annual agricultural export-volume series
+(`src/data/banguat.py`, pristine xlsx + committed CSV extraction,
+publication-lagged to 01-Apr of the following year, 5 leakage tests).
+The data is real and tells the right story — Guatemala's crop collapsed
+−45% then −42% across 2024-25, the largest deficit in the 32-year series.
+
+Two pre-registered trials (`scripts/gtm_trial.py`), ledger 32 → 34:
+
+| trial | Sharpe | 90% CI | p(SR≤0) | AUC | hit vs base |
+|---|---|---|---|---|---|
+| T9 gtm-gbm | +0.49 | [−0.08, +1.04] | 0.08 | 0.540 | +2.5pts |
+| T10 physics+gtm-gbm | +0.58 | [+0.07, +1.08] | 0.03 | 0.546 | +4.4pts |
+
+**Cut, per the pre-registered rule.** T9's CI straddles zero, so the feed
+does not pay solo; T10 is the fourth consecutive dilution result. Annual
+frequency is the likely culprit — a once-a-year step function gives the
+tree nothing to *time* that bid dispersion isn't already printing daily
+at the auction. The loader, data and tests stay in the repo (the series
+is the right cross-check for any future monthly wiring — SIECA/INE both
+bot-wall their monthly volume data); the feature enters no configuration.
+
 ## Roadmap implied by the numbers
 
 ~~Horizon-matched rebalancing + calibration~~ (done). ~~Auction physics~~
 (done — champion: **physics-gbm +0.79, DSR 0.63**). ~~Rain~~ (done — pays
-as signal, kept). ~~Naive displacement~~ (done — killed). Next: MCX basis
-(manual Bhavcopy drop into `data/raw/mcx/`), Guatemala/FX via Comtrade
-key; any future displacement gets nominated by all-fold evidence, not one
-fold. Every new configuration grows the 32-trial DSR ledger.
+as signal, kept). ~~Naive displacement~~ (done — killed). ~~Guatemala
+supply~~ (done — cut; annual too coarse). Next: MCX basis (manual
+Bhavcopy drop into `data/raw/mcx/`) is the last unwired feed; beyond
+that, the honest lever is more auction days, not more features — five
+of five feature-addition rounds since the champion have failed to beat
+it. Every new configuration grows the 34-trial DSR ledger.
 
 *Machine-verifiable provenance: every number above regenerates from
 `data/processed/market.parquet` via `python run.py`, `scripts/analyze.py`,

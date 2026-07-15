@@ -207,7 +207,7 @@
       "source_file": "tests/test_signal_layer.py",
       "source_location": "L41",
       "id": "tests_test_signal_layer_test_parse_comtrade_sums_hs_codes",
-      "community": 4,
+      "community": 41,
       "norm_label": "test_parse_comtrade_sums_hs_codes()"
     },
     {
@@ -810,7 +810,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L166",
       "id": "tests_test_loaders_test_rain_validation_seasonality_guard",
-      "community": 4,
+      "community": 40,
       "norm_label": "test_rain_validation_seasonality_guard()"
     },
     {
@@ -839,6 +839,105 @@
       "id": "tests_test_loaders_rationale_107",
       "community": 5,
       "norm_label": "on a roll day the spliced return must be the new contract's own     day-over-day"
+    },
+    {
+      "label": "test_banguat.py",
+      "file_type": "code",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L1",
+      "id": "tests_test_banguat_py",
+      "community": 35,
+      "norm_label": "test_banguat.py"
+    },
+    {
+      "label": "_annual()",
+      "file_type": "code",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L18",
+      "id": "tests_test_banguat_annual",
+      "community": 35,
+      "norm_label": "_annual()"
+    },
+    {
+      "label": "test_deficit_norm_uses_prior_years_only()",
+      "file_type": "code",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L24",
+      "id": "tests_test_banguat_test_deficit_norm_uses_prior_years_only",
+      "community": 35,
+      "norm_label": "test_deficit_norm_uses_prior_years_only()"
+    },
+    {
+      "label": "test_collapse_reads_as_positive_deficit()",
+      "file_type": "code",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L34",
+      "id": "tests_test_banguat_test_collapse_reads_as_positive_deficit",
+      "community": 35,
+      "norm_label": "test_collapse_reads_as_positive_deficit()"
+    },
+    {
+      "label": "test_publication_lag_is_enforced()",
+      "file_type": "code",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L41",
+      "id": "tests_test_banguat_test_publication_lag_is_enforced",
+      "community": 35,
+      "norm_label": "test_publication_lag_is_enforced()"
+    },
+    {
+      "label": "test_daily_features_are_strictly_causal()",
+      "file_type": "code",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L54",
+      "id": "tests_test_banguat_test_daily_features_are_strictly_causal",
+      "community": 35,
+      "norm_label": "test_daily_features_are_strictly_causal()"
+    },
+    {
+      "label": "test_real_extraction_parses_and_shows_the_collapse()",
+      "file_type": "code",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L68",
+      "id": "tests_test_banguat_test_real_extraction_parses_and_shows_the_collapse",
+      "community": 35,
+      "norm_label": "test_real_extraction_parses_and_shows_the_collapse()"
+    },
+    {
+      "label": "Tests for the Banguat annual Guatemala-supply feature block (offline).",
+      "file_type": "rationale",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L1",
+      "id": "tests_test_banguat_rationale_1",
+      "community": 35,
+      "norm_label": "tests for the banguat annual guatemala-supply feature block (offline)."
+    },
+    {
+      "label": "Mutating year Y must not change year Y-1's features (past-only norm).",
+      "file_type": "rationale",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L25",
+      "id": "tests_test_banguat_rationale_25",
+      "community": 35,
+      "norm_label": "mutating year y must not change year y-1's features (past-only norm)."
+    },
+    {
+      "label": "Year Y is invisible before 01-Apr-(Y+1).",
+      "file_type": "rationale",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L42",
+      "id": "tests_test_banguat_rationale_42",
+      "community": 35,
+      "norm_label": "year y is invisible before 01-apr-(y+1)."
+    },
+    {
+      "label": "Mutating the newest year never changes rows before its publication.",
+      "file_type": "rationale",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L55",
+      "id": "tests_test_banguat_rationale_55",
+      "community": 35,
+      "norm_label": "mutating the newest year never changes rows before its publication."
     },
     {
       "label": "test_pipeline.py",
@@ -1066,12 +1165,39 @@
       "norm_label": "main()"
     },
     {
+      "label": "refresh_banguat.py",
+      "file_type": "code",
+      "source_file": "scripts/refresh_banguat.py",
+      "source_location": "L1",
+      "id": "scripts_refresh_banguat_py",
+      "community": 43,
+      "norm_label": "refresh_banguat.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/refresh_banguat.py",
+      "source_location": "L25",
+      "id": "scripts_refresh_banguat_main",
+      "community": 43,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Re-download + re-extract the Banguat annual volume series.      python scripts/r",
+      "file_type": "rationale",
+      "source_file": "scripts/refresh_banguat.py",
+      "source_location": "L1",
+      "id": "scripts_refresh_banguat_rationale_1",
+      "community": 43,
+      "norm_label": "re-download + re-extract the banguat annual volume series.      python scripts/r"
+    },
+    {
       "label": "merge_rain.py",
       "file_type": "code",
       "source_file": "scripts/merge_rain.py",
       "source_location": "L1",
       "id": "scripts_merge_rain_py",
-      "community": 4,
+      "community": 40,
       "norm_label": "merge_rain.py"
     },
     {
@@ -1080,7 +1206,7 @@
       "source_file": "scripts/merge_rain.py",
       "source_location": "L28",
       "id": "scripts_merge_rain_main",
-      "community": 4,
+      "community": 40,
       "norm_label": "main()"
     },
     {
@@ -1089,7 +1215,7 @@
       "source_file": "scripts/merge_rain.py",
       "source_location": "L1",
       "id": "scripts_merge_rain_rationale_1",
-      "community": 4,
+      "community": 40,
       "norm_label": "merge imd rain features into the canonical market.parquet, in place.      python"
     },
     {
@@ -1098,7 +1224,7 @@
       "source_file": "scripts/ingest_browser_dump.py",
       "source_location": "L1",
       "id": "scripts_ingest_browser_dump_py",
-      "community": 3,
+      "community": 5,
       "norm_label": "ingest_browser_dump.py"
     },
     {
@@ -1107,7 +1233,7 @@
       "source_file": "scripts/ingest_browser_dump.py",
       "source_location": "L19",
       "id": "scripts_ingest_browser_dump_main",
-      "community": 3,
+      "community": 5,
       "norm_label": "main()"
     },
     {
@@ -1116,7 +1242,7 @@
       "source_file": "scripts/ingest_browser_dump.py",
       "source_location": "L1",
       "id": "scripts_ingest_browser_dump_rationale_1",
-      "community": 3,
+      "community": 5,
       "norm_label": "ingest the browser-crawled sessions csv -> canonical daily + market.parquet."
     },
     {
@@ -1251,7 +1377,7 @@
       "source_file": "scripts/build_dataset.py",
       "source_location": "L1",
       "id": "scripts_build_dataset_py",
-      "community": 5,
+      "community": 39,
       "norm_label": "build_dataset.py"
     },
     {
@@ -1260,7 +1386,7 @@
       "source_file": "scripts/build_dataset.py",
       "source_location": "L33",
       "id": "scripts_build_dataset_main",
-      "community": 5,
+      "community": 39,
       "norm_label": "main()"
     },
     {
@@ -1269,7 +1395,7 @@
       "source_file": "scripts/build_dataset.py",
       "source_location": "L1",
       "id": "scripts_build_dataset_rationale_1",
-      "community": 5,
+      "community": 39,
       "norm_label": "one-command real-data build.  usage:     python scripts/build_dataset.py"
     },
     {
@@ -1307,6 +1433,33 @@
       "id": "scripts_analyze_rationale_1",
       "community": 2,
       "norm_label": "full research report: ablation, robustness, calibration, regimes, shap.      pyt"
+    },
+    {
+      "label": "gtm_trial.py",
+      "file_type": "code",
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L1",
+      "id": "scripts_gtm_trial_py",
+      "community": 0,
+      "norm_label": "gtm_trial.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L46",
+      "id": "scripts_gtm_trial_main",
+      "community": 0,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Edge hunt, round 5 \u2014 Guatemala supply state, two pre-registered trials.      pyt",
+      "file_type": "rationale",
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L1",
+      "id": "scripts_gtm_trial_rationale_1",
+      "community": 0,
+      "norm_label": "edge hunt, round 5 \u2014 guatemala supply state, two pre-registered trials.      pyt"
     },
     {
       "label": "make_flagship_chart.py",
@@ -1899,7 +2052,7 @@
       "source_file": "src/features/auction_physics.py",
       "source_location": "L99",
       "id": "features_auction_physics_build_physics_features",
-      "community": 1,
+      "community": 0,
       "norm_label": "build_physics_features()"
     },
     {
@@ -1944,7 +2097,7 @@
       "source_file": "src/features/auction_physics.py",
       "source_location": "L100",
       "id": "features_auction_physics_rationale_100",
-      "community": 1,
+      "community": 0,
       "norm_label": "assemble the block on the market calendar; all columns lag-safe."
     },
     {
@@ -2322,7 +2475,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L1",
       "id": "src_data_comtrade_py",
-      "community": 4,
+      "community": 41,
       "norm_label": "comtrade.py"
     },
     {
@@ -2331,7 +2484,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L48",
       "id": "data_comtrade_parse_comtrade",
-      "community": 4,
+      "community": 41,
       "norm_label": "parse_comtrade()"
     },
     {
@@ -2376,7 +2529,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L117",
       "id": "data_comtrade_guatemalaexportsloader_parse",
-      "community": 4,
+      "community": 41,
       "norm_label": ".parse()"
     },
     {
@@ -2385,7 +2538,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L132",
       "id": "data_comtrade_add_features",
-      "community": 4,
+      "community": 41,
       "norm_label": "add_features()"
     },
     {
@@ -2394,7 +2547,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L142",
       "id": "data_comtrade_to_daily_features",
-      "community": 4,
+      "community": 41,
       "norm_label": "to_daily_features()"
     },
     {
@@ -2412,7 +2565,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L1",
       "id": "data_comtrade_rationale_1",
-      "community": 4,
+      "community": 41,
       "norm_label": "guatemala cardamom exports via un comtrade \u2014 the cross-market supply signal.  wh"
     },
     {
@@ -2421,7 +2574,7 @@
       "source_file": "src/data/comtrade.py",
       "source_location": "L49",
       "id": "data_comtrade_rationale_49",
-      "community": 4,
+      "community": 41,
       "norm_label": "comtrade json -> monthly frame [exp_kg, exp_usd], hs codes summed."
     },
     {
@@ -2439,7 +2592,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L1",
       "id": "src_data_mcx_bhavcopy_py",
-      "community": 4,
+      "community": 38,
       "norm_label": "mcx_bhavcopy.py"
     },
     {
@@ -2448,7 +2601,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L61",
       "id": "data_mcx_bhavcopy_norm",
-      "community": 4,
+      "community": 38,
       "norm_label": "_norm()"
     },
     {
@@ -2457,7 +2610,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L65",
       "id": "data_mcx_bhavcopy_to_date",
-      "community": 4,
+      "community": 38,
       "norm_label": "_to_date()"
     },
     {
@@ -2466,7 +2619,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L79",
       "id": "data_mcx_bhavcopy_map_columns",
-      "community": 4,
+      "community": 38,
       "norm_label": "_map_columns()"
     },
     {
@@ -2502,7 +2655,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L128",
       "id": "data_mcx_bhavcopy_mcxbhavcopyloader_read_any",
-      "community": 4,
+      "community": 38,
       "norm_label": "._read_any()"
     },
     {
@@ -2511,7 +2664,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L141",
       "id": "data_mcx_bhavcopy_mcxbhavcopyloader_parse_contracts",
-      "community": 4,
+      "community": 38,
       "norm_label": ".parse_contracts()"
     },
     {
@@ -2520,7 +2673,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L177",
       "id": "data_mcx_bhavcopy_mcxbhavcopyloader_parse",
-      "community": 4,
+      "community": 38,
       "norm_label": ".parse()"
     },
     {
@@ -2529,7 +2682,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L182",
       "id": "data_mcx_bhavcopy_build_continuous",
-      "community": 4,
+      "community": 38,
       "norm_label": "build_continuous()"
     },
     {
@@ -2547,7 +2700,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L1",
       "id": "data_mcx_bhavcopy_rationale_1",
-      "community": 4,
+      "community": 38,
       "norm_label": "mcxbhavcopyloader \u2014 cardamom futures from mcx bhavcopy files.  tier-1 strategy ("
     },
     {
@@ -2556,7 +2709,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L66",
       "id": "data_mcx_bhavcopy_rationale_66",
-      "community": 4,
+      "community": 38,
       "norm_label": "parse dates that may be iso (udiff: 2026-07-01) or indian     dd-mm-yyyy (classi"
     },
     {
@@ -2574,7 +2727,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L129",
       "id": "data_mcx_bhavcopy_rationale_129",
-      "community": 4,
+      "community": 38,
       "norm_label": "read a csv or a zip containing csvs."
     },
     {
@@ -2583,7 +2736,7 @@
       "source_file": "src/data/mcx_bhavcopy.py",
       "source_location": "L142",
       "id": "data_mcx_bhavcopy_rationale_142",
-      "community": 4,
+      "community": 38,
       "norm_label": "all cardamom contract-day rows across all cached files."
     },
     {
@@ -2763,7 +2916,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L1",
       "id": "src_data_loaders_py",
-      "community": 5,
+      "community": 39,
       "norm_label": "loaders.py"
     },
     {
@@ -2772,7 +2925,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L43",
       "id": "data_loaders_load_spot",
-      "community": 5,
+      "community": 39,
       "norm_label": "load_spot()"
     },
     {
@@ -2781,7 +2934,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L47",
       "id": "data_loaders_load_futures",
-      "community": 5,
+      "community": 39,
       "norm_label": "load_futures()"
     },
     {
@@ -2790,7 +2943,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L51",
       "id": "data_loaders_load_rain",
-      "community": 5,
+      "community": 39,
       "norm_label": "load_rain()"
     },
     {
@@ -2799,7 +2952,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L55",
       "id": "data_loaders_build_market_dataset",
-      "community": 5,
+      "community": 39,
       "norm_label": "build_market_dataset()"
     },
     {
@@ -2808,7 +2961,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L1",
       "id": "data_loaders_rationale_1",
-      "community": 5,
+      "community": 39,
       "norm_label": "real-data facade \u2014 the swap-in point that replaces synthetic.py.  public api (wh"
     },
     {
@@ -2817,7 +2970,7 @@
       "source_file": "src/data/loaders.py",
       "source_location": "L61",
       "id": "data_loaders_rationale_61",
-      "community": 5,
+      "community": 39,
       "norm_label": "join the three feeds on a master calendar, compute basis honestly."
     },
     {
@@ -2826,7 +2979,7 @@
       "source_file": "src/data/__init__.py",
       "source_location": "L1",
       "id": "src_data_init_py",
-      "community": 4,
+      "community": 42,
       "norm_label": "__init__.py"
     },
     {
@@ -2835,7 +2988,7 @@
       "source_file": "src/data/__init__.py",
       "source_location": "L1",
       "id": "data_init_rationale_1",
-      "community": 4,
+      "community": 42,
       "norm_label": "real-data ingestion layer for cardamom-quant."
     },
     {
@@ -2844,7 +2997,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L1",
       "id": "src_data_imd_rainfall_py",
-      "community": 4,
+      "community": 42,
       "norm_label": "imd_rainfall.py"
     },
     {
@@ -2853,7 +3006,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L34",
       "id": "data_imd_rainfall_imdrainfallloader",
-      "community": 4,
+      "community": 40,
       "norm_label": "imdrainfallloader"
     },
     {
@@ -2862,7 +3015,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L43",
       "id": "data_imd_rainfall_imdrainfallloader_init",
-      "community": 4,
+      "community": 40,
       "norm_label": ".__init__()"
     },
     {
@@ -2871,7 +3024,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L58",
       "id": "data_imd_rainfall_imdrainfallloader_fetch",
-      "community": 4,
+      "community": 40,
       "norm_label": ".fetch()"
     },
     {
@@ -2880,7 +3033,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L71",
       "id": "data_imd_rainfall_imdrainfallloader_parse",
-      "community": 4,
+      "community": 42,
       "norm_label": ".parse()"
     },
     {
@@ -2889,7 +3042,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L95",
       "id": "data_imd_rainfall_add_anomaly",
-      "community": 4,
+      "community": 42,
       "norm_label": "add_anomaly()"
     },
     {
@@ -2898,7 +3051,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L119",
       "id": "data_imd_rainfall_imdrainfallloader_validate",
-      "community": 4,
+      "community": 40,
       "norm_label": ".validate()"
     },
     {
@@ -2907,7 +3060,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L1",
       "id": "data_imd_rainfall_rationale_1",
-      "community": 4,
+      "community": 42,
       "norm_label": "imdrainfallloader \u2014 idukki cardamom-belt rainfall with anomaly features.  histor"
     },
     {
@@ -2916,7 +3069,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L59",
       "id": "data_imd_rainfall_rationale_59",
-      "community": 4,
+      "community": 40,
       "norm_label": "download gridded rain via imdlib into raw_dir (idempotent)."
     },
     {
@@ -2925,7 +3078,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L72",
       "id": "data_imd_rainfall_rationale_72",
-      "community": 4,
+      "community": 42,
       "norm_label": "gridded binary -> idukki daily area-mean -> anomaly features."
     },
     {
@@ -2936,6 +3089,96 @@
       "id": "data_imd_rainfall_rationale_97",
       "community": 27,
       "norm_label": "attach day-of-year climatology + anomaly. pure \u2014 unit-testable.          climato"
+    },
+    {
+      "label": "banguat.py",
+      "file_type": "code",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L1",
+      "id": "src_data_banguat_py",
+      "community": 35,
+      "norm_label": "banguat.py"
+    },
+    {
+      "label": "load_annual_kg()",
+      "file_type": "code",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L37",
+      "id": "data_banguat_load_annual_kg",
+      "community": 35,
+      "norm_label": "load_annual_kg()"
+    },
+    {
+      "label": "annual_features()",
+      "file_type": "code",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L48",
+      "id": "data_banguat_annual_features",
+      "community": 35,
+      "norm_label": "annual_features()"
+    },
+    {
+      "label": "to_daily_features()",
+      "file_type": "code",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L61",
+      "id": "data_banguat_to_daily_features",
+      "community": 35,
+      "norm_label": "to_daily_features()"
+    },
+    {
+      "label": "build_gtm_features()",
+      "file_type": "code",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L76",
+      "id": "data_banguat_build_gtm_features",
+      "community": 35,
+      "norm_label": "build_gtm_features()"
+    },
+    {
+      "label": "Guatemala cardamom export volume \u2014 Banco de Guatemala primary source.  UN Comtra",
+      "file_type": "rationale",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L1",
+      "id": "data_banguat_rationale_1",
+      "community": 35,
+      "norm_label": "guatemala cardamom export volume \u2014 banco de guatemala primary source.  un comtra"
+    },
+    {
+      "label": "Annual export volume in kg, indexed by calendar year.",
+      "file_type": "rationale",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L38",
+      "id": "data_banguat_rationale_38",
+      "community": 35,
+      "norm_label": "annual export volume in kg, indexed by calendar year."
+    },
+    {
+      "label": "Per-year features, using only same-or-prior years per row.      gtm_vol_yoy",
+      "file_type": "rationale",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L49",
+      "id": "data_banguat_rationale_49",
+      "community": 35,
+      "norm_label": "per-year features, using only same-or-prior years per row.      gtm_vol_yoy"
+    },
+    {
+      "label": "Step-function daily features under the 01-Apr-(Y+1) publication rule.",
+      "file_type": "rationale",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L62",
+      "id": "data_banguat_rationale_62",
+      "community": 35,
+      "norm_label": "step-function daily features under the 01-apr-(y+1) publication rule."
+    },
+    {
+      "label": "Feature block on the market calendar (ready for build_features alt=).",
+      "file_type": "rationale",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L77",
+      "id": "data_banguat_rationale_77",
+      "community": 35,
+      "norm_label": "feature block on the market calendar (ready for build_features alt=)."
     },
     {
       "label": "climate_indices.py",
@@ -3096,7 +3339,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L1",
       "id": "src_data_base_py",
-      "community": 4,
+      "community": 37,
       "norm_label": "base.py"
     },
     {
@@ -3123,7 +3366,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L26",
       "id": "data_base_baseloader",
-      "community": 4,
+      "community": 37,
       "norm_label": "baseloader"
     },
     {
@@ -3132,7 +3375,7 @@
       "source_file": "",
       "source_location": "",
       "id": "abc",
-      "community": 4,
+      "community": 37,
       "norm_label": "abc"
     },
     {
@@ -3141,7 +3384,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L34",
       "id": "data_base_baseloader_init",
-      "community": 4,
+      "community": 37,
       "norm_label": ".__init__()"
     },
     {
@@ -3150,7 +3393,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L42",
       "id": "data_base_fetch",
-      "community": 4,
+      "community": 37,
       "norm_label": "fetch()"
     },
     {
@@ -3159,7 +3402,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L50",
       "id": "data_base_parse",
-      "community": 4,
+      "community": 37,
       "norm_label": "parse()"
     },
     {
@@ -3168,7 +3411,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L53",
       "id": "data_base_baseloader_validate",
-      "community": 4,
+      "community": 37,
       "norm_label": ".validate()"
     },
     {
@@ -3177,7 +3420,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L64",
       "id": "data_base_baseloader_load",
-      "community": 4,
+      "community": 37,
       "norm_label": ".load()"
     },
     {
@@ -3186,7 +3429,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L1",
       "id": "data_base_rationale_1",
-      "community": 4,
+      "community": 37,
       "norm_label": "baseloader: the common contract every real-data feed implements.  design princip"
     },
     {
@@ -3204,7 +3447,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L27",
       "id": "data_base_rationale_27",
-      "community": 4,
+      "community": 37,
       "norm_label": "fetch \u2192 parse \u2192 validate \u2192 load, with an immutable raw cache."
     },
     {
@@ -3231,7 +3474,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L54",
       "id": "data_base_rationale_54",
-      "community": 4,
+      "community": 37,
       "norm_label": "generic schema checks; subclasses add source-specific rules."
     },
     {
@@ -3240,7 +3483,7 @@
       "source_file": "src/data/base.py",
       "source_location": "L65",
       "id": "data_base_rationale_65",
-      "community": 4,
+      "community": 37,
       "norm_label": "cached-or-fetched, parsed, validated frame; also writes parquet."
     },
     {
@@ -3487,10 +3730,37 @@
       "norm_label": "signal, not as the champion"
     },
     {
-      "label": "Roadmap implied by the numbers",
+      "label": "UPDATE (edge hunt, round 4): first displacement trial \u2014 killed",
       "file_type": "document",
       "source_file": "RESULTS_REAL.md",
       "source_location": "L156",
+      "id": "cardamom_quant_results_real_update_edge_hunt_round_4_first_displacement_trial_killed",
+      "community": 17,
+      "norm_label": "update (edge hunt, round 4): first displacement trial \u2014 killed"
+    },
+    {
+      "label": "UPDATE (edge hunt, round 5): Guatemala supply, from the primary source",
+      "file_type": "document",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L170",
+      "id": "cardamom_quant_results_real_update_edge_hunt_round_5_guatemala_supply_from_the_primary_source",
+      "community": 17,
+      "norm_label": "update (edge hunt, round 5): guatemala supply, from the primary source"
+    },
+    {
+      "label": "\u2014 and cut",
+      "file_type": "document",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L171",
+      "id": "cardamom_quant_results_real_and_cut",
+      "community": 17,
+      "norm_label": "\u2014 and cut"
+    },
+    {
+      "label": "Roadmap implied by the numbers",
+      "file_type": "document",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L195",
       "id": "cardamom_quant_results_real_roadmap_implied_by_the_numbers",
       "community": 17,
       "norm_label": "roadmap implied by the numbers"
@@ -3832,7 +4102,7 @@
       "label": "What this is",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L33",
+      "source_location": "L48",
       "id": "cardamom_quant_handoff_what_this_is",
       "community": 10,
       "norm_label": "what this is"
@@ -3841,7 +4111,7 @@
       "label": "State: what is DONE",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L42",
+      "source_location": "L57",
       "id": "cardamom_quant_handoff_state_what_is_done",
       "community": 10,
       "norm_label": "state: what is done"
@@ -3850,7 +4120,7 @@
       "label": "First 30 minutes in VS Code",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L61",
+      "source_location": "L76",
       "id": "cardamom_quant_handoff_first_30_minutes_in_vs_code",
       "community": 10,
       "norm_label": "first 30 minutes in vs code"
@@ -3859,7 +4129,7 @@
       "label": "code:bash (cd cardamom-quant)",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L63",
+      "source_location": "L78",
       "id": "cardamom_quant_handoff_codeblock_1",
       "community": 10,
       "norm_label": "code:bash (cd cardamom-quant)"
@@ -3868,7 +4138,7 @@
       "label": "Priority queue (in order of expected value)",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L79",
+      "source_location": "L94",
       "id": "cardamom_quant_handoff_priority_queue_in_order_of_expected_value",
       "community": 10,
       "norm_label": "priority queue (in order of expected value)"
@@ -3877,7 +4147,7 @@
       "label": "Gotchas / tribal knowledge",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L104",
+      "source_location": "L119",
       "id": "cardamom_quant_handoff_gotchas_tribal_knowledge",
       "community": 10,
       "norm_label": "gotchas / tribal knowledge"
@@ -3886,7 +4156,7 @@
       "label": "One-line status if anyone asks",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L131",
+      "source_location": "L146",
       "id": "cardamom_quant_handoff_one_line_status_if_anyone_asks",
       "community": 10,
       "norm_label": "one-line status if anyone asks"
@@ -6128,6 +6398,183 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tests_test_banguat_py",
+      "target": "tests_test_banguat_annual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "tests_test_banguat_py",
+      "target": "tests_test_banguat_test_deficit_norm_uses_prior_years_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "tests_test_banguat_py",
+      "target": "tests_test_banguat_test_collapse_reads_as_positive_deficit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "tests_test_banguat_py",
+      "target": "tests_test_banguat_test_publication_lag_is_enforced",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "tests_test_banguat_py",
+      "target": "tests_test_banguat_test_daily_features_are_strictly_causal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "tests_test_banguat_py",
+      "target": "tests_test_banguat_test_real_extraction_parses_and_shows_the_collapse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "tests_test_banguat_rationale_1",
+      "target": "tests_test_banguat_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "tests_test_banguat_test_deficit_norm_uses_prior_years_only",
+      "target": "tests_test_banguat_annual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "tests_test_banguat_test_collapse_reads_as_positive_deficit",
+      "target": "tests_test_banguat_annual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "tests_test_banguat_test_publication_lag_is_enforced",
+      "target": "tests_test_banguat_annual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "tests_test_banguat_test_daily_features_are_strictly_causal",
+      "target": "tests_test_banguat_annual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "tests_test_banguat_rationale_25",
+      "target": "tests_test_banguat_test_deficit_norm_uses_prior_years_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "tests_test_banguat_test_deficit_norm_uses_prior_years_only",
+      "target": "data_banguat_annual_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "tests_test_banguat_test_collapse_reads_as_positive_deficit",
+      "target": "data_banguat_annual_features"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "tests_test_banguat_rationale_42",
+      "target": "tests_test_banguat_test_publication_lag_is_enforced",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "tests_test_banguat_rationale_55",
+      "target": "tests_test_banguat_test_daily_features_are_strictly_causal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_banguat.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "tests_test_banguat_test_real_extraction_parses_and_shows_the_collapse",
+      "target": "data_banguat_load_annual_kg"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_pipeline.py",
       "source_location": "L19",
       "weight": 1.0,
@@ -6417,9 +6864,9 @@
       "source_file": "scripts/displacement_trial.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_displacement_trial_py",
-      "target": "scripts_displacement_trial_main",
-      "confidence_score": 1.0
+      "target": "scripts_displacement_trial_main"
     },
     {
       "relation": "rationale_for",
@@ -6427,9 +6874,9 @@
       "source_file": "scripts/displacement_trial.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_displacement_trial_rationale_1",
-      "target": "scripts_displacement_trial_py",
-      "confidence_score": 1.0
+      "target": "scripts_displacement_trial_py"
     },
     {
       "relation": "calls",
@@ -6720,6 +7167,26 @@
       "weight": 1.0,
       "source": "scripts_run_real_reference_main",
       "target": "src_metrics_format_scorecard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh_banguat.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_refresh_banguat_py",
+      "target": "scripts_refresh_banguat_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh_banguat.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_refresh_banguat_rationale_1",
+      "target": "scripts_refresh_banguat_py",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7159,6 +7626,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "scripts_gtm_trial_main",
+      "target": "scripts_edge_hunt_calibrated_fold_proba"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/edge_hunt.py",
       "source_location": "L125",
@@ -7199,6 +7677,17 @@
       "weight": 1.0,
       "source": "scripts_edge_hunt_evaluate_stream",
       "target": "src_metrics_classification_metrics"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "scripts_gtm_trial_main",
+      "target": "scripts_edge_hunt_evaluate_stream"
     },
     {
       "relation": "calls",
@@ -7612,6 +8101,81 @@
       "weight": 1.0,
       "source": "scripts_analyze_main",
       "target": "analysis_interpret_shap_report"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "scripts_gtm_trial_py",
+      "target": "scripts_gtm_trial_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_gtm_trial_rationale_1",
+      "target": "scripts_gtm_trial_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "scripts_gtm_trial_main",
+      "target": "data_banguat_build_gtm_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "scripts_gtm_trial_main",
+      "target": "features_auction_physics_build_physics_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "scripts_gtm_trial_main",
+      "target": "features_engineering_build_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "scripts_gtm_trial_main",
+      "target": "validation_walkforward_purgedwalkforward"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/gtm_trial.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "scripts_gtm_trial_main",
+      "target": "analysis_robustness_deflated_sharpe"
     },
     {
       "relation": "contains",
@@ -9784,6 +10348,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_data_banguat_py",
+      "target": "src_data_init_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L29",
       "weight": 1.0,
@@ -9922,6 +10497,129 @@
       "weight": 1.0,
       "source": "data_imd_rainfall_imdrainfallloader_validate",
       "target": "data_base_validationerror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_data_banguat_py",
+      "target": "data_banguat_load_annual_kg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "src_data_banguat_py",
+      "target": "data_banguat_annual_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "src_data_banguat_py",
+      "target": "data_banguat_to_daily_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "src_data_banguat_py",
+      "target": "data_banguat_build_gtm_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "data_banguat_rationale_1",
+      "target": "src_data_banguat_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "data_banguat_build_gtm_features",
+      "target": "data_banguat_load_annual_kg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "data_banguat_rationale_38",
+      "target": "data_banguat_load_annual_kg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "data_banguat_to_daily_features",
+      "target": "data_banguat_annual_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "data_banguat_rationale_49",
+      "target": "data_banguat_annual_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "data_banguat_build_gtm_features",
+      "target": "data_banguat_to_daily_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "data_banguat_rationale_62",
+      "target": "data_banguat_to_daily_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/banguat.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "data_banguat_rationale_77",
+      "target": "data_banguat_build_gtm_features",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -10532,6 +11230,36 @@
       "confidence_score": 1.0,
       "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
       "target": "cardamom_quant_results_real_signal_not_as_the_champion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
+      "target": "cardamom_quant_results_real_update_edge_hunt_round_4_first_displacement_trial_killed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L170",
+      "weight": 1.0,
+      "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
+      "target": "cardamom_quant_results_real_update_edge_hunt_round_5_guatemala_supply_from_the_primary_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
+      "target": "cardamom_quant_results_real_and_cut",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11175,5 +11903,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "338e031e0efd7890e16bdefdac6ccffe6ad88c73"
+  "built_at_commit": "3ae7ece36dfca300a374250eae7f7a5132471fc0"
 }
