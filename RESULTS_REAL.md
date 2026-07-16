@@ -214,16 +214,60 @@ the one that survives re-slicing — *the physics book is positive with
 ~98% bootstrap confidence, in the +0.2…+1.2 range, and does not clear the
 29-to-34-trial luck bar.* Point estimates are weather; the CI is climate.
 
+## The slicing-robust estimate (16-Jul-2026): the honest headline drops
+## to +0.43
+
+`scripts/robust_estimate.py` replaced the single fold layout with a
+family of six, declared ex ante (n_splits ∈ {5,6,7} × min_train offset
+∈ {0,+63}), reporting the average — estimator refinement, not selection;
+the DSR ledger is unchanged.
+
+| layout | Sharpe |
+|---|---|
+| 5 folds, base | +0.30 |
+| 5 folds, +63 | +0.01 |
+| 6 folds, base (the one every prior table used) | +0.69 |
+| 6 folds, +63 | +0.43 |
+| 7 folds, base | +0.56 |
+| 7 folds, +63 | +0.48 |
+
+**Blended stream (per-day mean probability across layouts): Sharpe
++0.43, 90% CI [−0.01, +0.90], p(SR≤0) 5.5%, AUC 0.540, hit +4.2pts,
+max drawdown −6.2%.**
+
+Reported as found: a large part of the +0.79 print — and of every
+single-layout number in this file — was fold-slicing luck. The layout
+every prior table happened to use was the best of six. The claim that
+survives is smaller and still real: *the physics book is positive with
+~94% bootstrap confidence, classification skill is intact (+4.2pts,
+AUC 0.54), drawdowns are shallow — and the 90% CI now grazes zero.*
+Verdict: **a maybe, honestly priced.** This is why the prospective
+forecast ledger (below) exists — backtest error bars have this many
+degrees of freedom; a live track record has none.
+
+## PROSPECTIVE VALIDATION (live since 16-Jul-2026)
+
+`scripts/forecast.py` + `src/live/ledger.py`: every week the champion
+emits P(up, 5d) for auction days whose outcomes do not yet exist, into
+an append-only, hash-chained ledger (any edit or deletion of history
+breaks every subsequent hash — `verify_chain` runs on every invocation
+and in the test suite). Matured forecasts are scored into a second
+chained ledger. `scripts/weekly_update.sh` (launchd agent) automates
+crawl → verify → forecast → score. The running prospective scorecard
+prints on every run; it is the number that will eventually settle this
+project's question.
+
 ## Roadmap implied by the numbers
 
 ~~Horizon-matched rebalancing + calibration~~ (done). ~~Auction physics~~
-(done — champion). ~~Rain~~ (done — pays as signal, kept). ~~Naive
-displacement~~ (done — killed). ~~Guatemala supply~~ (done — cut; annual
-too coarse). ~~Refresh pipeline~~ (done — run `scripts/refresh_spot.py`
-weekly; every run buys CI width). Still open: MCX basis (manual Bhavcopy
-drop into `data/raw/mcx/`), and time itself — at ~250 auction days/year
-the bootstrap CI narrows ~11%/year. Every new configuration grows the
-34-trial DSR ledger.
+(done — champion, slicing-averaged +0.43). ~~Rain~~ (done — kept).
+~~Naive displacement~~ (done — killed). ~~Guatemala supply~~ (done —
+cut). ~~Refresh pipeline + live forecast ledger~~ (done — running).
+Open, in order: MCX basis (manual Bhavcopy drop), probability-ensemble
+trial (bagging the three solo-positive streams), forecast-rain trial
+(TIGGE archive for history, Aurora for live), and time itself — the
+ledgers accrue ~250 scored forecasts/year. Every new configuration
+grows the 34-trial DSR ledger.
 
 *Machine-verifiable provenance: every number above regenerates from
 `data/processed/market.parquet` via `python run.py`, `scripts/analyze.py`,

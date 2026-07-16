@@ -1,16 +1,16 @@
-# Graph Report - cardamom-quant  (2026-07-15)
+# Graph Report - cardamom-quant  (2026-07-16)
 
 ## Corpus Check
-- 69 files · ~164,229 words
+- 75 files · ~166,458 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 511 nodes · 743 edges · 45 communities (36 shown, 9 thin omitted)
-- Extraction: 74% EXTRACTED · 26% INFERRED · 0% AMBIGUOUS · INFERRED: 190 edges (avg confidence: 0.79)
+- 550 nodes · 809 edges · 47 communities (38 shown, 9 thin omitted)
+- Extraction: 74% EXTRACTED · 26% INFERRED · 0% AMBIGUOUS · INFERRED: 207 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `81ee4c99`
+- Built from commit: `5d24154f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -58,39 +58,39 @@
 1. `BacktestConfig` - 17 edges
 2. `run_backtest()` - 17 edges
 3. `main()` - 16 edges
-4. `SpicesBoardLoader` - 16 edges
-5. `build_features()` - 13 edges
-6. `MCXBhavcopyLoader` - 13 edges
-7. `IMDRainfallLoader` - 13 edges
-8. `PurgedWalkForward` - 13 edges
-9. `REAL out-of-sample results — July 7, 2026` - 13 edges
+4. `build_features()` - 16 edges
+5. `SpicesBoardLoader` - 16 edges
+6. `REAL out-of-sample results — July 7, 2026` - 16 edges
+7. `PurgedWalkForward` - 14 edges
+8. `MCXBhavcopyLoader` - 13 edges
+9. `IMDRainfallLoader` - 13 edges
 10. `main()` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `test_spices_loader_end_to_end()` --calls--> `SpicesBoardLoader`  [INFERRED]
+  tests/test_loaders.py → src/data/spices_board.py
+- `test_spices_validation_rejects_garbage()` --calls--> `SpicesBoardLoader`  [INFERRED]
+  tests/test_loaders.py → src/data/spices_board.py
 - `test_build_market_dataset_alignment()` --calls--> `build_market_dataset()`  [INFERRED]
   tests/test_loaders.py → src/data/loaders.py
 - `main()` --calls--> `parse_oni()`  [INFERRED]
   run.py → src/data/climate_indices.py
 - `main()` --calls--> `build_alt_features()`  [INFERRED]
   run.py → src/features/alt_features.py
-- `main()` --calls--> `run_backtest()`  [INFERRED]
-  run.py → src/backtest/engine.py
-- `main()` --calls--> `BacktestConfig`  [INFERRED]
-  run.py → src/backtest/engine.py
 
-## Communities (45 total, 9 thin omitted)
+## Communities (47 total, 9 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.06
-Nodes (50): deflated_sharpe(), DSR: PSR against the expected-max-Sharpe of everything we tried.      all_trial_, load_market(), Cardamom Quant — interactive dashboard.      pip install streamlit     streamlit, run_cv(), load_dataset(), main(), cardamom-quant — end-to-end run.      python run.py                 # real data (+42 more)
+Cohesion: 0.05
+Nodes (55): deflated_sharpe(), DSR: PSR against the expected-max-Sharpe of everything we tried.      all_trial_, load_market(), Cardamom Quant — interactive dashboard.      pip install streamlit     streamlit, run_cv(), load_dataset(), main(), cardamom-quant — end-to-end run.      python run.py                 # real data (+47 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.07
 Nodes (35): _crop_year(), _day_in_crop_year(), hurst_rs(), inventory_overhang(), Auction-physics features — signal mined from columns the pipeline never touched,, R/S Hurst exponent estimate (three-scale log-log slope)., Crop-year label: Aug-2019..Jul-2020 -> 2019., log(crop-year-to-date arrivals / past-years' norm at the same point).      Posit (+27 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.07
-Nodes (36): brier_score(), calibration_summary(), calibration_table(), enso_phase(), isotonic_calibrator(), Probability calibration + regime-conditional performance.  Calibration: a 0.65 f, Fit an isotonic map raw p -> calibrated p on a held-out slice.      The slice mu, elnino' (>= +0.5), 'lanina' (<= -0.5), else 'neutral'. (+28 more)
+Cohesion: 0.06
+Nodes (43): brier_score(), calibration_summary(), calibration_table(), enso_phase(), isotonic_calibrator(), Probability calibration + regime-conditional performance.  Calibration: a 0.65 f, Fit an isotonic map raw p -> calibrated p on a held-out slice.      The slice mu, elnino' (>= +0.5), 'lanina' (<= -0.5), else 'neutral'. (+35 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.09
@@ -101,16 +101,16 @@ Cohesion: 0.19
 Nodes (7): BaseLoader, Raised when a loader's output violates its schema contract., ValidationError, GuatemalaExportsLoader, MCXBhavcopyLoader, Tier-1 is manual: files are dropped into raw_dir by the user.          This just, RuntimeError
 
 ### Community 5 - "Community 5"
-Cohesion: 0.09
-Nodes (19): aggregate_daily(), _normalise(), _parse_html(), SpicesBoardLoader — small-cardamom e-auction archive (the spot backbone).  The S, Session-level table across all cached pages, deduped., Daily aggregate: quantity-weighted average price + supply columns., Session-level table across all cached pages, deduped., Daily aggregate: quantity-weighted average price + supply columns. (+11 more)
+Cohesion: 0.17
+Nodes (10): aggregate_daily(), _normalise(), _parse_html(), SpicesBoardLoader — small-cardamom e-auction archive (the spot backbone).  The S, Session-level table across all cached pages, deduped., Daily aggregate: quantity-weighted average price + supply columns., Session-level table across all cached pages, deduped., Daily aggregate: quantity-weighted average price + supply columns. (+2 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.11
 Nodes (20): fetch_usdinr(), parse_fred_csv(), FX competitiveness — USD/INR from FRED (no API key needed).  Indian cardamom com, fredgraph.csv -> daily Series; '.' means missing., FX features on the trading calendar (ffill weekends/holidays, max 5d)., to_daily_features(), auction_microstructure(), build_alt_features() (+12 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.14
-Nodes (11): mean_abs_shap(), SHAP interpretability — per-prediction attribution on top of the permutation imp, SHAP values for a fitted model from src/models/baselines.py.      logistic  -> L, Global importance: mean |SHAP| per feature, descending., shap_report(), shap_values_for(), make_gbm(), Models. The rule of this repo: ML must beat the dumb seasonal rule or we say so (+3 more)
+Cohesion: 0.08
+Nodes (23): _canon(), _chain_hash(), ChainedCsv, forecast_ledger(), outcome_ledger(), Tamper-evident forecast ledger — the prospective-validation backbone.  A backtes, Append-only CSV where every row extends a hash chain., Recompute every hash; raise on the first broken link. (+15 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.14
@@ -149,12 +149,12 @@ Cohesion: 0.53
 Nodes (5): join_ok(), main(), partitions(), Repair thousands-separator commas in the browser-crawled sessions CSV.  Each dat, sane()
 
 ### Community 17 - "Community 17"
-Cohesion: 0.13
-Nodes (14): — and cut, Dataset v1.1 (15-Jul-2026): the lever, pulled — and a lesson in, estimator variance, REAL out-of-sample results — July 7, 2026, Roadmap implied by the numbers, signal, not as the champion, The findings — reported as found, The scorecard (purged walk-forward, 6 folds, after 15bps costs) (+6 more)
+Cohesion: 0.11
+Nodes (17): — and cut, Dataset v1.1 (15-Jul-2026): the lever, pulled — and a lesson in, estimator variance, PROSPECTIVE VALIDATION (live since 16-Jul-2026), REAL out-of-sample results — July 7, 2026, Roadmap implied by the numbers, signal, not as the champion, The findings — reported as found (+9 more)
 
 ### Community 31 - "Community 31"
-Cohesion: 0.17
-Nodes (21): BacktestConfig, Backtest engine: conviction sizing, vol targeting, leverage cap, costs.  Mechani, proba_up: model P(up) indexed by date; daily_returns: same calendar., proba_up: model P(up) indexed by date; daily_returns: same calendar., Same execution/cost mechanics for a strategy that emits target weights     direc, run_backtest(), run_weights_backtest(), test_run_weights_backtest_mechanics() (+13 more)
+Cohesion: 0.16
+Nodes (22): BacktestConfig, Backtest engine: conviction sizing, vol targeting, leverage cap, costs.  Mechani, proba_up: model P(up) indexed by date; daily_returns: same calendar., proba_up: model P(up) indexed by date; daily_returns: same calendar., Same execution/cost mechanics for a strategy that emits target weights     direc, run_backtest(), run_weights_backtest(), grid_cell() (+14 more)
 
 ### Community 32 - "Community 32"
 Cohesion: 0.15
@@ -181,23 +181,23 @@ Cohesion: 0.27
 Nodes (8): build_market_dataset(), load_futures(), load_rain(), load_spot(), Real-data facade — the swap-in point that replaces synthetic.py.  Public API (wh, Join the three feeds on a master calendar, compute basis honestly., main(), One-command real-data build.  Usage:     python scripts/build_dataset.py
 
 ### Community 40 - "Community 40"
-Cohesion: 0.22
-Nodes (5): IMDRainfallLoader, Download gridded rain via imdlib into raw_dir (idempotent)., main(), Merge IMD rain features into the canonical market.parquet, in place.      python, test_rain_validation_seasonality_guard()
+Cohesion: 0.15
+Nodes (8): add_anomaly(), IMDRainfallLoader, IMDRainfallLoader — Idukki cardamom-belt rainfall with anomaly features.  Histor, Download gridded rain via imdlib into raw_dir (idempotent)., Gridded binary -> Idukki daily area-mean -> anomaly features., main(), Merge IMD rain features into the canonical market.parquet, in place.      python, test_rain_validation_seasonality_guard()
 
 ### Community 41 - "Community 41"
-Cohesion: 0.29
-Nodes (5): add_features(), parse_comtrade(), Guatemala cardamom exports via UN Comtrade — the cross-market supply signal.  Wh, Comtrade JSON -> monthly frame [exp_kg, exp_usd], HS codes summed., test_parse_comtrade_sums_hs_codes()
+Cohesion: 0.22
+Nodes (6): add_features(), parse_comtrade(), Guatemala cardamom exports via UN Comtrade — the cross-market supply signal.  Wh, Comtrade JSON -> monthly frame [exp_kg, exp_usd], HS codes summed., Real-data ingestion layer for cardamom-quant., test_parse_comtrade_sums_hs_codes()
 
 ### Community 42 - "Community 42"
-Cohesion: 0.29
-Nodes (4): add_anomaly(), IMDRainfallLoader — Idukki cardamom-belt rainfall with anomaly features.  Histor, Gridded binary -> Idukki daily area-mean -> anomaly features., Real-data ingestion layer for cardamom-quant.
+Cohesion: 0.16
+Nodes (9): _mcx_loader(), Unit tests for the real-data ingestion layer.  Everything here runs offline agai, On a roll day the spliced return must be the NEW contract's own     day-over-day, test_build_market_dataset_alignment(), test_mcx_continuous_level_no_roll_jump(), test_mcx_front_selection_and_spliced_return(), test_mcx_parses_both_schema_eras(), test_spices_loader_end_to_end() (+1 more)
 
 ### Community 44 - "Community 44"
 Cohesion: 0.21
 Nodes (11): canon_auctioneer(), main(), Extend the spot backbone with new auction days — THE lever.      python scripts/, Match keys across the site's commas and the repaired dump's semicolons.      The, rebuild_market(), _page(), Tests for archive-page parsing across markup eras + refresh key matching (offlin, The Jul-2026 site era: header cells are <td>, read_html sees ints. (+3 more)
 
 ## Knowledge Gaps
-- **195 isolated node(s):** `cardamom-quant — end-to-end run.      python run.py                 # real data`, `Cardamom Quant — interactive dashboard.      pip install streamlit     streamlit`, `Leakage + sanity tests for the edge-hunt round: auction physics, Kalman seasonal`, `Mutating TODAY's auction must not change TODAY's features.`, `Tests for the cross-market/macro/microstructure signal layer (offline).` (+190 more)
+- **207 isolated node(s):** `cardamom-quant — end-to-end run.      python run.py                 # real data`, `Cardamom Quant — interactive dashboard.      pip install streamlit     streamlit`, `Leakage + sanity tests for the edge-hunt round: auction physics, Kalman seasonal`, `Mutating TODAY's auction must not change TODAY's features.`, `Tests for the tamper-evident forecast ledger + live feature builder (offline).` (+202 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -207,14 +207,14 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `parse_oni()` connect `Community 3` to `Community 0`, `Community 44`?**
   _High betweenness centrality (0.180) - this node is a cross-community bridge._
 - **Why does `main()` connect `Community 0` to `Community 3`, `Community 6`, `Community 31`?**
-  _High betweenness centrality (0.101) - this node is a cross-community bridge._
-- **Why does `main()` connect `Community 0` to `Community 1`, `Community 2`, `Community 31`?**
-  _High betweenness centrality (0.097) - this node is a cross-community bridge._
+  _High betweenness centrality (0.103) - this node is a cross-community bridge._
 - **Are the 16 inferred relationships involving `BacktestConfig` (e.g. with `main()` and `run_cv()`) actually correct?**
   _`BacktestConfig` has 16 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 14 inferred relationships involving `run_backtest()` (e.g. with `main()` and `run_cv()`) actually correct?**
   _`run_backtest()` has 14 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 13 inferred relationships involving `main()` (e.g. with `build_features()` and `forward_returns()`) actually correct?**
   _`main()` has 13 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 14 inferred relationships involving `build_features()` (e.g. with `main()` and `run_cv()`) actually correct?**
+  _`build_features()` has 14 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 7 inferred relationships involving `SpicesBoardLoader` (e.g. with `BaseLoader` and `ValidationError`) actually correct?**
   _`SpicesBoardLoader` has 7 INFERRED edges - model-reasoned connections that need verification._

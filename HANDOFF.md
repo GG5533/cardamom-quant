@@ -36,6 +36,18 @@
 > `.claude/agents/quant-researcher` agent — the trial-discipline
 > automation works.
 >
+> **ESTIMATOR + LIVE LOOP (16-Jul):** `scripts/robust_estimate.py`
+> replaced the single fold layout with a declared 6-layout family —
+> single layouts range +0.01…+0.69; the standing champion estimate is
+> the BLENDED **+0.43, 90% CI [−0.01, +0.90]** (much of +0.79 was
+> slicing luck; reported as found). Prospective validation is LIVE:
+> `src/live/ledger.py` (hash-chained, tamper-evident, tested) +
+> `scripts/forecast.py`; first 5 forecasts logged 16-Jul (P(up)=0.53).
+> `scripts/weekly_update.sh` + a launchd plist are staged — the user
+> must run `launchctl load ~/Library/LaunchAgents/
+> com.samihabbal.cardamom-weekly.plist` to arm Sunday-18:00 automation.
+> 77 tests. NEVER edit data/live/*.csv by hand — the chains will scream.
+>
 > **ROUND 5 (Guatemala, primary source):** Comtrade paywalled its keyless
 > tier, so the feed was rebuilt from Banco de Guatemala's annual volume
 > series (`src/data/banguat.py`, 69 tests total). Real data, right story

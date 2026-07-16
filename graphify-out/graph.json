@@ -193,6 +193,96 @@
       "norm_label": "mutating today's auction must not change today's features."
     },
     {
+      "label": "test_live_ledger.py",
+      "file_type": "code",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L1",
+      "id": "tests_test_live_ledger_py",
+      "community": 7,
+      "norm_label": "test_live_ledger.py"
+    },
+    {
+      "label": "_ledger()",
+      "file_type": "code",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L21",
+      "id": "tests_test_live_ledger_ledger",
+      "community": 7,
+      "norm_label": "_ledger()"
+    },
+    {
+      "label": "test_chain_appends_and_verifies()",
+      "file_type": "code",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L25",
+      "id": "tests_test_live_ledger_test_chain_appends_and_verifies",
+      "community": 7,
+      "norm_label": "test_chain_appends_and_verifies()"
+    },
+    {
+      "label": "test_chain_detects_tampering()",
+      "file_type": "code",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L32",
+      "id": "tests_test_live_ledger_test_chain_detects_tampering",
+      "community": 7,
+      "norm_label": "test_chain_detects_tampering()"
+    },
+    {
+      "label": "test_chain_detects_deletion()",
+      "file_type": "code",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L43",
+      "id": "tests_test_live_ledger_test_chain_detects_deletion",
+      "community": 7,
+      "norm_label": "test_chain_detects_deletion()"
+    },
+    {
+      "label": "test_missing_field_rejected()",
+      "file_type": "code",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L53",
+      "id": "tests_test_live_ledger_test_missing_field_rejected",
+      "community": 7,
+      "norm_label": "test_missing_field_rejected()"
+    },
+    {
+      "label": "_market()",
+      "file_type": "code",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L58",
+      "id": "tests_test_live_ledger_market",
+      "community": 7,
+      "norm_label": "_market()"
+    },
+    {
+      "label": "test_tail_features_match_unextended()",
+      "file_type": "code",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L69",
+      "id": "tests_test_live_ledger_test_tail_features_match_unextended",
+      "community": 0,
+      "norm_label": "test_tail_features_match_unextended()"
+    },
+    {
+      "label": "Tests for the tamper-evident forecast ledger + live feature builder (offline).",
+      "file_type": "rationale",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L1",
+      "id": "tests_test_live_ledger_rationale_1",
+      "community": 7,
+      "norm_label": "tests for the tamper-evident forecast ledger + live feature builder (offline)."
+    },
+    {
+      "label": "The synthetic extension must not contaminate real rows' features.",
+      "file_type": "rationale",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L70",
+      "id": "tests_test_live_ledger_rationale_70",
+      "community": 0,
+      "norm_label": "the synthetic extension must not contaminate real rows' features."
+    },
+    {
       "label": "test_signal_layer.py",
       "file_type": "code",
       "source_file": "tests/test_signal_layer.py",
@@ -576,7 +666,7 @@
       "source_file": "tests/test_analysis.py",
       "source_location": "L103",
       "id": "tests_test_analysis_test_shap_on_gbm_if_available",
-      "community": 7,
+      "community": 2,
       "norm_label": "test_shap_on_gbm_if_available()"
     },
     {
@@ -774,7 +864,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L1",
       "id": "tests_test_loaders_py",
-      "community": 5,
+      "community": 42,
       "norm_label": "test_loaders.py"
     },
     {
@@ -783,7 +873,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L27",
       "id": "tests_test_loaders_test_spices_parse_html",
-      "community": 5,
+      "community": 42,
       "norm_label": "test_spices_parse_html()"
     },
     {
@@ -792,7 +882,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L36",
       "id": "tests_test_loaders_test_spices_daily_aggregation_qty_weighted",
-      "community": 5,
+      "community": 42,
       "norm_label": "test_spices_daily_aggregation_qty_weighted()"
     },
     {
@@ -801,7 +891,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L51",
       "id": "tests_test_loaders_test_spices_loader_end_to_end",
-      "community": 5,
+      "community": 42,
       "norm_label": "test_spices_loader_end_to_end()"
     },
     {
@@ -810,7 +900,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L61",
       "id": "tests_test_loaders_test_spices_validation_rejects_garbage",
-      "community": 5,
+      "community": 42,
       "norm_label": "test_spices_validation_rejects_garbage()"
     },
     {
@@ -819,7 +909,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L73",
       "id": "tests_test_loaders_mcx_loader",
-      "community": 5,
+      "community": 42,
       "norm_label": "_mcx_loader()"
     },
     {
@@ -828,7 +918,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L81",
       "id": "tests_test_loaders_test_mcx_parses_both_schema_eras",
-      "community": 5,
+      "community": 42,
       "norm_label": "test_mcx_parses_both_schema_eras()"
     },
     {
@@ -837,7 +927,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L92",
       "id": "tests_test_loaders_test_mcx_front_selection_and_spliced_return",
-      "community": 5,
+      "community": 42,
       "norm_label": "test_mcx_front_selection_and_spliced_return()"
     },
     {
@@ -846,7 +936,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L106",
       "id": "tests_test_loaders_test_mcx_continuous_level_no_roll_jump",
-      "community": 5,
+      "community": 42,
       "norm_label": "test_mcx_continuous_level_no_roll_jump()"
     },
     {
@@ -855,7 +945,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L131",
       "id": "tests_test_loaders_test_mcx_regime_guard",
-      "community": 5,
+      "community": 42,
       "norm_label": "test_mcx_regime_guard()"
     },
     {
@@ -864,7 +954,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L149",
       "id": "tests_test_loaders_test_rain_anomaly_math",
-      "community": 5,
+      "community": 42,
       "norm_label": "test_rain_anomaly_math()"
     },
     {
@@ -882,7 +972,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L183",
       "id": "tests_test_loaders_test_build_market_dataset_alignment",
-      "community": 5,
+      "community": 42,
       "norm_label": "test_build_market_dataset_alignment()"
     },
     {
@@ -891,7 +981,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L1",
       "id": "tests_test_loaders_rationale_1",
-      "community": 5,
+      "community": 42,
       "norm_label": "unit tests for the real-data ingestion layer.  everything here runs offline agai"
     },
     {
@@ -900,7 +990,7 @@
       "source_file": "tests/test_loaders.py",
       "source_location": "L107",
       "id": "tests_test_loaders_rationale_107",
-      "community": 5,
+      "community": 42,
       "norm_label": "on a roll day the spliced return must be the new contract's own     day-over-day"
     },
     {
@@ -1201,6 +1291,78 @@
       "norm_label": "edge hunt, round 4 \u2014 feature displacement, one pre-registered trial.      python"
     },
     {
+      "label": "forecast.py",
+      "file_type": "code",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L1",
+      "id": "scripts_forecast_py",
+      "community": 7,
+      "norm_label": "forecast.py"
+    },
+    {
+      "label": "features_all_rows()",
+      "file_type": "code",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L48",
+      "id": "scripts_forecast_features_all_rows",
+      "community": 0,
+      "norm_label": "features_all_rows()"
+    },
+    {
+      "label": "fit_champion()",
+      "file_type": "code",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L65",
+      "id": "scripts_forecast_fit_champion",
+      "community": 7,
+      "norm_label": "fit_champion()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L79",
+      "id": "scripts_forecast_main",
+      "community": 7,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Live champion forecast + prospective scoring \u2014 run weekly, after scripts/refresh",
+      "file_type": "rationale",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L1",
+      "id": "scripts_forecast_rationale_1",
+      "community": 7,
+      "norm_label": "live champion forecast + prospective scoring \u2014 run weekly, after scripts/refresh"
+    },
+    {
+      "label": "Champion feature matrix for EVERY real auction day, tail included.      Returns",
+      "file_type": "rationale",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L49",
+      "id": "scripts_forecast_rationale_49",
+      "community": 0,
+      "norm_label": "champion feature matrix for every real auction day, tail included.      returns"
+    },
+    {
+      "label": "Full-data champion fit: GBM on the front, isotonic on a purged tail.",
+      "file_type": "rationale",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L66",
+      "id": "scripts_forecast_rationale_66",
+      "community": 7,
+      "norm_label": "full-data champion fit: gbm on the front, isotonic on a purged tail."
+    },
+    {
+      "label": "weekly_update.sh",
+      "file_type": "code",
+      "source_file": "scripts/weekly_update.sh",
+      "source_location": "L1",
+      "id": "scripts_weekly_update_sh",
+      "community": 45,
+      "norm_label": "weekly_update.sh"
+    },
+    {
       "label": "repair_sessions.py",
       "file_type": "code",
       "source_file": "scripts/repair_sessions.py",
@@ -1395,7 +1557,7 @@
       "source_file": "scripts/horizon_experiment.py",
       "source_location": "L107",
       "id": "scripts_horizon_experiment_grid_cell",
-      "community": 0,
+      "community": 31,
       "norm_label": "grid_cell()"
     },
     {
@@ -1433,6 +1595,33 @@
       "id": "scripts_horizon_experiment_rationale_88",
       "community": 0,
       "norm_label": "staggered implementation: 1/reb of the book rebalances each day.      a single 5"
+    },
+    {
+      "label": "robust_estimate.py",
+      "file_type": "code",
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L1",
+      "id": "scripts_robust_estimate_py",
+      "community": 0,
+      "norm_label": "robust_estimate.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L50",
+      "id": "scripts_robust_estimate_main",
+      "community": 0,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Slicing-robust champion estimate \u2014 kill the fold-boundary wobble.      python sc",
+      "file_type": "rationale",
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L1",
+      "id": "scripts_robust_estimate_rationale_1",
+      "community": 0,
+      "norm_label": "slicing-robust champion estimate \u2014 kill the fold-boundary wobble.      python sc"
     },
     {
       "label": "edge_hunt.py",
@@ -1728,7 +1917,7 @@
       "source_file": "src/analysis/interpret.py",
       "source_location": "L1",
       "id": "src_analysis_interpret_py",
-      "community": 7,
+      "community": 2,
       "norm_label": "interpret.py"
     },
     {
@@ -1737,7 +1926,7 @@
       "source_file": "src/analysis/interpret.py",
       "source_location": "L22",
       "id": "analysis_interpret_shap_values_for",
-      "community": 7,
+      "community": 2,
       "norm_label": "shap_values_for()"
     },
     {
@@ -1746,7 +1935,7 @@
       "source_file": "src/analysis/interpret.py",
       "source_location": "L48",
       "id": "analysis_interpret_mean_abs_shap",
-      "community": 7,
+      "community": 2,
       "norm_label": "mean_abs_shap()"
     },
     {
@@ -1755,7 +1944,7 @@
       "source_file": "src/analysis/interpret.py",
       "source_location": "L53",
       "id": "analysis_interpret_shap_report",
-      "community": 7,
+      "community": 2,
       "norm_label": "shap_report()"
     },
     {
@@ -1764,7 +1953,7 @@
       "source_file": "src/analysis/interpret.py",
       "source_location": "L1",
       "id": "analysis_interpret_rationale_1",
-      "community": 7,
+      "community": 2,
       "norm_label": "shap interpretability \u2014 per-prediction attribution on top of the permutation imp"
     },
     {
@@ -1773,7 +1962,7 @@
       "source_file": "src/analysis/interpret.py",
       "source_location": "L23",
       "id": "analysis_interpret_rationale_23",
-      "community": 7,
+      "community": 2,
       "norm_label": "shap values for a fitted model from src/models/baselines.py.      logistic  -> l"
     },
     {
@@ -1782,7 +1971,7 @@
       "source_file": "src/analysis/interpret.py",
       "source_location": "L49",
       "id": "analysis_interpret_rationale_49",
-      "community": 7,
+      "community": 2,
       "norm_label": "global importance: mean |shap| per feature, descending."
     },
     {
@@ -2560,6 +2749,141 @@
       "norm_label": "same execution/cost mechanics for a strategy that emits target weights     direc"
     },
     {
+      "label": "ledger.py",
+      "file_type": "code",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L1",
+      "id": "src_live_ledger_py",
+      "community": 7,
+      "norm_label": "ledger.py"
+    },
+    {
+      "label": "_canon()",
+      "file_type": "code",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L33",
+      "id": "live_ledger_canon",
+      "community": 7,
+      "norm_label": "_canon()"
+    },
+    {
+      "label": "_chain_hash()",
+      "file_type": "code",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L37",
+      "id": "live_ledger_chain_hash",
+      "community": 7,
+      "norm_label": "_chain_hash()"
+    },
+    {
+      "label": "ChainedCsv",
+      "file_type": "code",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L41",
+      "id": "live_ledger_chainedcsv",
+      "community": 7,
+      "norm_label": "chainedcsv"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L44",
+      "id": "live_ledger_chainedcsv_init",
+      "community": 7,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".read()",
+      "file_type": "code",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L48",
+      "id": "live_ledger_chainedcsv_read",
+      "community": 7,
+      "norm_label": ".read()"
+    },
+    {
+      "label": ".last_hash()",
+      "file_type": "code",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L53",
+      "id": "live_ledger_chainedcsv_last_hash",
+      "community": 7,
+      "norm_label": ".last_hash()"
+    },
+    {
+      "label": ".append()",
+      "file_type": "code",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L57",
+      "id": "live_ledger_chainedcsv_append",
+      "community": 7,
+      "norm_label": ".append()"
+    },
+    {
+      "label": ".verify_chain()",
+      "file_type": "code",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L68",
+      "id": "live_ledger_chainedcsv_verify_chain",
+      "community": 7,
+      "norm_label": ".verify_chain()"
+    },
+    {
+      "label": "forecast_ledger()",
+      "file_type": "code",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L102",
+      "id": "live_ledger_forecast_ledger",
+      "community": 7,
+      "norm_label": "forecast_ledger()"
+    },
+    {
+      "label": "outcome_ledger()",
+      "file_type": "code",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L106",
+      "id": "live_ledger_outcome_ledger",
+      "community": 7,
+      "norm_label": "outcome_ledger()"
+    },
+    {
+      "label": "Tamper-evident forecast ledger \u2014 the prospective-validation backbone.  A backtes",
+      "file_type": "rationale",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L1",
+      "id": "live_ledger_rationale_1",
+      "community": 7,
+      "norm_label": "tamper-evident forecast ledger \u2014 the prospective-validation backbone.  a backtes"
+    },
+    {
+      "label": "Append-only CSV where every row extends a hash chain.",
+      "file_type": "rationale",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L42",
+      "id": "live_ledger_rationale_42",
+      "community": 7,
+      "norm_label": "append-only csv where every row extends a hash chain."
+    },
+    {
+      "label": "Recompute every hash; raise on the first broken link.",
+      "file_type": "rationale",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L69",
+      "id": "live_ledger_rationale_69",
+      "community": 7,
+      "norm_label": "recompute every hash; raise on the first broken link."
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/live/__init__.py",
+      "source_location": "L1",
+      "id": "src_live_init_py",
+      "community": 46,
+      "norm_label": "__init__.py"
+    },
+    {
       "label": "synthetic.py",
       "file_type": "code",
       "source_file": "src/data/synthetic.py",
@@ -3096,7 +3420,7 @@
       "source_file": "src/data/__init__.py",
       "source_location": "L1",
       "id": "src_data_init_py",
-      "community": 42,
+      "community": 41,
       "norm_label": "__init__.py"
     },
     {
@@ -3105,7 +3429,7 @@
       "source_file": "src/data/__init__.py",
       "source_location": "L1",
       "id": "data_init_rationale_1",
-      "community": 42,
+      "community": 41,
       "norm_label": "real-data ingestion layer for cardamom-quant."
     },
     {
@@ -3114,7 +3438,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L1",
       "id": "src_data_imd_rainfall_py",
-      "community": 42,
+      "community": 40,
       "norm_label": "imd_rainfall.py"
     },
     {
@@ -3150,7 +3474,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L71",
       "id": "data_imd_rainfall_imdrainfallloader_parse",
-      "community": 42,
+      "community": 40,
       "norm_label": ".parse()"
     },
     {
@@ -3159,7 +3483,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L95",
       "id": "data_imd_rainfall_add_anomaly",
-      "community": 42,
+      "community": 40,
       "norm_label": "add_anomaly()"
     },
     {
@@ -3177,7 +3501,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L1",
       "id": "data_imd_rainfall_rationale_1",
-      "community": 42,
+      "community": 40,
       "norm_label": "imdrainfallloader \u2014 idukki cardamom-belt rainfall with anomaly features.  histor"
     },
     {
@@ -3195,7 +3519,7 @@
       "source_file": "src/data/imd_rainfall.py",
       "source_location": "L72",
       "id": "data_imd_rainfall_rationale_72",
-      "community": 42,
+      "community": 40,
       "norm_label": "gridded binary -> idukki daily area-mean -> anomaly features."
     },
     {
@@ -3892,10 +4216,37 @@
       "norm_label": "estimator variance"
     },
     {
-      "label": "Roadmap implied by the numbers",
+      "label": "The slicing-robust estimate (16-Jul-2026): the honest headline drops",
       "file_type": "document",
       "source_file": "RESULTS_REAL.md",
       "source_location": "L217",
+      "id": "cardamom_quant_results_real_the_slicing_robust_estimate_16_jul_2026_the_honest_headline_drops",
+      "community": 17,
+      "norm_label": "the slicing-robust estimate (16-jul-2026): the honest headline drops"
+    },
+    {
+      "label": "to +0.43",
+      "file_type": "document",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L218",
+      "id": "cardamom_quant_results_real_to_0_43",
+      "community": 17,
+      "norm_label": "to +0.43"
+    },
+    {
+      "label": "PROSPECTIVE VALIDATION (live since 16-Jul-2026)",
+      "file_type": "document",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L248",
+      "id": "cardamom_quant_results_real_prospective_validation_live_since_16_jul_2026",
+      "community": 17,
+      "norm_label": "prospective validation (live since 16-jul-2026)"
+    },
+    {
+      "label": "Roadmap implied by the numbers",
+      "file_type": "document",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L260",
       "id": "cardamom_quant_results_real_roadmap_implied_by_the_numbers",
       "community": 17,
       "norm_label": "roadmap implied by the numbers"
@@ -4237,7 +4588,7 @@
       "label": "What this is",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L48",
+      "source_location": "L60",
       "id": "cardamom_quant_handoff_what_this_is",
       "community": 10,
       "norm_label": "what this is"
@@ -4246,7 +4597,7 @@
       "label": "State: what is DONE",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L57",
+      "source_location": "L69",
       "id": "cardamom_quant_handoff_state_what_is_done",
       "community": 10,
       "norm_label": "state: what is done"
@@ -4255,7 +4606,7 @@
       "label": "First 30 minutes in VS Code",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L76",
+      "source_location": "L88",
       "id": "cardamom_quant_handoff_first_30_minutes_in_vs_code",
       "community": 10,
       "norm_label": "first 30 minutes in vs code"
@@ -4264,7 +4615,7 @@
       "label": "code:bash (cd cardamom-quant)",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L78",
+      "source_location": "L90",
       "id": "cardamom_quant_handoff_codeblock_1",
       "community": 10,
       "norm_label": "code:bash (cd cardamom-quant)"
@@ -4273,7 +4624,7 @@
       "label": "Priority queue (in order of expected value)",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L94",
+      "source_location": "L106",
       "id": "cardamom_quant_handoff_priority_queue_in_order_of_expected_value",
       "community": 10,
       "norm_label": "priority queue (in order of expected value)"
@@ -4282,7 +4633,7 @@
       "label": "Gotchas / tribal knowledge",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L119",
+      "source_location": "L131",
       "id": "cardamom_quant_handoff_gotchas_tribal_knowledge",
       "community": 10,
       "norm_label": "gotchas / tribal knowledge"
@@ -4291,7 +4642,7 @@
       "label": "One-line status if anyone asks",
       "file_type": "document",
       "source_file": "HANDOFF.md",
-      "source_location": "L146",
+      "source_location": "L158",
       "id": "cardamom_quant_handoff_one_line_status_if_anyone_asks",
       "community": 10,
       "norm_label": "one-line status if anyone asks"
@@ -5172,6 +5523,195 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_py",
+      "target": "tests_test_live_ledger_ledger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_py",
+      "target": "tests_test_live_ledger_test_chain_appends_and_verifies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_py",
+      "target": "tests_test_live_ledger_test_chain_detects_tampering",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_py",
+      "target": "tests_test_live_ledger_test_chain_detects_deletion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_py",
+      "target": "tests_test_live_ledger_test_missing_field_rejected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_py",
+      "target": "tests_test_live_ledger_market",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_py",
+      "target": "tests_test_live_ledger_test_tail_features_match_unextended",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_rationale_1",
+      "target": "tests_test_live_ledger_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_test_chain_appends_and_verifies",
+      "target": "tests_test_live_ledger_ledger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_test_chain_detects_tampering",
+      "target": "tests_test_live_ledger_ledger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_test_chain_detects_deletion",
+      "target": "tests_test_live_ledger_ledger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_test_missing_field_rejected",
+      "target": "tests_test_live_ledger_ledger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_ledger",
+      "target": "live_ledger_chainedcsv"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_test_tail_features_match_unextended",
+      "target": "tests_test_live_ledger_market",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_rationale_70",
+      "target": "tests_test_live_ledger_test_tail_features_match_unextended",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_test_tail_features_match_unextended",
+      "target": "scripts_forecast_features_all_rows"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_test_tail_features_match_unextended",
+      "target": "features_engineering_build_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_live_ledger.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "tests_test_live_ledger_test_tail_features_match_unextended",
+      "target": "features_auction_physics_build_physics_features"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_signal_layer.py",
       "source_location": "L41",
       "weight": 1.0,
@@ -6025,9 +6565,9 @@
       "source_file": "tests/test_spices_refresh.py",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_spices_refresh_py",
-      "target": "tests_test_spices_refresh_page",
-      "confidence_score": 1.0
+      "target": "tests_test_spices_refresh_page"
     },
     {
       "relation": "contains",
@@ -6035,9 +6575,9 @@
       "source_file": "tests/test_spices_refresh.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_spices_refresh_py",
-      "target": "tests_test_spices_refresh_test_parse_th_header_markup",
-      "confidence_score": 1.0
+      "target": "tests_test_spices_refresh_test_parse_th_header_markup"
     },
     {
       "relation": "contains",
@@ -6045,9 +6585,9 @@
       "source_file": "tests/test_spices_refresh.py",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_spices_refresh_py",
-      "target": "tests_test_spices_refresh_test_parse_plain_row_header_markup",
-      "confidence_score": 1.0
+      "target": "tests_test_spices_refresh_test_parse_plain_row_header_markup"
     },
     {
       "relation": "contains",
@@ -6055,9 +6595,9 @@
       "source_file": "tests/test_spices_refresh.py",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_spices_refresh_py",
-      "target": "tests_test_spices_refresh_test_canon_auctioneer_bridges_comma_semicolon",
-      "confidence_score": 1.0
+      "target": "tests_test_spices_refresh_test_canon_auctioneer_bridges_comma_semicolon"
     },
     {
       "relation": "rationale_for",
@@ -6065,9 +6605,9 @@
       "source_file": "tests/test_spices_refresh.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_spices_refresh_rationale_1",
-      "target": "tests_test_spices_refresh_py",
-      "confidence_score": 1.0
+      "target": "tests_test_spices_refresh_py"
     },
     {
       "relation": "calls",
@@ -6076,9 +6616,9 @@
       "source_file": "tests/test_spices_refresh.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_spices_refresh_test_parse_th_header_markup",
-      "target": "tests_test_spices_refresh_page",
-      "confidence_score": 1.0
+      "target": "tests_test_spices_refresh_page"
     },
     {
       "relation": "calls",
@@ -6087,9 +6627,9 @@
       "source_file": "tests/test_spices_refresh.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_spices_refresh_test_parse_plain_row_header_markup",
-      "target": "tests_test_spices_refresh_page",
-      "confidence_score": 1.0
+      "target": "tests_test_spices_refresh_page"
     },
     {
       "relation": "rationale_for",
@@ -6097,9 +6637,9 @@
       "source_file": "tests/test_spices_refresh.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_spices_refresh_rationale_37",
-      "target": "tests_test_spices_refresh_test_parse_plain_row_header_markup",
-      "confidence_score": 1.0
+      "target": "tests_test_spices_refresh_test_parse_plain_row_header_markup"
     },
     {
       "relation": "calls",
@@ -7042,9 +7582,9 @@
       "source_file": "scripts/refresh_spot.py",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_refresh_spot_py",
-      "target": "scripts_refresh_spot_canon_auctioneer",
-      "confidence_score": 1.0
+      "target": "scripts_refresh_spot_canon_auctioneer"
     },
     {
       "relation": "contains",
@@ -7052,9 +7592,9 @@
       "source_file": "scripts/refresh_spot.py",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_refresh_spot_py",
-      "target": "scripts_refresh_spot_rebuild_market",
-      "confidence_score": 1.0
+      "target": "scripts_refresh_spot_rebuild_market"
     },
     {
       "relation": "contains",
@@ -7062,9 +7602,9 @@
       "source_file": "scripts/refresh_spot.py",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_refresh_spot_py",
-      "target": "scripts_refresh_spot_main",
-      "confidence_score": 1.0
+      "target": "scripts_refresh_spot_main"
     },
     {
       "relation": "rationale_for",
@@ -7072,9 +7612,9 @@
       "source_file": "scripts/refresh_spot.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_refresh_spot_rationale_1",
-      "target": "scripts_refresh_spot_py",
-      "confidence_score": 1.0
+      "target": "scripts_refresh_spot_py"
     },
     {
       "relation": "calls",
@@ -7083,9 +7623,9 @@
       "source_file": "scripts/refresh_spot.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_refresh_spot_main",
-      "target": "scripts_refresh_spot_canon_auctioneer",
-      "confidence_score": 1.0
+      "target": "scripts_refresh_spot_canon_auctioneer"
     },
     {
       "relation": "rationale_for",
@@ -7093,9 +7633,9 @@
       "source_file": "scripts/refresh_spot.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_refresh_spot_rationale_53",
-      "target": "scripts_refresh_spot_canon_auctioneer",
-      "confidence_score": 1.0
+      "target": "scripts_refresh_spot_canon_auctioneer"
     },
     {
       "relation": "calls",
@@ -7104,9 +7644,9 @@
       "source_file": "scripts/refresh_spot.py",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_refresh_spot_main",
-      "target": "scripts_refresh_spot_rebuild_market",
-      "confidence_score": 1.0
+      "target": "scripts_refresh_spot_rebuild_market"
     },
     {
       "relation": "calls",
@@ -7312,6 +7852,143 @@
       "weight": 1.0,
       "source": "scripts_displacement_trial_main",
       "target": "analysis_robustness_deflated_sharpe"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "scripts_forecast_py",
+      "target": "scripts_forecast_features_all_rows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "scripts_forecast_py",
+      "target": "scripts_forecast_fit_champion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "scripts_forecast_py",
+      "target": "scripts_forecast_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_forecast_rationale_1",
+      "target": "scripts_forecast_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "scripts_forecast_main",
+      "target": "scripts_forecast_features_all_rows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "scripts_forecast_rationale_49",
+      "target": "scripts_forecast_features_all_rows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/forecast.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "scripts_forecast_features_all_rows",
+      "target": "features_engineering_build_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/forecast.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "scripts_forecast_features_all_rows",
+      "target": "features_auction_physics_build_physics_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "scripts_forecast_main",
+      "target": "scripts_forecast_fit_champion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/forecast.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "scripts_forecast_rationale_66",
+      "target": "scripts_forecast_fit_champion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/forecast.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "scripts_forecast_fit_champion",
+      "target": "models_baselines_make_gbm"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/forecast.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "scripts_forecast_main",
+      "target": "live_ledger_forecast_ledger"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/forecast.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "scripts_forecast_main",
+      "target": "live_ledger_outcome_ledger"
     },
     {
       "relation": "contains",
@@ -7782,6 +8459,17 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "scripts_robust_estimate_main",
+      "target": "scripts_horizon_experiment_tranched_net_returns"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "scripts/edge_hunt.py",
       "source_location": "L98",
       "weight": 1.0,
@@ -7919,6 +8607,103 @@
       "weight": 1.0,
       "source": "scripts_horizon_experiment_main",
       "target": "analysis_robustness_deflated_sharpe"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "scripts_robust_estimate_py",
+      "target": "scripts_robust_estimate_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_robust_estimate_rationale_1",
+      "target": "scripts_robust_estimate_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "scripts_robust_estimate_main",
+      "target": "features_engineering_build_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "scripts_robust_estimate_main",
+      "target": "features_auction_physics_build_physics_features"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "scripts_robust_estimate_main",
+      "target": "validation_walkforward_purgedwalkforward"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "scripts_robust_estimate_main",
+      "target": "scripts_edge_hunt_calibrated_fold_proba"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "scripts_robust_estimate_main",
+      "target": "src_metrics_backtest_metrics"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "scripts_robust_estimate_main",
+      "target": "analysis_robustness_block_bootstrap_sharpe"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/robust_estimate.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "scripts_robust_estimate_main",
+      "target": "src_metrics_classification_metrics"
     },
     {
       "relation": "contains",
@@ -9742,6 +10527,235 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "src_live_ledger_py",
+      "target": "live_ledger_canon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_live_ledger_py",
+      "target": "live_ledger_chain_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "src_live_ledger_py",
+      "target": "live_ledger_chainedcsv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "src_live_ledger_py",
+      "target": "live_ledger_forecast_ledger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "src_live_ledger_py",
+      "target": "live_ledger_outcome_ledger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "live_ledger_rationale_1",
+      "target": "src_live_ledger_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv_append",
+      "target": "live_ledger_canon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv_verify_chain",
+      "target": "live_ledger_canon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv_append",
+      "target": "live_ledger_chain_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv_verify_chain",
+      "target": "live_ledger_chain_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv",
+      "target": "live_ledger_chainedcsv_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv",
+      "target": "live_ledger_chainedcsv_read",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv",
+      "target": "live_ledger_chainedcsv_last_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv",
+      "target": "live_ledger_chainedcsv_append",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv",
+      "target": "live_ledger_chainedcsv_verify_chain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "live_ledger_forecast_ledger",
+      "target": "live_ledger_chainedcsv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "live_ledger_outcome_ledger",
+      "target": "live_ledger_chainedcsv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "live_ledger_rationale_42",
+      "target": "live_ledger_chainedcsv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv_last_hash",
+      "target": "live_ledger_chainedcsv_read",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv_verify_chain",
+      "target": "live_ledger_chainedcsv_read",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "live_ledger_chainedcsv_append",
+      "target": "live_ledger_chainedcsv_last_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/live/ledger.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "live_ledger_rationale_69",
+      "target": "live_ledger_chainedcsv_verify_chain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/data/synthetic.py",
       "source_location": "L23",
       "weight": 1.0,
@@ -10541,9 +11555,9 @@
       "source_file": "src/data/spices_board.py",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_spices_board_rationale_145",
-      "target": "data_spices_board_spicesboardloader_parse_sessions",
-      "confidence_score": 1.0
+      "target": "data_spices_board_spicesboardloader_parse_sessions"
     },
     {
       "relation": "rationale_for",
@@ -10572,9 +11586,9 @@
       "source_file": "src/data/spices_board.py",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_spices_board_rationale_157",
-      "target": "data_spices_board_spicesboardloader_parse",
-      "confidence_score": 1.0
+      "target": "data_spices_board_spicesboardloader_parse"
     },
     {
       "relation": "rationale_for",
@@ -11656,9 +12670,9 @@
       "source_file": "RESULTS_REAL.md",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
-      "target": "cardamom_quant_results_real_dataset_v1_1_15_jul_2026_the_lever_pulled_and_a_lesson_in",
-      "confidence_score": 1.0
+      "target": "cardamom_quant_results_real_dataset_v1_1_15_jul_2026_the_lever_pulled_and_a_lesson_in"
     },
     {
       "relation": "contains",
@@ -11666,8 +12680,38 @@
       "source_file": "RESULTS_REAL.md",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
-      "target": "cardamom_quant_results_real_estimator_variance",
+      "target": "cardamom_quant_results_real_estimator_variance"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L217",
+      "weight": 1.0,
+      "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
+      "target": "cardamom_quant_results_real_the_slicing_robust_estimate_16_jul_2026_the_honest_headline_drops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L218",
+      "weight": 1.0,
+      "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
+      "target": "cardamom_quant_results_real_to_0_43",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESULTS_REAL.md",
+      "source_location": "L248",
+      "weight": 1.0,
+      "source": "cardamom_quant_results_real_real_out_of_sample_results_july_7_2026",
+      "target": "cardamom_quant_results_real_prospective_validation_live_since_16_jul_2026",
       "confidence_score": 1.0
     },
     {
@@ -12136,9 +13180,9 @@
       "source_file": ".claude/skills/verify/SKILL.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "verify_skill_verifying_cardamom_quant",
-      "target": "verify_skill_5_data_lineage",
-      "confidence_score": 1.0
+      "target": "verify_skill_5_data_lineage"
     },
     {
       "relation": "contains",
@@ -12146,9 +13190,9 @@
       "source_file": ".claude/skills/verify/SKILL.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "verify_skill_verifying_cardamom_quant",
-      "target": "verify_skill_6_honesty_checklist_read_results_real_md_ledger_line",
-      "confidence_score": 1.0
+      "target": "verify_skill_6_honesty_checklist_read_results_real_md_ledger_line"
     },
     {
       "relation": "contains",
@@ -12332,5 +13376,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "81ee4c9965597a670de3a90f9cef178ac4853ae6"
+  "built_at_commit": "5d24154f372dbcc7a5a10eefa21b9fb4f4199052"
 }
