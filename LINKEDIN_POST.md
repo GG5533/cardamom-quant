@@ -50,19 +50,27 @@ said turnover, not skill, was the killer: 16.6× annual turnover trading a
 5-day signal daily. So I matched the trading to the label — isotonic-
 calibrated probabilities, rebalanced at the 5-day horizon, implemented as
 five staggered tranches so no lucky anchor day flatters the number.
-That book earns Sharpe +0.57, 90% CI [+0.05, +1.12], p(Sharpe≤0) 3.6% —
-and I still won't call it an edge, because the Deflated Sharpe against
-all 24 configurations I ever evaluated is 0.49. The honest label is *a
-defensible maybe*: the first configuration to beat the seasonal rule and
-clear zero, reported with the multiple-testing haircut that says it isn't
-yet a discovery. A backtest that can say "no" is the only kind whose
-"maybe" means anything.
+Then I mined the columns nobody models — the auction's own physics:
+the max/average bid spread (competition intensity), crop-year inventory
+overhang, a rolling Hurst regime dial. That configuration printed Sharpe
++0.79. And here is the part I'm most proud of: I then attacked my own
+number twice. Re-slicing the walk-forward folds after a data refresh
+moved it to +0.69; averaging over six equally-defensible fold layouts —
+because the layout every table used turned out to be the luckiest of
+six — settled it at **+0.43, 90% CI [−0.01, +0.90]**, against a
+34-configuration deflated-Sharpe ledger where every failed idea stays
+counted. The honest label is *a maybe* — positive with ~94% confidence,
+shallow drawdowns, real classification skill (AUC 0.55) — and since
+July 2026 the model forecasts LIVE into an append-only, hash-chained
+ledger, scored as outcomes mature, because a backtest has degrees of
+freedom and a time-stamped forecast has none. A backtest that can say
+"no" is the only kind whose "maybe" means anything.
 
 Capacity caveat up front: this is a niche market (~₹25 crore/day through the
 auctions). The point was never scale — it was demonstrating desk-grade
 process on a market nobody else models.
 
-Repo: [link]. Stack: Python, pandas, scikit-learn, Streamlit. 56 tests,
+Repo: [link]. Stack: Python, pandas, scikit-learn, Streamlit. 77 tests,
 no notebook heroics.
 
 ---
@@ -75,10 +83,12 @@ lesson: the futures contract I planned to model had only 11 months of history
 problem around 12 years of cash-market e-auction data, with the future as a
 tradability overlay. Purged walk-forward, honest seasonal baseline, bootstrap
 CIs, deflated Sharpe. Result: real predictive signal (AUC 0.55 OOS) that dies
-at daily rebalancing and revives when traded at its own 5-day horizon in
-staggered tranches — Sharpe +0.57, CI clear of zero, and a deflated Sharpe
-of 0.49 that says I still can't call it an edge. Reporting that number with
-its haircut IS the portfolio piece. Repo in comments.
+at daily rebalancing, revives at its own 5-day horizon, peaks at +0.79 with
+auction-microstructure features — and settles at +0.43 once I averaged away
+my own fold-slicing luck. 34 configurations tried, every failure still in the
+ledger, and the model now forecasts live into a hash-chained ledger so the
+next number can't be argued with. Reporting the haircuts IS the portfolio
+piece. Repo in comments.
 
 ---
 

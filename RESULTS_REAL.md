@@ -257,17 +257,44 @@ crawl → verify → forecast → score. The running prospective scorecard
 prints on every run; it is the number that will eventually settle this
 project's question.
 
+## UPDATE (edge hunt, round 6): the probability ensemble — a tie,
+## called a tie
+
+T12 (`scripts/ensemble_trial.py`, pre-registered, evaluated
+slicing-robust from the start): per-day mean of the three calibrated
+streams that cleared zero solo (physics, kalman, rain). Ledger 34 → 35.
+
+Blended across the 6-layout family: **Sharpe +0.47, 90% CI [−0.03,
++1.01], AUC 0.544, hit +3.9pts, max_dd −7.1%** (single layouts −0.05…
++0.73). The pre-registered promote rule (beat +0.43) fires on the
+letter — by +0.04, between two estimates whose intervals are half a
+Sharpe wide. Reported as found: **a statistical tie.** Bagging did not
+hurt (unlike all four stacking attempts) but bought no measurable edge
+on this sample. Tiebreak goes to simplicity: the LIVE model stays
+physics-gbm (one model, already forecasting on-chain); T12 stands in
+the ledger as the nominal best number. DSR of T12 against all 35: 0.27.
+The backtest modeling front is now CLOSED pending new information
+(basis, forecast-rain) or live evidence.
+
+## Forecast-rain groundwork (pilot passed)
+
+`scripts/gefs_pilot.py` proved the keyless path to as-issued historical
+rain forecasts: NOAA GEFS v12 reforecast on anonymous S3, per-variable
+GRIB2, 27.5 MB/init, Idukki 5-day totals extract cleanly and pass the
+seasonality sanity check (monsoon init 109 mm vs dry-season 0 mm).
+Full reforecast-era backfill ≈ 36 GB streamed / ~1 h wall-clock, stored
+as a small CSV; the 2020+ leg uses the operational archive with .idx
+byte-range subsetting. The T13 forecast-rain trial is GO when scheduled.
+
 ## Roadmap implied by the numbers
 
-~~Horizon-matched rebalancing + calibration~~ (done). ~~Auction physics~~
-(done — champion, slicing-averaged +0.43). ~~Rain~~ (done — kept).
-~~Naive displacement~~ (done — killed). ~~Guatemala supply~~ (done —
-cut). ~~Refresh pipeline + live forecast ledger~~ (done — running).
-Open, in order: MCX basis (manual Bhavcopy drop), probability-ensemble
-trial (bagging the three solo-positive streams), forecast-rain trial
-(TIGGE archive for history, Aurora for live), and time itself — the
-ledgers accrue ~250 scored forecasts/year. Every new configuration
-grows the 34-trial DSR ledger.
+~~Horizon-matched + calibration~~ ~~auction physics~~ ~~rain~~
+~~displacement~~ ~~Guatemala~~ ~~refresh + live ledger~~ ~~slicing-
+robust estimator~~ ~~probability ensemble~~ (all done, all counted).
+Open: MCX basis (manual Bhavcopy drop — the one 10-minute human task),
+T13 forecast-rain backfill + trial (pilot passed, ~1 h of streaming),
+and the live ledgers accruing ~250 scored forecasts/year. Ledger
+stands at 35 trials.
 
 *Machine-verifiable provenance: every number above regenerates from
 `data/processed/market.parquet` via `python run.py`, `scripts/analyze.py`,

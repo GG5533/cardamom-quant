@@ -6,7 +6,7 @@
 # If the repo moves (plan item 6), update REPO here AND in the plist.
 set -euo pipefail
 
-REPO="/Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant"
+REPO="/Users/samihabbal/dev/cardamom-quant"
 PY="$REPO/.venv/bin/python"
 
 echo ""
