@@ -5,4 +5,7 @@ requests>=2.31
 lxml>=4.9          # pandas.read_html backend
 pyarrow>=14.0      # parquet caching (optional but recommended)
 imdlib>=0.1.19     # IMD gridded rainfall (only needed for the rain backfill)
+xarray>=2023.1     # GEFS GRIB2 forecast-rain backfill
+cfgrib>=0.9.10     # GRIB2 engine for xarray (needs eccodes on the system)
+playwright>=1.40   # MCX Bhavcopy browser automation (site is behind Akamai)
 pytest>=7.4        # tests
