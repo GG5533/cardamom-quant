@@ -42,3 +42,11 @@ IMD_RAW_DIR = RAW_DIR / "imd"
 IDUKKI_LAT = (9.4, 10.2)
 IDUKKI_LON = (76.7, 77.4)
 IMD_FIRST_YEAR = 2010           # backfill start; gridded data exists from 1901
+
+# ---------------------------------------------------------------------------
+# GEFS as-issued forecast rain (T13) — reforecast era only, see
+# scripts/gefs_backfill_reforecast.py and src/features/forecast_rain.py.
+# Coverage: 2014-11-07 -> 2019-12-31. The 2020+ operational-archive leg is
+# NOT built; this path has zero rows past 2019-12-31.
+# ---------------------------------------------------------------------------
+GEFS_FORECAST_RAIN_CSV = RAW_DIR / "climate" / "gefs_forecast_rain.csv"

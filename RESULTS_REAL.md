@@ -286,16 +286,85 @@ Full reforecast-era backfill ≈ 36 GB streamed / ~1 h wall-clock, stored
 as a small CSV; the 2020+ leg uses the operational archive with .idx
 byte-range subsetting. The T13 forecast-rain trial is GO when scheduled.
 
+## UPDATE (edge hunt, round 7): T13 forecast rain — the backfill lands,
+## and cut
+
+The reforecast-era backfill (`scripts/gefs_backfill_reforecast.py`)
+completed: `data/raw/climate/gefs_forecast_rain.csv`, 1341/1341 auction
+days, NOAA GEFS v12 as-issued 5-day accumulated Idukki-box precip
+forecast. **Coverage: 2014-11-07 → 2019-12-31 ONLY** — the 2020-present
+leg needs the operational GEFS archive with `.idx` byte-range subsetting
+and has not been built. This feature has ZERO rows past 2019-12-31 and
+does not overlap the live-trading window at all. Everything below is an
+honest answer to "did as-issued rain forecasts help during 2014-2019,"
+never a claim about current predictive power.
+
+Pre-registered hypothesis (`scripts/forecast_rain_trial.py`): unlike the
+already-tested realized/observed rain feature (T6: pays solo, backward-
+looking, +0.64 full-history Sharpe, but adds nothing on top of the
+physics champion), an as-issued 5-day forecast overlaps the label window
+directly — forward-looking at the moment of the trading decision, not
+after it. Evaluated two ways, both declared before running: (a) the
+standard vehicle restricted to the 2014-2019 covered window (n=1341,
+`PurgedWalkForward(n_splits=6, min_train=max(400, n//4))` — the existing
+formula already degrades gracefully at this sample size, so no fold-count
+reduction was needed); and (b) the T6 realized-rain configuration
+recomputed on the SAME window as a comparison baseline — not a new trial,
+same precedent as the v1.1 champion re-estimate above.
+
+| trial | Sharpe | 90% CI | p(SR≤0) | AUC | hit vs base |
+|---|---|---|---|---|---|
+| T6-equivalent, same window (comparison, not counted) | +1.11 | [+0.21, +1.94] | 0.020 | 0.557 | −4.2pts |
+| **T13 forecast-rain-gbm** (counted) | **+0.84** | [+0.08, +1.71] | **0.036** | 0.563 | −2.4pts |
+
+T13 clears zero on its own — but the decision rule was never "does T13
+clear zero in isolation," because BOTH rows in that table clear zero: the
+whole 2014-2019 window is favorable for this vehicle regardless of which
+rain feature (if any) it sees, so an isolated pass is not evidence the
+feature itself did anything. The pre-registered rule was PAY only if T13
+*also* beats the same-window realized-rain baseline. It does not:
+**−0.27 Sharpe** relative to core+realized-rain alone. Read honestly, the
+as-issued forecast is the fifth stacking-dilution result in this project
+(T5, T7, T10, and now T13) — one more tree column, even a theoretically
+well-motivated one, costs more on ~1,300 rows than it pays. **Cut.**
+
+One data-quality note surfaced in-run, reported because it's real and
+because a future reader will hit it too: the 2014-2015 crawl is sparse
+enough that the auction record has three gaps inside this window (68,
+107, 31 days — visible directly in `market.parquet`'s own index, not a
+parsing bug). The forecast feature's `shift(1)` — the same positional
+convention as `mom_5`/`mom_10`/`rain_anom_30` — means the 3 rows
+immediately after those gaps carry a forecast stale by that many days.
+Not a leak (still strictly-past information) and immaterial to the
+verdict above (3 of 1341 rows), but worth knowing before trusting any
+single-row diagnostic drawn from this window.
+
+Ledger: 35 → **36** (T13 counts regardless of outcome — a cut is still a
+counted trial, same rule as T3/T4/T9). DSR of T13 against the 36-trial
+ledger: **0.613** (expected max Sharpe from luck alone: 0.69) — high only
+because the 2014-2019 window inflates every Sharpe tested inside it, not
+a claim the feature pays; the −0.27 same-window delta is the number that
+actually speaks to the hypothesis. **Standing champion unchanged**
+(physics-gbm remains the live model; T12's ensemble tied it but did not
+beat it decisively). The forecast-rain loader, feature module, tests and
+backfill script all stay in the repo — the keyless path is real and the
+2020+ operational-archive leg is a well-specified next step if the
+question is ever worth re-asking on data that actually overlaps
+live trading — but the feature enters no configuration.
+
 ## Roadmap implied by the numbers
 
 ~~Horizon-matched + calibration~~ ~~auction physics~~ ~~rain~~
 ~~displacement~~ ~~Guatemala~~ ~~refresh + live ledger~~ ~~slicing-
-robust estimator~~ ~~probability ensemble~~ (all done, all counted).
+robust estimator~~ ~~probability ensemble~~ ~~forecast-rain backfill +
+trial (T13, cut)~~ (all done, all counted).
 Open: MCX basis (manual Bhavcopy drop — the one 10-minute human task),
-T13 forecast-rain backfill + trial (pilot passed, ~1 h of streaming),
-and the live ledgers accruing ~250 scored forecasts/year. Ledger
-stands at 35 trials.
+the GEFS 2020+ operational-archive leg (only worth building if a reason
+emerges to re-test forecast rain on data that overlaps live trading), and
+the live ledgers accruing ~250 scored forecasts/year. Ledger stands at
+36 trials.
 
 *Machine-verifiable provenance: every number above regenerates from
 `data/processed/market.parquet` via `python run.py`, `scripts/analyze.py`,
-`scripts/horizon_experiment.py` and `scripts/edge_hunt.py`.*
+`scripts/horizon_experiment.py`, `scripts/edge_hunt.py` and
+`scripts/forecast_rain_trial.py`.*
