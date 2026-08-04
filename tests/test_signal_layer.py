@@ -13,11 +13,13 @@ sys.path.insert(0, str(ROOT))
 
 from src.data.comtrade import GuatemalaExportsLoader, parse_comtrade  # noqa: E402
 from src.data.fx import parse_fred_csv, to_daily_features as fx_daily  # noqa: E402
+from src.data.loaders import build_market_dataset  # noqa: E402
 from src.features.alt_features import (  # noqa: E402
     ALT_FEATURE_COLS,
     auction_microstructure,
     build_alt_features,
 )
+from src.features.engineering import build_features  # noqa: E402
 
 COMTRADE_FIXTURE = json.dumps(
     {
@@ -143,3 +145,74 @@ def test_build_alt_features_with_climate():
     f = build_alt_features(_spot(), oni=oni)
     assert f["oni"].notna().sum() > 0
     assert list(f.columns) == ALT_FEATURE_COLS
+
+
+# ------------------------------------------------------------------ MCX basis
+def _basis_market():
+    """Real-shaped spot+futures frame (as build_market_dataset would join
+    them, post the MCX relaunch backfill), long enough for basis_chg's
+    diff(5) to be defined mid-series.
+    """
+    idx = pd.bdate_range("2026-01-01", periods=40)
+    rng = np.random.default_rng(0)
+    spot_px = 3000.0 + np.cumsum(rng.normal(0, 10, len(idx)))
+    spot = pd.DataFrame(
+        {
+            "spot_avg": spot_px,
+            "spot_max": spot_px * 1.1,
+            "qty_arrived": 100_000.0,
+            "qty_sold": 95_000.0,
+            "n_sessions": 2,
+        },
+        index=idx,
+    )
+    fut_px = spot_px * 1.02 + rng.normal(0, 5, len(idx))
+    futures = pd.DataFrame(
+        {
+            "fut_close": fut_px,
+            "fut_volume": 100.0,
+            "fut_oi": 300.0,
+            "contract": "2026-12-31",
+            "days_to_expiry": np.arange(len(idx), 0, -1),
+            "fut_ret": pd.Series(fut_px, index=idx).pct_change(),
+            "fut_cont": fut_px,
+            "regime": "post2025",
+        },
+        index=idx,
+    )
+    rain = pd.DataFrame(
+        {"rain_mm": np.nan, "rain_climatology": np.nan, "rain_anomaly": np.nan},
+        index=idx,
+    )
+    return build_market_dataset(spot=spot, futures=futures, rain=rain)
+
+
+def test_basis_features_are_strictly_causal():
+    """Mutating TODAY's basis (as build_market_dataset would compute it from
+    a changed futures close / spot print) must not change TODAY's
+    basis_pct / basis_chg features (build_features shifts both by 1 day),
+    but MUST change the NEXT day's -- otherwise the shift is a no-op.
+    """
+    m = _basis_market()
+    X, _ = build_features(m)
+    assert X["basis_pct"].notna().any(), "fixture produced no basis coverage"
+
+    t = X.index[-6]  # mid-series, defined label, defined basis_chg
+    t_next = X.index[X.index.get_loc(t) + 1]
+
+    mutated = m.copy()
+    # simulate a changed futures print at t propagating through the same
+    # honest join build_market_dataset performs: basis/basis_pct move too.
+    mutated.loc[t, "fut_close"] = 99999.0
+    mutated.loc[t, "basis"] = mutated.loc[t, "fut_close"] - mutated.loc[t, "spot_avg"]
+    mutated.loc[t, "basis_pct"] = mutated.loc[t, "basis"] / mutated.loc[t, "spot_avg"]
+    X2, _ = build_features(mutated)
+
+    for col in ("basis_pct", "basis_chg"):
+        b, a = X.loc[t, col], X2.loc[t, col]
+        assert (np.isnan(b) and np.isnan(a)) or b == a, f"{col} leaked at t"
+        # the mutation must actually propagate forward (shift(1) is live)
+        nb, na = X.loc[t_next, col], X2.loc[t_next, col]
+        assert not ((np.isnan(nb) and np.isnan(na)) or nb == na), (
+            f"{col} at t+1 did not react to a t mutation -- shift(1) is dead"
+        )

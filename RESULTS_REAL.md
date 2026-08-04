@@ -286,15 +286,80 @@ Full reforecast-era backfill ≈ 36 GB streamed / ~1 h wall-clock, stored
 as a small CSV; the 2020+ leg uses the operational archive with .idx
 byte-range subsetting. The T13 forecast-rain trial is GO when scheduled.
 
+## UPDATE (edge hunt, round 7): MCX basis — the coverage problem, faced
+## honestly — cut
+
+The MCX Bhavcopy backfill landed: `data/raw/mcx/CommodityWise_CARDAMOM_
+backfill.csv` (1,305 contract-day rows since the 2025-07-29 relaunch),
+parsed by the existing `MCXBhavcopyLoader` (unchanged) and wired into
+`market.parquet` via `scripts/merge_mcx.py` (same pattern as
+`merge_rain.py` — touches only the futures/basis columns, spot/ONI/rain
+untouched). `basis_pct`/`basis_chg` were already declared in
+`CORE_FEATURE_COLS` and already causally shifted — dark, not absent,
+since the very first version of `src/features/engineering.py`.
+
+**The coverage problem, stated before any model ran:** basis_pct is
+non-null for 232 of 3,153 feature rows (7.4%) — 2025-07-30 → 2026-07-11 —
+inside an 11-year dataset. It is NaN across the entire pre-relaunch
+history and the whole 2021–2025 suspension gap, by construction. Checked
+analytically first: under the project's standard 6-fold vehicle, every
+fold's training window ends before row 2,873 (the first non-null row) —
+zero folds ever see a non-missing basis value while fitting. This isn't
+hypothetical: running the naive full-history champion+basis config
+(`scripts/mcx_basis_trial.py`'s diagnostic, reusing
+`scripts/ensemble_trial.py`'s own physics member matrix unmodified)
+doesn't produce a misleading Sharpe — it **throws inside sklearn's
+histogram binning** (`ValueError: window shape cannot be larger than
+input array shape`), because a shallow GBM's binner needs ≥2 distinct
+non-missing training values per feature and gets zero. A full-history
+Sharpe for this feature was never going to be an honest number; it isn't
+even a computable one.
+
+**T14 mcx-basis-gbm** (`scripts/mcx_basis_trial.py`, pre-registered,
+option-(a)-literal): the entire train+calibrate+test universe restricted
+to the 281 covered-window rows (2025-07-29 onward; momentum/vol/physics
+features still use their full-history rolling windows, only the CV row
+*subset* is restricted). `PurgedWalkForward(n_splits=3, min_train=140,
+purge=5, embargo=5)` — min_train derived from "leaves ≥75 rows after the
+pipeline's own calibration carve-out," not swept — three 47-day test
+blocks, 141 OOS days total (2026-01-20 → 2026-07-13). Same isotonic
+calibration, tranched 5d rebalancing, 15bps costs as every other trial.
+Champion-without-basis evaluated on the *identical* folds as the paired
+control (not separately counted — same precedent as
+`robust_estimate.py`'s re-slicing: "estimator refinement, not
+selection"). Ledger 35 → 36.
+
+| config | Sharpe | 90% CI | p(SR≤0) | AUC | hit vs base | n OOS |
+|---|---|---|---|---|---|---|
+| control (champion, no basis, same folds) | −1.24 | [−3.21, +0.94] | 0.850 | 0.466 | −2.1pts | 141 |
+| **T14 mcx-basis-gbm** | **−0.59** | [−2.17, +1.54] | 0.705 | 0.521 | −0.7pts | 141 |
+
+DSR of T14 against the 36-trial ledger: **0.157** (expected max Sharpe
+from luck alone across 36 zero-skill trials: 0.75).
+
+**Cut.** Read honestly: basis is directionally *consistent* with the
+hypothesis on this sample — it beats the no-basis control on the
+identical folds (+0.65 Sharpe, AUC 0.466 → 0.521, hit-vs-base −2.1 →
+−0.7pts) — but the absolute number is negative, the 90% CI spans over 3.5
+Sharpe points and buries zero deep inside it, and 141 OOS days (~28
+non-overlapping 5-day bets) is nowhere near enough to distinguish this
+from noise. This is not "no edge after costs" (T3/T4's mechanism); it is
+"no sample yet" — a different, smaller kind of honest negative. The
+champion is unchanged: **physics-gbm / T12 ensemble stand as reported in
+round 6.** Revisit when the covered window is materially longer (each
+additional trading year roughly doubles it) or drop it for good if it
+still doesn't clear zero with a real sample.
+
 ## Roadmap implied by the numbers
 
 ~~Horizon-matched + calibration~~ ~~auction physics~~ ~~rain~~
 ~~displacement~~ ~~Guatemala~~ ~~refresh + live ledger~~ ~~slicing-
-robust estimator~~ ~~probability ensemble~~ (all done, all counted).
-Open: MCX basis (manual Bhavcopy drop — the one 10-minute human task),
-T13 forecast-rain backfill + trial (pilot passed, ~1 h of streaming),
-and the live ledgers accruing ~250 scored forecasts/year. Ledger
-stands at 35 trials.
+robust estimator~~ ~~probability ensemble~~ ~~MCX basis (cut, too
+little history since relaunch)~~ (all done, all counted). Open: T13
+forecast-rain backfill + trial (pilot passed, ~1 h of streaming), the
+live ledgers accruing ~250 scored forecasts/year, and MCX basis itself —
+revisit, don't re-litigate, once the covered window is longer. Ledger
+stands at 36 trials.
 
 *Machine-verifiable provenance: every number above regenerates from
 `data/processed/market.parquet` via `python run.py`, `scripts/analyze.py`,
