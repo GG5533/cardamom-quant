@@ -20,6 +20,10 @@ from src.features.alt_features import (  # noqa: E402
     build_alt_features,
 )
 from src.features.engineering import build_features  # noqa: E402
+from src.features.forecast_rain import (  # noqa: E402
+    build_forecast_rain_features,
+    load_forecast_rain,
+)
 
 COMTRADE_FIXTURE = json.dumps(
     {
@@ -216,3 +220,90 @@ def test_basis_features_are_strictly_causal():
         assert not ((np.isnan(nb) and np.isnan(na)) or nb == na), (
             f"{col} at t+1 did not react to a t mutation -- shift(1) is dead"
         )
+
+
+# ------------------------------------------------------------ forecast rain
+def _market_for_forecast(n=40, seed=3):
+    rng = np.random.default_rng(seed)
+    idx = pd.bdate_range("2015-01-01", periods=n)
+    return pd.DataFrame({"spot_avg": rng.uniform(2000, 3000, n)}, index=idx)
+
+
+def _forecast_csv(tmp_path, dates, values):
+    path = tmp_path / "gefs_forecast_rain.csv"
+    pd.DataFrame(
+        {
+            "date": dates,
+            "forecast_5d_precip_mm": values,
+            "source": "reforecast",
+            "fetched_at_utc": "2026-01-01T00:00:00+00:00",
+        }
+    ).to_csv(path, index=False)
+    return path
+
+
+def test_forecast_rain_is_strictly_causal(tmp_path):
+    """Mutating TODAY's as-issued forecast must not change TODAY's feature.
+
+    The raw CSV value at date D is, by construction, a forecast issued AT D
+    (never computed from realized outcomes after D) — but build_features()'s
+    pipeline-wide contract is "available at the close of t-1", so the
+    feature is shift(1)'d. This proves that shift actually holds: day t's
+    OWN same-day forecast must not leak into day t's feature.
+    """
+    market = _market_for_forecast()
+    dates = [d.strftime("%Y%m%d") for d in market.index]
+    values = np.linspace(0.0, 200.0, len(dates))
+    path = _forecast_csv(tmp_path, dates, values)
+
+    base = build_forecast_rain_features(market, path=path)
+
+    t = market.index[10]
+    mutated = values.copy()
+    mutated[10] = 9999.0  # blow up TODAY's own forecast
+    path2 = _forecast_csv(tmp_path, dates, mutated)
+    after = build_forecast_rain_features(market, path=path2)
+
+    b, a = base.loc[t, "fcst_rain_5d"], after.loc[t, "fcst_rain_5d"]
+    assert (np.isnan(b) and np.isnan(a)) or b == a
+
+
+def test_forecast_rain_uses_prior_day_value(tmp_path):
+    """The shift is a real shift, not an accidental no-op: mutating day t's
+    forecast MUST move day t+1's feature, and move it to exactly that
+    value — proving fcst_rain_5d(t+1) == raw_forecast(t)."""
+    market = _market_for_forecast()
+    dates = [d.strftime("%Y%m%d") for d in market.index]
+    values = np.linspace(0.0, 200.0, len(dates))
+    mutated = values.copy()
+    mutated[10] = 4321.0
+    path = _forecast_csv(tmp_path, dates, mutated)
+
+    feats = build_forecast_rain_features(market, path=path)
+    t_next = market.index[11]
+    assert feats.loc[t_next, "fcst_rain_5d"] == 4321.0
+
+
+def test_forecast_rain_out_of_era_is_nan(tmp_path):
+    """Coverage caveat enforced in the data itself: dates the reforecast-era
+    CSV never covered come back NaN, never silently zero-filled."""
+    market = _market_for_forecast(n=60)
+    covered = market.index[:20]  # only the first 20 days have a forecast
+    dates = [d.strftime("%Y%m%d") for d in covered]
+    values = np.full(len(dates), 25.0)
+    path = _forecast_csv(tmp_path, dates, values)
+
+    feats = build_forecast_rain_features(market, path=path)
+    assert feats.loc[market.index[30]:, "fcst_rain_5d"].isna().all()
+    # shift(1) loses day 0 (no prior value) but gains day 20 (inherits day
+    # 19's covered value) -> coverage count is preserved, just shifted.
+    assert feats["fcst_rain_5d"].notna().sum() == 20
+    assert np.isnan(feats.loc[market.index[0], "fcst_rain_5d"])
+
+
+def test_load_forecast_rain_missing_file_returns_empty_series(tmp_path):
+    """Feed-not-wired convention: missing CSV -> empty typed Series, not a
+    crash (mirrors every other loader's 'not yet wired -> NaN' behaviour)."""
+    s = load_forecast_rain(path=tmp_path / "does_not_exist.csv")
+    assert s.empty
+    assert s.dtype == float
