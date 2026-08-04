@@ -1,4 +1,69 @@
 {
+  "/Users/samihabbal/dev/cardamom-quant/run.py": {
+    "mtime": 1784179372.5777183,
+    "ast_hash": "8899dbf2f25167d10489dc95b8d6eb73",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/app.py": {
+    "mtime": 1784179368.8455036,
+    "ast_hash": "daf700a8272a0fe098431d2a9d28b0d3",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/test_edge_hunt.py": {
+    "mtime": 1784179372.5993302,
+    "ast_hash": "98b1b1eab65c6da8c349de5da72a73a9",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/test_live_ledger.py": {
+    "mtime": 1784179372.5997286,
+    "ast_hash": "610631c99f890a69c1132b076cedad6d",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/test_signal_layer.py": {
+    "mtime": 1785875900.9577045,
+    "ast_hash": "4ab5c915a66863fed562538d750a9581",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/test_alt_features.py": {
+    "mtime": 1784179372.5982554,
+    "ast_hash": "550c160824e7fb8ca3271a25baef4adf",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/test_capacity.py": {
+    "mtime": 1784179372.599116,
+    "ast_hash": "6ca26262b840b53b0ed303c90eafdcd8",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/test_analysis.py": {
+    "mtime": 1784179372.5987115,
+    "ast_hash": "4512b3b25f2df514fc62ff38703b9347",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/test_spices_refresh.py": {
+    "mtime": 1784179372.6014953,
+    "ast_hash": "b2651e1adb1072e5c1da2dc73c3d4498",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/test_horizon_trading.py": {
+    "mtime": 1784179372.5995336,
+    "ast_hash": "e8b79cc9d306c841895ebd23382d7825",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/test_loaders.py": {
+    "mtime": 1784179372.599934,
+    "ast_hash": "2f07e4d72b41c5529d47d2bbad3ccf36",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/test_banguat.py": {
+    "mtime": 1784179372.5989308,
+    "ast_hash": "7eeca1f9bb16be76f6aaf41035f16528",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/test_pipeline.py": {
+    "mtime": 1784179372.6010041,
+    "ast_hash": "60d23982ee11be505dde8ea4ca844c30",
+    "semantic_hash": ""
+  },
   "/Users/samihabbal/dev/cardamom-quant/.claude/worktrees/agent-a673b3a56aa887d15/run.py": {
     "mtime": 1785873915.8570387,
     "ast_hash": "8899dbf2f25167d10489dc95b8d6eb73",
@@ -344,6 +409,356 @@
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/refresh_spot.py": {
+    "mtime": 1784179372.5826929,
+    "ast_hash": "54fe7c7b85a865699ba26d298a36bbd7",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/gefs_backfill_reforecast.py": {
+    "mtime": 1785869595.5520842,
+    "ast_hash": "82065c29e3116b6c588dc74c769e81ea",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/rain_trial.py": {
+    "mtime": 1784179372.5821645,
+    "ast_hash": "f679006b24bf2801d7c4001119c4dc3f",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/displacement_trial.py": {
+    "mtime": 1784179372.5787632,
+    "ast_hash": "0d1a6503ff0e5a9566d4f2578a4fba86",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/forecast.py": {
+    "mtime": 1784179372.5801396,
+    "ast_hash": "4e027cc77f3d358574f58c187162f9ac",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/mcx_basis_trial.py": {
+    "mtime": 1785875372.922243,
+    "ast_hash": "fe6febe24147728971d24574442096a3",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/weekly_update.sh": {
+    "mtime": 1785869329.9667346,
+    "ast_hash": "5dc40402cb259b4c00b340bb80910611",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/merge_mcx.py": {
+    "mtime": 1785875372.9237466,
+    "ast_hash": "c4d00773814f32073a49bceb82f56f90",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/repair_sessions.py": {
+    "mtime": 1784179372.5829191,
+    "ast_hash": "fe8b55fae9c1be7850b0f045f2401c2b",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/forecast_rain_trial.py": {
+    "mtime": 1785875859.203893,
+    "ast_hash": "21370670b053387d6cf5679a3ca0b8e0",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/run_real_reference.py": {
+    "mtime": 1784179372.583477,
+    "ast_hash": "c738f922aa69f0325e23400d6cc9410e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/mcx_bhavcopy_backfill.py": {
+    "mtime": 1785872698.0828888,
+    "ast_hash": "acb47d4f162fb018b3eb09690a07ff3b",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/ensemble_trial.py": {
+    "mtime": 1784179519.770544,
+    "ast_hash": "9d5b7440822a2015c0ba36dcaa6bee20",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/refresh_banguat.py": {
+    "mtime": 1784179372.582339,
+    "ast_hash": "3bb9bc788756417c354bf0149f136a19",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/merge_rain.py": {
+    "mtime": 1784179372.5819373,
+    "ast_hash": "882bdcc24390b87d1e623ed6cc9dc2ce",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/ingest_browser_dump.py": {
+    "mtime": 1784179372.5811415,
+    "ast_hash": "2f1f67471220c0cf545d7661da60491f",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/horizon_experiment.py": {
+    "mtime": 1784179372.5808563,
+    "ast_hash": "2b8c817280dd5f3b47869828b69591dc",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/robust_estimate.py": {
+    "mtime": 1784179372.5831795,
+    "ast_hash": "cac9ffb16557a6fc9b85b67605f8670a",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/edge_hunt.py": {
+    "mtime": 1784179372.579115,
+    "ast_hash": "0250f6f8fc1eca0f1f5bbb7ca7f38cdf",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/gefs_pilot.py": {
+    "mtime": 1784309177.6047776,
+    "ast_hash": "45a676d58cad77ec9e5249ceafd53822",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/build_dataset.py": {
+    "mtime": 1784179372.5784817,
+    "ast_hash": "8bcafe52f69c5e199217336866b505bf",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/analyze.py": {
+    "mtime": 1784179372.5781248,
+    "ast_hash": "762f84f060e8a0d77b5229d8b1107891",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/gtm_trial.py": {
+    "mtime": 1784179372.5805075,
+    "ast_hash": "609f6a17d172710162183d1424b762ac",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/make_flagship_chart.py": {
+    "mtime": 1784179372.5816314,
+    "ast_hash": "35c22f3b5b026c331cb29be2127ddf0b",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/metrics.py": {
+    "mtime": 1784179372.5937085,
+    "ast_hash": "6d7b54a773d0adb5eba0572f1bbb395c",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/__init__.py": {
+    "mtime": 1784179372.583976,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/analysis/capacity.py": {
+    "mtime": 1784179372.5846946,
+    "ast_hash": "f7e836d238b45580581c5dbe8980a5ff",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/analysis/interpret.py": {
+    "mtime": 1784179372.5849755,
+    "ast_hash": "7139ef6620e0711e11dd92a19ff932cb",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/analysis/__init__.py": {
+    "mtime": 1784179372.5842829,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/analysis/robustness.py": {
+    "mtime": 1784179372.5852191,
+    "ast_hash": "0028f1d6b09f77a449525718192fec67",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/analysis/calibration.py": {
+    "mtime": 1784179372.5845106,
+    "ast_hash": "7b5d38ac323d56812a965b40654b55af",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/features/__init__.py": {
+    "mtime": 1784179372.5908904,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/features/alt_features.py": {
+    "mtime": 1784179372.5911634,
+    "ast_hash": "a51efb7b9f0ea9fe3148ecacaf8c426f",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/features/engineering.py": {
+    "mtime": 1784179372.591679,
+    "ast_hash": "2e7581fcab2850c17417d1855870d0bd",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/features/auction_physics.py": {
+    "mtime": 1784179372.591388,
+    "ast_hash": "6b11191e5ddf243dcf8b9fb3961130cc",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/features/forecast_rain.py": {
+    "mtime": 1785875859.207941,
+    "ast_hash": "47274191e78033db7d69229dabe8bf1f",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/models/baselines.py": {
+    "mtime": 1784179372.5942762,
+    "ast_hash": "09600c422e5c10309b8cb3964ffb7b6d",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/models/__init__.py": {
+    "mtime": 1784179372.5939565,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/models/kalman_seasonal.py": {
+    "mtime": 1784179372.5946202,
+    "ast_hash": "a573099c185859e1b617a9ce9981aed1",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/models/ou_bands.py": {
+    "mtime": 1784179372.5954697,
+    "ast_hash": "42e7c9086d6a00fd6fb4370fd1666dcc",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/backtest/__init__.py": {
+    "mtime": 1784179372.585527,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/backtest/engine.py": {
+    "mtime": 1784179372.585944,
+    "ast_hash": "69407ea3103fa8975c267111ff798b86",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/live/ledger.py": {
+    "mtime": 1784179372.593474,
+    "ast_hash": "7b832ecd22ea4d3edcc88291c440c925",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/live/__init__.py": {
+    "mtime": 1784179372.5919254,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/synthetic.py": {
+    "mtime": 1784179372.5905728,
+    "ast_hash": "6ebaeb8baacf9728daf46a94f77c5a70",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/comtrade.py": {
+    "mtime": 1784179372.5883753,
+    "ast_hash": "766444883a8af7e74822125a56bfa000",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/mcx_bhavcopy.py": {
+    "mtime": 1784179372.5900016,
+    "ast_hash": "2a5e5cf43cd9cb7a5021783d046d841c",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/config.py": {
+    "mtime": 1785875859.2066517,
+    "ast_hash": "bb35aa8f059e0fc176cc6fb86c5f48c4",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/spices_board.py": {
+    "mtime": 1784179372.5903294,
+    "ast_hash": "c29d1d0dd55bb43e7a8fafdede562d15",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/loaders.py": {
+    "mtime": 1784179372.5897627,
+    "ast_hash": "fea028ef0b3d4a7314368d1ff0744b0a",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/__init__.py": {
+    "mtime": 1784179372.5867612,
+    "ast_hash": "6f3f5283b87e1877758a228ef3d31471",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/imd_rainfall.py": {
+    "mtime": 1784179372.5894415,
+    "ast_hash": "a1966f3a9e0d490266f1eef1137ad0dd",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/banguat.py": {
+    "mtime": 1784179372.586995,
+    "ast_hash": "4bfd51122a27314686b3d6bf9451dfbd",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/climate_indices.py": {
+    "mtime": 1784179372.5881765,
+    "ast_hash": "143cb6f822e846deb1ac3bbf4f41f2a8",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/fx.py": {
+    "mtime": 1784179372.588902,
+    "ast_hash": "883263e0ce39f3fa9b4d92d026dfc66f",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/base.py": {
+    "mtime": 1784179372.5877357,
+    "ast_hash": "dfc1a6144085fca008a51bae16c5fb5e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/calendars.py": {
+    "mtime": 1784179372.5879622,
+    "ast_hash": "11367d81ac31b755bb31746fbffd7a09",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/validation/walkforward.py": {
+    "mtime": 1784179372.5964956,
+    "ast_hash": "105447ee62cf4c0027563cb9e913f561",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/validation/__init__.py": {
+    "mtime": 1784179372.5956788,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/LINKEDIN_POST.md": {
+    "mtime": 1784179588.1648598,
+    "ast_hash": "12864e00cf8769ca1c8b203aef33005d",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/RESULTS_REAL.md": {
+    "mtime": 1785875966.4469192,
+    "ast_hash": "212e92cacdc5869d8a7784ec4385b8c5",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/ALT_DATA_RESEARCH.md": {
+    "mtime": 1784179368.841579,
+    "ast_hash": "addc0a42ccea61fb10c30cf3823045e7",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/requirements-data.txt": {
+    "mtime": 1785873513.0771494,
+    "ast_hash": "b5f6783c01205c92377b9d65ab3d570d",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/README.md": {
+    "mtime": 1784179368.8426487,
+    "ast_hash": "5088753dd4ea0c0989bc0b4525dcead5",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/DATA_STATUS.md": {
+    "mtime": 1784179368.841825,
+    "ast_hash": "9848ab1e4d0bd56549f2308d60f415e1",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/requirements-analysis.txt": {
+    "mtime": 1784179372.5772285,
+    "ast_hash": "296b5cc07a7c375e5f893c402999ca76",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/STEP1_RESEARCH_AND_PLAN.md": {
+    "mtime": 1784179368.8436623,
+    "ast_hash": "3e99da61f53922833a7fdd3a0d54efe1",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/HANDOFF.md": {
+    "mtime": 1784179368.8421197,
+    "ast_hash": "b9ddeed601417b1a36b2f88f575767a6",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/tests/fixtures/spices_page.html": {
+    "mtime": 1784179372.5980024,
+    "ast_hash": "2eb4f55fe40c4d074a365129e1763c7f",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/.claude/agents/quant-researcher.md": {
+    "mtime": 1784179368.8404522,
+    "ast_hash": "3bf5d840856313ab59014ed5af0abb52",
+    "semantic_hash": ""
+  },
   "/Users/samihabbal/dev/cardamom-quant/.claude/worktrees/agent-a673b3a56aa887d15/LINKEDIN_POST.md": {
     "mtime": 1785873909.536231,
     "ast_hash": "12864e00cf8769ca1c8b203aef33005d",
@@ -444,8 +859,58 @@
     "ast_hash": "1a63674ffdb64807dbdf4ea27b0704f7",
     "semantic_hash": ""
   },
+  "/Users/samihabbal/dev/cardamom-quant/.claude/skills/verify/SKILL.md": {
+    "mtime": 1784179368.8411746,
+    "ast_hash": "5073135a6cdd12b7f38934e0f16cf2a1",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/.claude/skills/new-trial/SKILL.md": {
+    "mtime": 1784179368.8408737,
+    "ast_hash": "1149ce109fc828183b181d5baea57fd5",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/data/raw/climate/oni.ascii.txt": {
+    "mtime": 1784179368.8859336,
+    "ast_hash": "15526e8360288876f54ffa3241bfcd36",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/data/raw/spices_board/page_0000.html": {
+    "mtime": 1784179372.4867487,
+    "ast_hash": "1d8341b19e22920c70accec96083e3e6",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/data/raw/spices_board/page_0001.html": {
+    "mtime": 1785869391.326265,
+    "ast_hash": "172547fa91ea59e3bfa5e2273bebbcb7",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/data/raw/spices_board/page_0002.html": {
+    "mtime": 1785869395.1923106,
+    "ast_hash": "716076aaf7e41ef7dd2133d2e54ad659",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/data/raw/spices_board/page_0003.html": {
+    "mtime": 1785869397.573491,
+    "ast_hash": "33f326ce628e8f620920cd79f7fb8a66",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/data/raw/spices_board/page_0004.html": {
+    "mtime": 1784179372.5278902,
+    "ast_hash": "724c7b04d232ce048bedcc83c2cdac2d",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/src/data/README.md": {
+    "mtime": 1784179372.586499,
+    "ast_hash": "1a63674ffdb64807dbdf4ea27b0704f7",
+    "semantic_hash": ""
+  },
   "/Users/samihabbal/dev/cardamom-quant/.claude/worktrees/agent-a673b3a56aa887d15/figures/spot_history.png": {
     "mtime": 1785873915.7228918,
+    "ast_hash": "f23ff5dca6d55ebb449639a496adf78a",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/figures/spot_history.png": {
+    "mtime": 1784179372.5330706,
     "ast_hash": "f23ff5dca6d55ebb449639a496adf78a",
     "semantic_hash": ""
   }

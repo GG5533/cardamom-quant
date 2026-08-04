@@ -1,16 +1,16 @@
-# Graph Report - agent-a673b3a56aa887d15  (2026-08-04)
+# Graph Report - cardamom-quant  (2026-08-04)
 
 ## Corpus Check
-- 80 files · ~170,219 words
+- 163 files · ~344,134 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 689 nodes · 1196 edges · 55 communities (45 shown, 10 thin omitted)
-- Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 226 edges (avg confidence: 0.79)
+- 847 nodes · 1580 edges · 78 communities (67 shown, 11 thin omitted)
+- Extraction: 86% EXTRACTED · 14% INFERRED · 0% AMBIGUOUS · INFERRED: 226 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a2d9a5c6`
+- Built from commit: `92ed89f8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -52,71 +52,85 @@
 - [[_COMMUNITY_Community 44|Community 44]]
 - [[_COMMUNITY_Community 52|Community 52]]
 - [[_COMMUNITY_Community 53|Community 53]]
+- [[_COMMUNITY_Community 55|Community 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
+- [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `REAL out-of-sample results — July 7, 2026` - 21 edges
-2. `build_features()` - 19 edges
-3. `REAL out-of-sample results — July 7, 2026` - 19 edges
-4. `BacktestConfig` - 18 edges
-5. `run_backtest()` - 18 edges
-6. `main()` - 17 edges
-7. `SpicesBoardLoader` - 17 edges
-8. `PurgedWalkForward` - 17 edges
-9. `deflated_sharpe()` - 14 edges
-10. `build_physics_features()` - 14 edges
+1. `REAL out-of-sample results — July 7, 2026` - 23 edges
+2. `REAL out-of-sample results — July 7, 2026` - 22 edges
+3. `build_features()` - 20 edges
+4. `BacktestConfig` - 19 edges
+5. `run_backtest()` - 19 edges
+6. `main()` - 18 edges
+7. `SpicesBoardLoader` - 18 edges
+8. `PurgedWalkForward` - 18 edges
+9. `deflated_sharpe()` - 15 edges
+10. `build_physics_features()` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `test_parse_comtrade_sums_hs_codes()` --calls--> `parse_comtrade()`  [INFERRED]
-  tests/test_signal_layer.py → /Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/comtrade.py
-- `main()` --calls--> `build_forecast_rain_features()`  [INFERRED]
-  scripts/forecast_rain_trial.py → src/features/forecast_rain.py
-- `test_parse_fred_csv_missing_dot()` --calls--> `parse_fred_csv()`  [INFERRED]
-  tests/test_signal_layer.py → /Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/fx.py
-- `test_fx_features_ffill_limited()` --calls--> `parse_fred_csv()`  [INFERRED]
-  tests/test_signal_layer.py → /Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/data/fx.py
-- `test_microstructure_is_strictly_causal()` --calls--> `auction_microstructure()`  [INFERRED]
-  tests/test_signal_layer.py → /Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/features/alt_features.py
+- `test_kalman_filter_is_causal()` --calls--> `kalman_features()`  [INFERRED]
+  .claude/worktrees/agent-a673b3a56aa887d15/tests/test_edge_hunt.py → /Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/models/kalman_seasonal.py
+- `test_kalman_recovers_planted_anomaly()` --calls--> `fit_params()`  [INFERRED]
+  .claude/worktrees/agent-a673b3a56aa887d15/tests/test_edge_hunt.py → /Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/models/kalman_seasonal.py
+- `test_kalman_recovers_planted_anomaly()` --calls--> `filter_anomaly()`  [INFERRED]
+  .claude/worktrees/agent-a673b3a56aa887d15/tests/test_edge_hunt.py → /Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/models/kalman_seasonal.py
+- `test_run_weights_backtest_mechanics()` --calls--> `run_weights_backtest()`  [INFERRED]
+  .claude/worktrees/agent-a673b3a56aa887d15/tests/test_edge_hunt.py → /Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/backtest/engine.py
+- `test_run_weights_backtest_mechanics()` --calls--> `BacktestConfig`  [INFERRED]
+  .claude/worktrees/agent-a673b3a56aa887d15/tests/test_edge_hunt.py → /Users/samihabbal/Documents/Claude/Projects/My personal Profile and who i am/cardamom-quant/src/backtest/engine.py
 
-## Communities (55 total, 10 thin omitted)
+## Communities (78 total, 11 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.05
-Nodes (58): ablation_table(), block_bootstrap_sharpe(), deflated_sharpe(), expected_max_sharpe_annual(), probabilistic_sharpe(), Robustness statistics — is the Sharpe distinguishable from luck?  Three tools mo, results: {variant_name: metrics_dict} -> tidy comparison frame., Circular block bootstrap of the annualized Sharpe ratio. (+50 more)
+Cohesion: 0.06
+Nodes (37): ablation_table(), block_bootstrap_sharpe(), deflated_sharpe(), expected_max_sharpe_annual(), probabilistic_sharpe(), Robustness statistics — is the Sharpe distinguishable from luck?  Three tools mo, results: {variant_name: metrics_dict} -> tidy comparison frame., Circular block bootstrap of the annualized Sharpe ratio. (+29 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.11
-Nodes (30): filter_anomaly(), fit_params(), _fourier(), half_life_days(), kalman_features(), KalmanParams, kappa(), Structural decomposition of log spot: level + seasonal + AR(1) anomaly.  Ported/ (+22 more)
+Cohesion: 0.12
+Nodes (29): build_physics_features(), _crop_year(), _day_in_crop_year(), hurst_rs(), inventory_overhang(), Auction-physics features — signal mined from columns the pipeline never touched,, Assemble the block on the market calendar; all columns lag-safe., R/S Hurst exponent estimate (three-scale log-log slope). (+21 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.14
-Nodes (25): brier_score(), calibration_summary(), calibration_table(), enso_phase(), isotonic_calibrator(), Probability calibration + regime-conditional performance.  Calibration: a 0.65 f, Fit an isotonic map raw p -> calibrated p on a held-out slice.      The slice mu, elnino' (>= +0.5), 'lanina' (<= -0.5), else 'neutral'. (+17 more)
+Cohesion: 0.1
+Nodes (34): brier_score(), calibration_summary(), calibration_table(), enso_phase(), isotonic_calibrator(), Probability calibration + regime-conditional performance.  Calibration: a 0.65 f, Fit an isotonic map raw p -> calibrated p on a held-out slice.      The slice mu, elnino' (>= +0.5), 'lanina' (<= -0.5), else 'neutral'. (+26 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.1
+Cohesion: 0.11
 Nodes (26): add_calendar_features(), _days_to_next(), Demand-calendar features — the moving seasonals that day-of-year misses.  The ou, Signed day count to the next occurrence of an annual event.      Positive = even, Feature block for a given trading calendar. All ex-ante knowable., fetch_dmi(), fetch_oni(), parse_oni() (+18 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.05
-Nodes (41): ABC, BaseLoader, BaseLoader, fetch(), parse(), BaseLoader: the common contract every real-data feed implements.  Design princip, Raised when a loader's output violates its schema contract., Fetch → parse → validate → load, with an immutable raw cache. (+33 more)
+Nodes (52): ABC, BaseLoader, BaseLoader, fetch(), parse(), BaseLoader: the common contract every real-data feed implements.  Design princip, Raised when a loader's output violates its schema contract., Fetch → parse → validate → load, with an immutable raw cache. (+44 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.11
-Nodes (24): aggregate_daily(), _normalise(), _parse_html(), SpicesBoardLoader — small-cardamom e-auction archive (the spot backbone).  The S, Session-level table across all cached pages, deduped., Daily aggregate: quantity-weighted average price + supply columns., Session-level table across all cached pages, deduped., Daily aggregate: quantity-weighted average price + supply columns. (+16 more)
+Cohesion: 0.31
+Nodes (14): _mcx_loader(), Unit tests for the real-data ingestion layer.  Everything here runs offline agai, On a roll day the spliced return must be the NEW contract's own     day-over-day, test_build_market_dataset_alignment(), test_mcx_continuous_level_no_roll_jump(), test_mcx_front_selection_and_spliced_return(), test_mcx_parses_both_schema_eras(), test_mcx_regime_guard() (+6 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.08
-Nodes (39): fetch_usdinr(), parse_fred_csv(), FX competitiveness — USD/INR from FRED (no API key needed).  Indian cardamom com, fredgraph.csv -> daily Series; '.' means missing., FX features on the trading calendar (ffill weekends/holidays, max 5d)., to_daily_features(), auction_microstructure(), build_alt_features() (+31 more)
+Nodes (42): auction_microstructure(), build_alt_features(), Alternative-data feature block: microstructure + calendars + climate + macro.  T, Demand tension + supply surprise from qty columns. Lag-safe (shifted).      tens, One aligned alt-feature frame on the spot calendar.      Optional blocks default, build_forecast_rain_features(), load_forecast_rain(), AS-ISSUED forecast rain — T13's single feature block.  Built from NOAA GEFS v12 (+34 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.12
-Nodes (23): _canon(), _chain_hash(), ChainedCsv, forecast_ledger(), outcome_ledger(), Tamper-evident forecast ledger — the prospective-validation backbone.  A backtes, Append-only CSV where every row extends a hash chain., Recompute every hash; raise on the first broken link. (+15 more)
+Cohesion: 0.17
+Nodes (14): _canon(), _chain_hash(), ChainedCsv, forecast_ledger(), outcome_ledger(), Tamper-evident forecast ledger — the prospective-validation backbone.  A backtes, Append-only CSV where every row extends a hash chain., Recompute every hash; raise on the first broken link. (+6 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.13
 Nodes (13): 1. The critical finding (this reshapes the project — for the better), 2.1 Spices Board e-auction (spot) — PRIMARY, verified working, 2.2 MCX futures (Bhavcopy) — the loader Step 1 names, 2.3 Rainfall (IMD) — the weather signal, 2.4 Rejected alternatives (document these — rejection rationale is showcase material), 2. Data source research (verified where possible), 3. `loaders.py` design, 4. Build sequence (with acceptance criteria) (+5 more)
 
 ### Community 9 - "Community 9"
-Cohesion: 0.24
+Cohesion: 0.25
 Nodes (12): capacity_report(), market_capacity(), participation_table(), Capacity analysis — could this strategy actually be run, and at what size?  A Sh, Recent tradable-size envelope from real market data., For each assumed capital: turnover-driven daily participation in the     auction, Tests for the capacity module (offline)., test_capacity_report_renders() (+4 more)
 
 ### Community 10 - "Community 10"
@@ -128,7 +142,7 @@ Cohesion: 0.22
 Nodes (7): 1. Moving demand calendars — `src/data/calendars.py`, 2. Climate teleconnections — `src/data/climate_indices.py`, Cardamom Quant — Alternative-Data Research (beyond the obvious), Implemented round 2 (code + 9 more tests), Implemented today (code + 8 new tests, all offline), Remaining roadmap, Why this layer wins interviews
 
 ### Community 12 - "Community 12"
-Cohesion: 0.22
+Cohesion: 0.2
 Nodes (7): Build everything, code:bash (pip install -r requirements-data.txt), Known limitations (also candidates for the LinkedIn write-up), MCX files: what to drop where, Real-data ingestion layer, The three loaders, Why the spot market is the backbone
 
 ### Community 13 - "Community 13"
@@ -144,63 +158,115 @@ Cohesion: 0.29
 Nodes (5): Cardamom Quant, Honesty guardrails, Layout, Run, The data story (the interesting part)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.62
+Cohesion: 0.64
 Nodes (5): join_ok(), main(), partitions(), Repair thousands-separator commas in the browser-crawled sessions CSV.  Each dat, sane()
 
 ### Community 17 - "Community 17"
-Cohesion: 0.05
-Nodes (42): — and cut, and cut, called a tie, Dataset v1.1 (15-Jul-2026): the lever, pulled — and a lesson in, estimator variance, Forecast-rain groundwork (pilot passed), PROSPECTIVE VALIDATION (live since 16-Jul-2026), REAL out-of-sample results — July 7, 2026 (+34 more)
+Cohesion: 0.04
+Nodes (46): — and cut, and cut, called a tie, Dataset v1.1 (15-Jul-2026): the lever, pulled — and a lesson in, estimator variance, Forecast-rain groundwork (pilot passed), PROSPECTIVE VALIDATION (live since 16-Jul-2026), REAL out-of-sample results — July 7, 2026 (+38 more)
 
 ### Community 31 - "Community 31"
-Cohesion: 0.1
-Nodes (31): BacktestConfig, Backtest engine: conviction sizing, vol targeting, leverage cap, costs.  Mechani, proba_up: model P(up) indexed by date; daily_returns: same calendar., proba_up: model P(up) indexed by date; daily_returns: same calendar., Same execution/cost mechanics for a strategy that emits target weights     direc, run_backtest(), run_weights_backtest(), load_market() (+23 more)
+Cohesion: 0.09
+Nodes (37): BacktestConfig, Backtest engine: conviction sizing, vol targeting, leverage cap, costs.  Mechani, proba_up: model P(up) indexed by date; daily_returns: same calendar., proba_up: model P(up) indexed by date; daily_returns: same calendar., Same execution/cost mechanics for a strategy that emits target weights     direc, run_backtest(), run_weights_backtest(), load_market() (+29 more)
 
 ### Community 32 - "Community 32"
-Cohesion: 0.14
+Cohesion: 0.13
 Nodes (12): 1. Test suite (fast, always first), 2. Scorecard reproduction (the numbers are the product), 3. Experiment scripts regenerate their published tables, 4. Dashboard boots with the REAL banner, 5. Data lineage, 5. Honesty checklist (read RESULTS_REAL.md ledger line), 6. Honesty checklist (read RESULTS_REAL.md ledger line), code:bash (.venv/bin/python -m pytest tests/ -q) (+4 more)
 
 ### Community 33 - "Community 33"
-Cohesion: 0.25
+Cohesion: 0.22
 Nodes (6): 1. Pre-register before running, 2. Leakage test first, feature second, 3. Evaluate in the standard vehicle, 4. Grow the ledger — even for failures, 5. Report as found, Adding a trial without lying to yourself
 
 ### Community 35 - "Community 35"
-Cohesion: 0.14
-Nodes (20): annual_features(), build_gtm_features(), load_annual_kg(), Guatemala cardamom export volume — Banco de Guatemala primary source.  UN Comtra, Annual export volume in kg, indexed by calendar year., Per-year features, using only same-or-prior years per row.      gtm_vol_yoy, Step-function daily features under the 01-Apr-(Y+1) publication rule., Feature block on the market calendar (ready for build_features alt=). (+12 more)
+Cohesion: 0.18
+Nodes (19): annual_features(), build_gtm_features(), load_annual_kg(), Guatemala cardamom export volume — Banco de Guatemala primary source.  UN Comtra, Annual export volume in kg, indexed by calendar year., Per-year features, using only same-or-prior years per row.      gtm_vol_yoy, Step-function daily features under the 01-Apr-(Y+1) publication rule., Feature block on the market calendar (ready for build_features alt=). (+11 more)
 
 ### Community 37 - "Community 37"
-Cohesion: 0.36
-Nodes (8): _crop_year(), _day_in_crop_year(), hurst_rs(), inventory_overhang(), Auction-physics features — signal mined from columns the pipeline never touched,, R/S Hurst exponent estimate (three-scale log-log slope)., Crop-year label: Aug-2019..Jul-2020 -> 2019., log(crop-year-to-date arrivals / past-years' norm at the same point).      Posit
+Cohesion: 0.24
+Nodes (11): generate_market(), Calibrated synthetic cardamom market — the methodology testbed.  NOT a market fi, Leakage, CV and backtest tests for the modeling pipeline (offline)., Mutating day-t market data must not change day-t features., Sanity: a clairvoyant signal must produce a positive Sharpe., test_backtest_costs_and_leverage(), test_backtest_perfect_foresight_wins(), test_features_are_strictly_lagged() (+3 more)
 
 ### Community 38 - "Community 38"
-Cohesion: 0.16
-Nodes (12): mean_abs_shap(), SHAP interpretability — per-prediction attribution on top of the permutation imp, SHAP values for a fitted model from src/models/baselines.py.      logistic  -> L, Global importance: mean |SHAP| per feature, descending., shap_report(), shap_values_for(), make_gbm(), make_logistic() (+4 more)
+Cohesion: 0.29
+Nodes (5): make_gbm(), make_logistic(), Models. The rule of this repo: ML must beat the dumb seasonal rule or we say so, Probability 0.5 +/- edge by season. No fitting on prices at all., SeasonalBaseline
 
 ### Community 39 - "Community 39"
-Cohesion: 0.52
+Cohesion: 0.54
 Nodes (5): fetch(), idukki_5d_forecast(), main(), GEFS forecast-rain pilot — proves the keyless path before any backfill.      pyt, Sum of 3-hourly APCP over leads 0-120h, area-meaned over the box.
 
 ### Community 44 - "Community 44"
-Cohesion: 0.24
+Cohesion: 0.25
 Nodes (11): canon_auctioneer(), main(), Extend the spot backbone with new auction days — THE lever.      python scripts/, Match keys across the site's commas and the repaired dump's semicolons.      The, rebuild_market(), _page(), Tests for archive-page parsing across markup eras + refresh key matching (offlin, The Jul-2026 site era: header cells are <td>, read_html sees ints. (+3 more)
 
 ### Community 52 - "Community 52"
-Cohesion: 0.48
+Cohesion: 0.57
 Nodes (6): already_done(), auction_dates(), fetch(), idukki_5d_forecast(), main(), GEFS reforecast-era forecast-rain backfill (2014-11-07 -> 2019-12-31).      pyth
 
+### Community 55 - "Community 55"
+Cohesion: 0.14
+Nodes (13): 1. The critical finding (this reshapes the project — for the better), 2.1 Spices Board e-auction (spot) — PRIMARY, verified working, 2.2 MCX futures (Bhavcopy) — the loader Step 1 names, 2.3 Rainfall (IMD) — the weather signal, 2.4 Rejected alternatives (document these — rejection rationale is showcase material), 2. Data source research (verified where possible), 3. `loaders.py` design, 4. Build sequence (with acceptance criteria) (+5 more)
+
+### Community 56 - "Community 56"
+Cohesion: 0.35
+Nodes (11): filter_anomaly(), fit_params(), _fourier(), half_life_days(), kalman_features(), KalmanParams, kappa(), Structural decomposition of log spot: level + seasonal + AR(1) anomaly.  Ported/ (+3 more)
+
+### Community 57 - "Community 57"
+Cohesion: 0.45
+Nodes (9): _ledger(), _market(), Tests for the tamper-evident forecast ledger + live feature builder (offline)., The synthetic extension must not contaminate real rows' features., test_chain_appends_and_verifies(), test_chain_detects_deletion(), test_chain_detects_tampering(), test_missing_field_rejected() (+1 more)
+
+### Community 58 - "Community 58"
+Cohesion: 0.22
+Nodes (8): code:bash (cd cardamom-quant), First 30 minutes in VS Code, Gotchas / tribal knowledge, HANDOFF — cardamom-quant → VS Code, One-line status if anyone asks, Priority queue (in order of expected value), State: what is DONE, What this is
+
+### Community 59 - "Community 59"
+Cohesion: 0.42
+Nodes (6): fetch_usdinr(), parse_fred_csv(), FX competitiveness — USD/INR from FRED (no API key needed).  Indian cardamom com, fredgraph.csv -> daily Series; '.' means missing., FX features on the trading calendar (ffill weekends/holidays, max 5d)., to_daily_features()
+
+### Community 60 - "Community 60"
+Cohesion: 0.25
+Nodes (7): 1. Moving demand calendars — `src/data/calendars.py`, 2. Climate teleconnections — `src/data/climate_indices.py`, Cardamom Quant — Alternative-Data Research (beyond the obvious), Implemented round 2 (code + 9 more tests), Implemented today (code + 8 new tests, all offline), Remaining roadmap, Why this layer wins interviews
+
+### Community 61 - "Community 61"
+Cohesion: 0.29
+Nodes (6): code:bash (cd cardamom-quant), Data status — what's real, what's pending, and why, Real data in the repo now (`data/`), UPDATE 07-Jul-2026: full backfill COMPLETE (via browser crawl), Verified behaviors from today's real-data run, Why the rest isn't here yet — and the one command that finishes it
+
+### Community 62 - "Community 62"
+Cohesion: 0.43
+Nodes (6): fetch_expiry(), main(), MCX cardamom Bhavcopy backfill via the real Bhav Copy UI (Commodity Wise tab)., Post-relaunch expiries, taken as the contiguous prefix of the     dropdown befor, relevant_expiries(), set_date()
+
+### Community 63 - "Community 63"
+Cohesion: 0.33
+Nodes (5): Attachments (in order of impact), LinkedIn post — Cardamom Quant, Main post, Posting notes, Short variant (for comments / reposts)
+
+### Community 64 - "Community 64"
+Cohesion: 0.33
+Nodes (5): Cardamom Quant, Honesty guardrails, Layout, Run, The data story (the interesting part)
+
+### Community 65 - "Community 65"
+Cohesion: 0.5
+Nodes (4): main(), _naive_full_history_diagnostic(), MCX futures basis, ONE pre-registered trial — T14.      python scripts/mcx_basis, Confirm (not count) that the standard 6-fold vehicle cannot learn     from basis
+
+### Community 66 - "Community 66"
+Cohesion: 0.67
+Nodes (3): load_market(), Cardamom Quant — interactive dashboard.      pip install streamlit     streamlit, run_cv()
+
+### Community 67 - "Community 67"
+Cohesion: 0.67
+Nodes (3): load_dataset(), main(), cardamom-quant — end-to-end run.      python run.py                 # real data
+
 ## Knowledge Gaps
-- **187 isolated node(s):** `Mutating TODAY's auction must not change TODAY's features.`, `The synthetic extension must not contaminate real rows' features.`, `Mutating TODAY's auction must not change TODAY's features.`, `Mutating TODAY's as-issued forecast must not change TODAY's feature.      The ra`, `The shift is a real shift, not an accidental no-op: mutating day t's     forecas` (+182 more)
+- **234 isolated node(s):** `Mutating TODAY's auction must not change TODAY's features.`, `The synthetic extension must not contaminate real rows' features.`, `Mutating TODAY's auction must not change TODAY's features.`, `Real-shaped spot+futures frame (as build_market_dataset would join     them, pos`, `Mutating TODAY's basis (as build_market_dataset would compute it from     a chan` (+229 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `parse_oni()` connect `Community 3` to `Community 0`, `Community 44`?**
-  _High betweenness centrality (0.149) - this node is a cross-community bridge._
-- **Why does `build_features()` connect `Community 0` to `Community 7`, `Community 31`?**
-  _High betweenness centrality (0.103) - this node is a cross-community bridge._
-- **Why does `main()` connect `Community 0` to `Community 3`, `Community 6`, `Community 31`?**
-  _High betweenness centrality (0.086) - this node is a cross-community bridge._
+- **Why does `parse_oni()` connect `Community 3` to `Community 44`, `Community 31`?**
+  _High betweenness centrality (0.119) - this node is a cross-community bridge._
+- **Why does `build_features()` connect `Community 0` to `Community 2`, `Community 37`, `Community 7`, `Community 57`, `Community 31`?**
+  _High betweenness centrality (0.085) - this node is a cross-community bridge._
+- **Why does `main()` connect `Community 31` to `Community 0`, `Community 3`, `Community 6`?**
+  _High betweenness centrality (0.069) - this node is a cross-community bridge._
 - **Are the 16 inferred relationships involving `build_features()` (e.g. with `main()` and `run_cv()`) actually correct?**
   _`build_features()` has 16 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 16 inferred relationships involving `BacktestConfig` (e.g. with `main()` and `run_cv()`) actually correct?**
@@ -208,4 +274,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Are the 14 inferred relationships involving `run_backtest()` (e.g. with `main()` and `run_cv()`) actually correct?**
   _`run_backtest()` has 14 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Mutating TODAY's auction must not change TODAY's features.`, `The synthetic extension must not contaminate real rows' features.`, `Mutating TODAY's auction must not change TODAY's features.` to the rest of the system?**
-  _187 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _234 weakly-connected nodes found - possible documentation gaps or missing edges._
