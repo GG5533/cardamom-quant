@@ -64,8 +64,11 @@ def main() -> None:
         "Indian small cardamom — 12 years of e-auction spot prices",
         color=INK, fontsize=15, fontweight="semibold", loc="left", pad=16,
     )
+    # Derived, never hardcoded: the previous literal said 3,148 days through
+    # Jul-2026 and silently outlived two dataset refreshes.
     ax.text(0, 1.015, "Weekly mean of Spices Board daily auction averages, "
-            "₹/kg · 3,148 auction days, Nov 2014 – Jul 2026",
+            f"₹/kg · {len(spot):,} auction days, "
+            f"{spot.index.min():%b %Y} – {spot.index.max():%b %Y}",
             transform=ax.transAxes, color=INK_2, fontsize=10.5)
 
     ax.grid(axis="y", color=GRID, lw=1)
