@@ -29,8 +29,11 @@ FLOODS = pd.Timestamp("2018-08-15")
 
 
 def main() -> None:
+    # spot_daily_canonical.csv is the mutable file the weekly refresh appends to;
+    # spot_daily_full.csv is the quarantine-locked browser-dump original, frozen at
+    # 07-Jul-2026. Reading the frozen one silently rendered a month-stale chart.
     spot = pd.read_csv(
-        ROOT / "data" / "processed" / "spot_daily_full.csv",
+        ROOT / "data" / "processed" / "spot_daily_canonical.csv",
         parse_dates=["date"], index_col="date",
     )["spot_avg"]
     weekly = spot.resample("W").mean()
