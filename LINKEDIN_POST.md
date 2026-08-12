@@ -40,7 +40,7 @@ part I'd want to see if I were hiring: a block-bootstrap CI on the Sharpe and
 a Deflated Sharpe Ratio that haircuts for every model I tried — because a
 good number selected from six attempts is often just the luckiest of six.
 
-**The result.** On 3,148 real auction days (2014–2026): the gradient
+**The result.** On 3,176 real auction days (2014–2026): the gradient
 booster found genuine predictive signal — +4.2pts hit rate over base, AUC
 0.553, out-of-sample — and still lost to a one-line seasonal rule after
 15bps costs at daily rebalancing (Sharpe +0.12, CI straddling zero).
@@ -58,20 +58,46 @@ number twice. Re-slicing the walk-forward folds after a data refresh
 moved it to +0.69; averaging over six equally-defensible fold layouts —
 because the layout every table used turned out to be the luckiest of
 six — settled it at **+0.43, 90% CI [−0.01, +0.90]**, against a
-34-configuration deflated-Sharpe ledger where every failed idea stays
+37-configuration deflated-Sharpe ledger where every failed idea stays
 counted. The honest label is *a maybe* — positive with ~94% confidence,
 shallow drawdowns, real classification skill (AUC 0.55) — and since
 July 2026 the model forecasts LIVE into an append-only, hash-chained
 ledger, scored as outcomes mature, because a backtest has degrees of
-freedom and a time-stamped forecast has none. A backtest that can say
-"no" is the only kind whose "maybe" means anything.
+freedom and a time-stamped forecast has none. That live ledger is at
+[REAL: n scored] scored forecasts and a Brier of [REAL: brier] against
+0.25 climatology — as I write this it is fractionally on the *wrong*
+side of that line, which is exactly why it's worth publishing. A
+backtest that can say "no" is the only kind whose "maybe" means
+anything, and a forecast log you can't quietly edit is the only kind
+whose "yes" would.
+
+**The finding that outlived the model.** Five separate times I added a
+carefully-built feature block to a model that already worked. Five times
+it got worse. The whole alt-data layer — rain, ENSO/IOD, rotating demand
+calendars, auction microstructure, Guatemala supply — took the gradient
+booster from Sharpe +0.22 down to +0.08. Stacking a Kalman anomaly filter
+onto the physics champion: +0.79 → +0.71. Stacking rainfall: → +0.55.
+Stacking Guatemala export volume: → +0.58. Stacking as-issued GEFS
+forecast rain — the most theoretically motivated of the lot, and the one
+I most wanted to work — lost to a same-window realized-rain baseline by
+0.27 Sharpe. Every one of those blocks was individually defensible.
+Several cleared zero on their own; rainfall posted the best
+classification numbers in the entire project (AUC 0.572, +6.3 hit-rate
+points). None survived contact with a model that already had signal.
+
+On roughly 500 effectively independent 5-day bets, one more column in the
+tree costs more than it pays. That's the result I'd actually defend in an
+interview — not the Sharpe. On small samples, feature addition is a tax,
+and the only way to learn that about your own work is to pre-register
+each attempt and leave the failures in the ledger, where they go on
+haircutting your headline forever.
 
 Capacity caveat up front: this is a niche market (~₹25 crore/day through the
 auctions). The point was never scale — it was demonstrating desk-grade
 process on a market nobody else models.
 
-Repo: [link]. Stack: Python, pandas, scikit-learn, Streamlit. 77 tests,
-no notebook heroics.
+Repo: github.com/GG5533/cardamom-quant. Stack: Python, pandas,
+scikit-learn, Streamlit. 82 tests, no notebook heroics.
 
 ---
 
@@ -85,7 +111,7 @@ tradability overlay. Purged walk-forward, honest seasonal baseline, bootstrap
 CIs, deflated Sharpe. Result: real predictive signal (AUC 0.55 OOS) that dies
 at daily rebalancing, revives at its own 5-day horizon, peaks at +0.79 with
 auction-microstructure features — and settles at +0.43 once I averaged away
-my own fold-slicing luck. 34 configurations tried, every failure still in the
+my own fold-slicing luck. 37 configurations tried, every failure still in the
 ledger, and the model now forecasts live into a hash-chained ledger so the
 next number can't be argued with. Reporting the haircuts IS the portfolio
 piece. Repo in comments.
@@ -94,14 +120,26 @@ piece. Repo in comments.
 
 ## Attachments (in order of impact)
 
-1. Full spot history chart, suspension/relaunch window shaded — *the* visual
-   of the data-regime story (generate after backfill).
-2. The horizon grid + tranched table from `scripts/horizon_experiment.py` —
-   the turnover-was-the-killer story in one screenshot.
-3. Ablation × robustness table from `scripts/analyze.py` (core vs core+alt,
-   with p(Sharpe≤0) column).
-3. Dashboard screenshot (equity tab, REAL banner visible).
-4. Calibration table or SHAP bar chart — pick whichever tells the cleaner story.
+All four are built and current. Regenerate the first three with
+`python scripts/make_flagship_chart.py` + `python scripts/make_post_figures.py`
+(both recompute from the real dataset; `make_post_figures.py` refuses to run on
+synthetic data). The dashboard shot is captured headless via Playwright — set
+the model to **gbm** with alt-data OFF first; the app defaults to `logistic`,
+which is the worst variant in the project (Sharpe −0.20).
+
+1. `figures/spot_history.png` — 12 years of spot, suspension/relaunch window
+   shaded, 2018-flood peak marked. *The* visual of the data-regime story.
+2. `figures/turnover_story.png` — paired dumbbell, every configuration traded
+   daily vs at its own 5-day horizon: 2.5× the turnover for a mean Sharpe
+   change of −0.02. The turnover-was-the-killer story, stated honestly.
+3. `figures/ablation.png` — core vs core+alt across three models. This is
+   dilution #1 of the five, and it pairs directly with "the finding that
+   outlived the model" paragraph.
+4. `figures/dashboard.png` — equity tab, REAL banner visible, all three models.
+
+Deliberately cut: the raw horizon grid and the SHAP bar chart. Sixteen rows of
+numbers don't survive a phone screen, and SHAP invites a feature-importance
+argument that distracts from the actual finding.
 
 ## Posting notes
 
