@@ -108,6 +108,15 @@ def evaluate_stream(name, proba, y, daily, ledger):
 
 def main() -> None:
     market, tag = load_dataset(False)
+    # T1-T5 are the Round-2 designs, specified and ledgered BEFORE rain existed
+    # in market.parquet. build_features() adds rain_anom_30/90 whenever
+    # rain_anomaly is present, so once Round 3 merged rain in, this script
+    # silently started evaluating physics+rain under the label "T1 physics-gbm"
+    # -- which is why T1 and rain_trial's T7 print the identical Sharpe. Drop it
+    # here, as robust_estimate.champion_estimate() already does, so each trial
+    # measures the design it names. Rain has its own trials in rain_trial.py.
+    market = market.drop(columns=["rain_mm", "rain_climatology", "rain_anomaly"],
+                         errors="ignore")
     X_core, y = build_features(market, alt=None)
     X_core = X_core.drop(columns=X_core.columns[X_core.isna().all()])
     daily = market["spot_avg"].pct_change().reindex(X_core.index)

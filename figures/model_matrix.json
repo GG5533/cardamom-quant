@@ -1,0 +1,79 @@
+[
+  {
+    "group": "daily rebalance",
+    "model": "seasonal_baseline",
+    "sharpe": 0.3308023941073305,
+    "ci_5": null,
+    "ci_95": null
+  },
+  {
+    "group": "daily rebalance",
+    "model": "logistic",
+    "sharpe": -0.2843431689976019,
+    "ci_5": null,
+    "ci_95": null
+  },
+  {
+    "group": "daily rebalance",
+    "model": "gbm",
+    "sharpe": 0.25212505729586987,
+    "ci_5": null,
+    "ci_95": null
+  },
+  {
+    "group": "tranched 5-day vehicle \u00b7 single 6-fold layout",
+    "model": "core-gbm (no physics)",
+    "sharpe": 0.8416389790342712,
+    "ci_5": 0.31650837507304,
+    "ci_95": 1.3414227776100287
+  },
+  {
+    "group": "tranched 5-day vehicle \u00b7 single 6-fold layout",
+    "model": "T6 rain-gbm",
+    "sharpe": 0.6510005366743877,
+    "ci_5": 0.08045849873796247,
+    "ci_95": 1.2441334210761203
+  },
+  {
+    "group": "tranched 5-day vehicle \u00b7 single 6-fold layout",
+    "model": "T1 physics-gbm",
+    "sharpe": 0.7334225971551397,
+    "ci_5": 0.1916578943113068,
+    "ci_95": 1.3209549697666807
+  },
+  {
+    "group": "tranched 5-day vehicle \u00b7 single 6-fold layout",
+    "model": "T2 kalman-gbm",
+    "sharpe": 0.7548187085921203,
+    "ci_5": 0.20269798309390658,
+    "ci_95": 1.2819215765889433
+  },
+  {
+    "group": "tranched 5-day vehicle \u00b7 single 6-fold layout",
+    "model": "T5 physics+kalman",
+    "sharpe": 0.7536972025338353,
+    "ci_5": 0.2471776142074593,
+    "ci_95": 1.2930632959392925
+  },
+  {
+    "group": "tranched 5-day vehicle \u00b7 single 6-fold layout",
+    "model": "T7 physics+rain-gbm",
+    "sharpe": 0.6607765714515942,
+    "ci_5": 0.09835499400535196,
+    "ci_95": 1.2320174780745847
+  },
+  {
+    "group": "slicing-robust blend \u00b7 all 6 layouts",
+    "model": "champion: physics (blended)",
+    "sharpe": 0.5163503067781001,
+    "ci_5": 0.02144274998834328,
+    "ci_95": 1.025609436242933
+  },
+  {
+    "group": "slicing-robust blend \u00b7 all 6 layouts",
+    "model": "core, no physics (blended)",
+    "sharpe": 0.4631812891880217,
+    "ci_5": -0.05723422295177121,
+    "ci_95": 0.9813186626610847
+  }
+]
