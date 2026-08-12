@@ -1,7 +1,10 @@
 # LinkedIn post — Cardamom Quant
 
-**Fill the [REAL: …] placeholders from `python run.py` / `scripts/analyze.py` output
-after the backfill. Do not post with synthetic numbers — the honesty is the pitch.**
+**Every number here is filled from real output and current as of the 2026-08-11
+weekly run (3,178 auction days; live ledger 12/19, Brier 0.2476). Re-run
+`scripts/weekly_update.sh` on the morning you post and re-check the live-ledger
+sentence and the figures — the scorecard moves ~5 forecasts a week. Never post
+with synthetic numbers; the honesty is the pitch.**
 
 ---
 
@@ -40,7 +43,7 @@ part I'd want to see if I were hiring: a block-bootstrap CI on the Sharpe and
 a Deflated Sharpe Ratio that haircuts for every model I tried — because a
 good number selected from six attempts is often just the luckiest of six.
 
-**The result.** On 3,176 real auction days (2014–2026): the gradient
+**The result.** On 3,178 real auction days (2014–2026): the gradient
 booster found genuine predictive signal — +4.2pts hit rate over base, AUC
 0.553, out-of-sample — and still lost to a one-line seasonal rule after
 15bps costs at daily rebalancing (Sharpe +0.12, CI straddling zero).
@@ -63,19 +66,20 @@ counted. The honest label is *a maybe* — positive with ~94% confidence,
 shallow drawdowns, real classification skill (AUC 0.55) — and since
 July 2026 the model forecasts LIVE into an append-only, hash-chained
 ledger, scored as outcomes mature, because a backtest has degrees of
-freedom and a time-stamped forecast has none. That live ledger is at
-[REAL: n scored] scored forecasts and a Brier of [REAL: brier] against
-0.25 climatology — as I write this it is fractionally on the *wrong*
-side of that line, which is exactly why it's worth publishing. A
-backtest that can say "no" is the only kind whose "maybe" means
-anything, and a forecast log you can't quietly edit is the only kind
-whose "yes" would.
+freedom and a time-stamped forecast has none. That live ledger is at 19
+scored forecasts, 12 of them correct, Brier 0.2476 against 0.25
+climatology. Watch it move and you learn exactly what n=19 is worth: it
+was 9 of 13, then 10 of 17, now 12 of 19 — the Brier crossed to the
+wrong side of climatology and back inside three weeks, and none of those
+swings was the model getting better or worse. That is the argument for
+publishing a log you can't quietly edit. A backtest that can say "no" is
+the only kind whose "maybe" means anything.
 
 **The finding that outlived the model.** Five separate times I added a
 carefully-built feature block to a model that already worked. Five times
 it got worse. The whole alt-data layer — rain, ENSO/IOD, rotating demand
 calendars, auction microstructure, Guatemala supply — took the gradient
-booster from Sharpe +0.22 down to +0.08. Stacking a Kalman anomaly filter
+booster from Sharpe +0.25 down to +0.03. Stacking a Kalman anomaly filter
 onto the physics champion: +0.79 → +0.71. Stacking rainfall: → +0.55.
 Stacking Guatemala export volume: → +0.58. Stacking as-issued GEFS
 forecast rain — the most theoretically motivated of the lot, and the one

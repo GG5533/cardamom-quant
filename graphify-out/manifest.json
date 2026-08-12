@@ -89,6 +89,11 @@
     "ast_hash": "4e027cc77f3d358574f58c187162f9ac",
     "semantic_hash": ""
   },
+  "/Users/samihabbal/dev/cardamom-quant/scripts/make_post_figures.py": {
+    "mtime": 1786495647.8560784,
+    "ast_hash": "690d90f38a832a90a8b02c689e8ce707",
+    "semantic_hash": ""
+  },
   "/Users/samihabbal/dev/cardamom-quant/scripts/mcx_basis_trial.py": {
     "mtime": 1785875372.922243,
     "ast_hash": "fe6febe24147728971d24574442096a3",
@@ -180,8 +185,8 @@
     "semantic_hash": ""
   },
   "/Users/samihabbal/dev/cardamom-quant/scripts/make_flagship_chart.py": {
-    "mtime": 1784179372.5816314,
-    "ast_hash": "35c22f3b5b026c331cb29be2127ddf0b",
+    "mtime": 1786496302.7938364,
+    "ast_hash": "b749a8bc077f79b80d2845aea89a28e5",
     "semantic_hash": ""
   },
   "/Users/samihabbal/dev/cardamom-quant/src/metrics.py": {
@@ -360,8 +365,8 @@
     "semantic_hash": ""
   },
   "/Users/samihabbal/dev/cardamom-quant/LINKEDIN_POST.md": {
-    "mtime": 1784179588.1648598,
-    "ast_hash": "12864e00cf8769ca1c8b203aef33005d",
+    "mtime": 1786496674.0010068,
+    "ast_hash": "d2e926406c272fde5438fcd2df77fd1d",
     "semantic_hash": ""
   },
   "/Users/samihabbal/dev/cardamom-quant/RESULTS_REAL.md": {
@@ -424,6 +429,11 @@
     "ast_hash": "1149ce109fc828183b181d5baea57fd5",
     "semantic_hash": ""
   },
+  "/Users/samihabbal/dev/cardamom-quant/site/index.html": {
+    "mtime": 1786496416.9149323,
+    "ast_hash": "df6adb25a627afb669dde1f9c510920f",
+    "semantic_hash": ""
+  },
   "/Users/samihabbal/dev/cardamom-quant/data/raw/climate/oni.ascii.txt": {
     "mtime": 1784179368.8859336,
     "ast_hash": "15526e8360288876f54ffa3241bfcd36",
@@ -435,13 +445,13 @@
     "semantic_hash": ""
   },
   "/Users/samihabbal/dev/cardamom-quant/data/raw/spices_board/page_0001.html": {
-    "mtime": 1786312817.2527838,
-    "ast_hash": "c60f3d413fef768571c17e9621bf0e4c",
+    "mtime": 1786496332.9259129,
+    "ast_hash": "6901ef099913268daa4ef4b532639f87",
     "semantic_hash": ""
   },
   "/Users/samihabbal/dev/cardamom-quant/data/raw/spices_board/page_0002.html": {
-    "mtime": 1786316441.0834556,
-    "ast_hash": "bb5d770861d83129a8abfe98793ac3bf",
+    "mtime": 1786496334.9430218,
+    "ast_hash": "2f1b17c9c28fb290b4998e7182720bd7",
     "semantic_hash": ""
   },
   "/Users/samihabbal/dev/cardamom-quant/data/raw/spices_board/page_0003.html": {
@@ -460,8 +470,23 @@
     "semantic_hash": ""
   },
   "/Users/samihabbal/dev/cardamom-quant/figures/spot_history.png": {
-    "mtime": 1784179372.5330706,
-    "ast_hash": "f23ff5dca6d55ebb449639a496adf78a",
+    "mtime": 1786496458.4629517,
+    "ast_hash": "1b9da5f774aa26d097902960aea6e4b9",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/figures/dashboard.png": {
+    "mtime": 1786496548.4166481,
+    "ast_hash": "105b9ca20705285c66e2bbaddd83998a",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/figures/turnover_story.png": {
+    "mtime": 1786496470.468044,
+    "ast_hash": "4bfe6a81d1736ed81da6f505ce3683f2",
+    "semantic_hash": ""
+  },
+  "/Users/samihabbal/dev/cardamom-quant/figures/ablation.png": {
+    "mtime": 1786496470.7028778,
+    "ast_hash": "c0eade3efd0155543151383c99148e74",
     "semantic_hash": ""
   }
 }

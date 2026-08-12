@@ -285,8 +285,8 @@ section:last-of-type{ border-bottom:none; }
         <div class="meter-label">live hit rate, 5-day direction</div>
         <div class="meter-bar"><div class="fill" id="hitRateFill"></div></div>
         <div class="meter-sub">
-          <span class="k tab">10 of 17</span> scored forecasts correct · Brier <span class="k tab">0.2525</span> vs <span class="k tab">0.25</span> climatology baseline — currently a hair on the wrong side of it.<br/><br/>
-          It was 9 of 13 two weeks ago. It is 10 of 17 now. That is what a live ledger looks like when it is allowed to move against you — n=17 is far too small to mean anything either way, and it grows by ~5 forecasts a week, automatically, every Sunday.
+          <span class="k tab">12 of 19</span> scored forecasts correct · Brier <span class="k tab">0.2476</span> vs <span class="k tab">0.25</span> climatology baseline.<br/><br/>
+          Watch this number move and you learn what n=19 is worth: 9 of 13, then 10 of 17, now 12 of 19 — the Brier crossed to the wrong side of climatology and back again inside three weeks. None of those swings were the model getting better or worse. That is the entire argument for waiting on a ledger that cannot be edited, and it grows by ~5 forecasts a week, automatically, every Sunday.
         </div>
       </div>
       <div class="ledger-log" id="ledgerLog"></div>
@@ -344,11 +344,13 @@ section:last-of-type{ border-bottom:none; }
     {d:"2026-07-31", h:"d2956e8e19a4c0a3", hit:1},
     {d:"2026-08-01", h:"9d3829e976eff72b", hit:0},
     {d:"2026-08-03", h:"1392622177bd3731", hit:0},
+    {d:"2026-08-04", h:"bb965cfefa3dca41", hit:1},
+    {d:"2026-08-05", h:"3cf2e02bb9e1295a", hit:1},
   ];
-  const PENDING = ["2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08"];
+  const PENDING = ["2026-08-06","2026-08-07","2026-08-08","2026-08-10","2026-08-11"];
 
   // ---- stat row ----
-  document.getElementById("statDays").textContent = "3,176";
+  document.getElementById("statDays").textContent = "3,178";
   const vals = PRICE.map(p=>p[1]);
   document.getElementById("statRange").textContent = Math.round(Math.min(...vals)).toLocaleString() + "–" + Math.round(Math.max(...vals)).toLocaleString();
   document.getElementById("statLive").textContent = SCORED.length + "/" + (SCORED.length+PENDING.length);
