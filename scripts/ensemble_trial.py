@@ -38,6 +38,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from edge_hunt import PRIOR_LEDGER, calibrated_fold_proba  # noqa: E402
+from robust_estimate import champion_estimate  # noqa: E402
 from horizon_experiment import tranched_net_returns  # noqa: E402
 from rain_trial import ROUND2_SHARPES  # noqa: E402
 from run import load_dataset  # noqa: E402
@@ -54,7 +55,15 @@ LAYOUTS = [(s, off) for s in (5, 6, 7) for off in (0, 63)]
 RAIN_SHARPES = [0.643, 0.546]
 T8_SHARPE = [0.626]
 GTM_SHARPES = [0.485, 0.575]
-CHAMPION_BLENDED = 0.431
+# The champion's blended Sharpe is COMPUTED, never stored. It was frozen here at
+# 0.431 from the 16-Jul run; by 11-Aug the champion had moved to +0.52 on a grown
+# dataset while this constant had not, so the verdict below printed
+# "PROMOTE — new standing champion" for what is actually a tie.
+#
+# TIE_BAND: the project calls a gap this small a tie rather than a promotion --
+# single-layout Sharpes swing by more than this between adjacent fold layouts,
+# so a margin inside the band is slicing noise, not evidence.
+TIE_BAND = 0.10
 
 
 def member_matrices(market_full: pd.DataFrame):
@@ -124,11 +133,18 @@ def main() -> None:
           f"90% CI [{m['ci_5']:+.2f}, {m['ci_95']:+.2f}]  p(SR<=0) {m['p_leq_0']:.3f}")
     print(f"  AUC {m['auc']:.3f}  hit vs base {m['hit_vs_base_pts']:+.1f}pts  "
           f"max_dd {m['max_dd']:+.1%}")
-    print(f"  vs champion blended {CHAMPION_BLENDED:+.2f}  |  "
-          f"DSR over {dsr['n_trials']} trials: {dsr['dsr']:.3f}")
+    _, champ = champion_estimate(market)   # it drops the rain columns itself
+    margin = m["sharpe"] - champ["sharpe"]
+    print(f"  vs champion blended {champ['sharpe']:+.3f} (recomputed on this "
+          f"dataset)  |  DSR over {dsr['n_trials']} trials: {dsr['dsr']:.3f}")
     print(f"  Ledger grew {len(ledger) - 1} -> {len(ledger)}.")
-    verdict = "PROMOTE — new standing champion" \
-        if m["sharpe"] > CHAMPION_BLENDED else "KILL — champion stands"
+    if margin > TIE_BAND:
+        verdict = f"PROMOTE — new standing champion (beats it by {margin:+.3f})"
+    elif margin < -TIE_BAND:
+        verdict = f"KILL — champion stands (loses by {margin:+.3f})"
+    else:
+        verdict = (f"TIE — champion stands ({margin:+.3f} is inside the "
+                   f"±{TIE_BAND:.2f} slicing band)")
     print(f"  Verdict: {verdict}")
 
 

@@ -47,8 +47,13 @@ logging.basicConfig(level=logging.WARNING)
 LAYOUTS = [(s, off) for s in (5, 6, 7) for off in (0, 63)]
 
 
-def main() -> None:
-    market, tag = load_dataset(False)
+def champion_estimate(market: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
+    """The champion's slicing-robust estimate: per-layout table + blended metrics.
+
+    Exposed as a function so nothing has to hardcode the champion's Sharpe to
+    compare against. It moves with the dataset -- a literal copied from an
+    earlier run silently becomes a wrong baseline (see ensemble_trial.py).
+    """
     market = market.drop(columns=["rain_mm", "rain_climatology", "rain_anomaly"])
     X, y = build_features(market, alt=build_physics_features(market))
     X = X.drop(columns=X.columns[X.isna().all()])
@@ -66,19 +71,26 @@ def main() -> None:
                      "oos_days": int(mask.sum()), "sharpe": m["sharpe"]})
         streams.append(proba)
 
-    per = pd.DataFrame(rows).set_index("layout")
-    print(f"\n=== SLICING-ROBUST CHAMPION ESTIMATE [{tag}] — 6 layouts ===")
-    print(per.round(3).to_string())
-    print(f"\n  layout mean {per['sharpe'].mean():+.3f}  "
-          f"range [{per['sharpe'].min():+.2f}, {per['sharpe'].max():+.2f}]")
-
     blend = pd.concat(streams, axis=1).mean(axis=1)
     mask = blend.notna()
     net, _ = tranched_net_returns(blend[mask], daily[mask])
     m = backtest_metrics(net)
     m.update(block_bootstrap_sharpe(net))
     m.update(classification_metrics(y[mask], blend[mask]))
-    print(f"\n  BLENDED stream ({int(mask.sum())} OOS days):")
+    m["oos_days"] = int(mask.sum())
+    return pd.DataFrame(rows).set_index("layout"), m
+
+
+def main() -> None:
+    market, tag = load_dataset(False)
+    per, m = champion_estimate(market)
+
+    print(f"\n=== SLICING-ROBUST CHAMPION ESTIMATE [{tag}] — 6 layouts ===")
+    print(per.round(3).to_string())
+    print(f"\n  layout mean {per['sharpe'].mean():+.3f}  "
+          f"range [{per['sharpe'].min():+.2f}, {per['sharpe'].max():+.2f}]")
+
+    print(f"\n  BLENDED stream ({m['oos_days']} OOS days):")
     print(f"    Sharpe {m['sharpe']:+.3f}  90% CI [{m['ci_5']:+.2f}, "
           f"{m['ci_95']:+.2f}]  p(SR<=0) {m['p_leq_0']:.3f}")
     print(f"    AUC {m['auc']:.3f}  hit vs base {m['hit_vs_base_pts']:+.1f}pts  "
