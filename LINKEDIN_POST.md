@@ -71,30 +71,9 @@ scored forecasts, 12 of them correct, Brier 0.2476 against 0.25
 climatology. Watch it move and you learn exactly what n=19 is worth: it
 was 9 of 13, then 10 of 17, now 12 of 19 — the Brier crossed to the
 wrong side of climatology and back inside three weeks, and none of those
-swings was the model getting better or worse.
-
-**Why 19 is the number I'm proudest of.** Before this I spent months on
-the impressive version: a market platform, 37,004 lines across 81
-modules, an LLM debate engine, prediction markets, four background
-daemons. It has a calibration engine — reliability curves, Brier, ECE —
-and a database table with exactly the right columns to grade its own
-calls: predicted probability, actual result, correct, simulated P&L.
-
-I checked that table this week. It made **8,438 predictions. It graded
-zero of them.** Not because the code was wrong — the schema is right, the
-resolution daemon exists. I stopped running it before it could ever tell
-me whether it worked.
-
-The two projects aren't strangers: the seasonal Kalman filter in this
-cardamom model is a direct port of that platform's world-model engine.
-Same author, same maths, same calibration apparatus. The difference is
-that the small one closed the loop and the big one never did. Eight
-thousand ungraded predictions are worth less than nineteen graded ones,
-and I only know that because I built both.
-
-So: a backtest that can say "no" is the only kind whose "maybe" means
-anything — and a forecast log you can't quietly edit is the only kind
-that ever finds out.
+swings was the model getting better or worse. That is the argument for
+publishing a log you can't quietly edit. A backtest that can say "no" is
+the only kind whose "maybe" means anything.
 
 **The finding that outlived the model.** Five separate times I added a
 carefully-built feature block to a model that already worked. Five times
@@ -161,14 +140,6 @@ which is the worst variant in the project (Sharpe −0.20).
    dilution #1 of the five, and it pairs directly with "the finding that
    outlived the model" paragraph.
 4. `figures/dashboard.png` — equity tab, REAL banner visible, all three models.
-5. **The interactive one — lead with this if the platform allows a link.**
-   The showcase page's "predictions made vs predictions graded" section:
-   8,438 hollow marks for the big platform against 24 for this model, 19 of
-   them filled. Counts come from each project's own store (the platform's
-   SQLite: 7,647 Kalshi + 791 Polymarket recommendations, `kalshi_outcomes`
-   empty; and this repo's `data/live/*.csv`). Hovering any mark on the right
-   shows its date, verdict and chain hash. The asymmetry is the argument, and
-   it lands faster than any paragraph about it does.
 
 Deliberately cut: the raw horizon grid and the SHAP bar chart. Sixteen rows of
 numbers don't survive a phone screen, and SHAP invites a feature-importance
