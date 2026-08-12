@@ -185,6 +185,41 @@ section:last-of-type{ border-bottom:none; }
 .ledger-log .row .r.pend{ color:var(--ink-faint); font-size:11px; }
 
 /* ---------- close ---------- */
+/* ---------- two systems: made vs graded ---------- */
+.two-systems{ border-top:1px solid var(--rule); padding-top:64px; }
+.sys-grid{ display:grid; grid-template-columns:1.4fr 1fr; gap:34px; margin-top:34px; align-items:start; }
+@media (max-width:820px){ .sys-grid{ grid-template-columns:1fr; } }
+.sys{ background:var(--bg-raised); border:1px solid var(--rule); border-radius:3px; padding:20px; box-shadow:var(--shadow); }
+.sys-head{ display:flex; flex-direction:column; gap:3px; margin-bottom:16px; }
+.sys-name{ font-family:'Fraunces Disp',Georgia,serif; font-style:italic; font-size:1.3rem; color:var(--ink); }
+.sys-meta{ font-family:'Plex Data',monospace; font-size:11px; color:var(--ink-faint); letter-spacing:.02em; }
+.sys-field{ display:flex; flex-wrap:wrap; gap:2px; align-content:flex-start; min-height:150px; }
+/* the 24-mark field sizes to its content; the 150px floor exists for the
+   8,438-mark field and would otherwise open a dead gap above the stats. */
+.sys-field.wide{ gap:7px; min-height:0; }
+.dot{ width:4px; height:4px; border-radius:50%; border:1px solid var(--ink-faint); opacity:0; transition:opacity .5s ease; }
+.sys-field.wide .dot{ width:15px; height:15px; border-width:1.5px; cursor:pointer;
+  transition:opacity .4s ease, background-color .4s ease, transform .15s ease; }
+.dot.on{ opacity:.55; }
+.sys-field.wide .dot.on{ opacity:1; }
+.dot.hit{ background:var(--pay); border-color:var(--pay); }
+.dot.miss{ background:var(--cut); border-color:var(--cut); }
+.dot.pend{ background:transparent; border-color:var(--ink-faint); border-style:dashed; }
+.sys-field.wide .dot:hover, .sys-field.wide .dot:focus-visible{ transform:scale(1.35); outline:none; }
+.sys-foot{ display:flex; gap:28px; margin-top:20px; padding-top:16px; border-top:1px solid var(--rule); }
+.sys-stat b{ display:block; font-size:2rem; line-height:1.05; color:var(--ink); }
+.sys-stat span{ font-size:.8rem; color:var(--ink-dim); }
+.sys-stat.cut b{ color:var(--cut); }
+.sys-stat.pay b{ color:var(--pay); }
+.sys-legend{ display:flex; flex-wrap:wrap; gap:14px; margin-top:16px; font-size:11px; color:var(--ink-dim);
+  font-family:'Plex Data',monospace; align-items:center; }
+.sys-legend .sw{ display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:5px; vertical-align:-1px; }
+.sys-legend .sw.pay{ background:var(--pay); } .sys-legend .sw.cut{ background:var(--cut); }
+.sys-legend .sw.pend{ border:1.5px dashed var(--ink-faint); }
+.sys-legend .hint{ margin-left:auto; color:var(--ink-faint); font-style:italic; }
+.sys-tip{ margin-top:10px; min-height:1.35em; font-family:'Plex Data',monospace; font-size:12px; color:var(--data); }
+@media (prefers-reduced-motion:reduce){ .dot{ transition:none; } }
+
 .close-section{ text-align:left; }
 .pull-quote{
   font-family:'Fraunces Disp'; font-style:italic; font-weight:500; font-size:clamp(1.5rem,3vw,2.05rem);
@@ -294,12 +329,56 @@ section:last-of-type{ border-bottom:none; }
   </div>
 </section>
 
+<section class="two-systems">
+  <div class="wrap">
+    <div class="eyebrow">THE SAME AUTHOR, TWICE — PREDICTIONS MADE vs PREDICTIONS GRADED</div>
+    <h2 style="font-size:2rem; max-width:24ch; margin-top:18px;">I built the impressive version first. It never found out whether it was right.</h2>
+    <p class="ledger-intro">Before this, I spent months on a market platform: 37,004 lines, 81 modules, an LLM debate engine, prediction markets, four background daemons. It has a calibration engine with reliability curves, Brier score and ECE — and a database table with exactly the right columns for grading its own calls. Every mark below is one prediction it made. None of them is filled, because none was ever scored.</p>
+
+    <div class="sys-grid">
+      <div class="sys" id="sysJarvis">
+        <div class="sys-head">
+          <span class="sys-name">Market platform</span>
+          <span class="sys-meta">37,004 lines · 81 modules · 17–25 Jun 2026</span>
+        </div>
+        <div class="sys-field" id="fieldJarvis" role="img"
+             aria-label="8,438 predictions, none graded"></div>
+        <div class="sys-foot">
+          <div class="sys-stat"><b class="tab" id="jMade">0</b><span>predictions made</span></div>
+          <div class="sys-stat cut"><b class="tab" id="jGraded">0</b><span>ever graded</span></div>
+        </div>
+      </div>
+
+      <div class="sys" id="sysCardamom">
+        <div class="sys-head">
+          <span class="sys-name">This model</span>
+          <span class="sys-meta">2,850 lines · one commodity · 10 Jul – 11 Aug 2026</span>
+        </div>
+        <div class="sys-field wide" id="fieldCardamom" role="img"
+             aria-label="24 forecasts, 19 graded, 12 correct"></div>
+        <div class="sys-foot">
+          <div class="sys-stat"><b class="tab" id="cMade">0</b><span>forecasts made</span></div>
+          <div class="sys-stat pay"><b class="tab" id="cGraded">0</b><span>graded, hashed, final</span></div>
+        </div>
+        <div class="sys-legend">
+          <span><i class="sw pay"></i>hit</span><span><i class="sw cut"></i>miss</span>
+          <span><i class="sw pend"></i>awaiting outcome</span>
+          <span class="hint">hover a mark</span>
+        </div>
+        <div class="sys-tip" id="sysTip" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <p class="ledger-intro" style="margin-top:34px;">The difference is not skill or ambition — one project's Kalman filter is a direct port of the other's. It is that the small one closed the loop and the big one never did. Eight thousand ungraded predictions are worth less than nineteen graded ones, and the only way to learn that is to build both.</p>
+  </div>
+</section>
+
 <section class="close-section">
   <div class="wrap">
     <p class="pull-quote">Real signal. No decisive edge after costs — yet. A maybe, honestly priced. The live ledger is what will settle it.</p>
     <div class="close-meta">
       <a class="cta" href="https://github.com/GG5533/cardamom-quant" target="_blank" rel="noopener">→ github.com/GG5533/cardamom-quant</a>
-      <span class="footer-note">champion: physics-gbm · last synced 04-Aug-2026</span>
+      <span class="footer-note">champion: physics-gbm · last synced 11-Aug-2026</span>
     </div>
   </div>
 </section>
@@ -527,6 +606,71 @@ section:last-of-type{ border-bottom:none; }
     requestAnimationFrame(step);
   }
 
+  // ---- two systems: one mark per prediction ----
+  // Counts are from each project's own store: the platform's SQLite
+  // (7,647 Kalshi + 791 Polymarket recommendations, kalshi_outcomes empty),
+  // and this repo's hash-chained data/live/*.csv.
+  const JARVIS_MADE = 8438, JARVIS_GRADED = 0;
+
+  function countTo(el, target, dur){
+    if(reduced || target === 0){ el.textContent = target.toLocaleString(); return; }
+    const t0 = performance.now();
+    (function step(t){
+      const p = Math.min(1, (t - t0) / dur);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString();
+      if(p < 1) requestAnimationFrame(step);
+    })(performance.now());
+  }
+
+  function buildFields(){
+    const jf = document.getElementById("fieldJarvis");
+    if(jf.childElementCount) return;
+    const frag = document.createDocumentFragment();
+    for(let i = 0; i < JARVIS_MADE; i++){
+      const d = document.createElement("div");
+      d.className = "dot";
+      frag.appendChild(d);
+    }
+    jf.appendChild(frag);
+
+    const cf = document.getElementById("fieldCardamom");
+    const tip = document.getElementById("sysTip");
+    const marks = SCORED.map(r => ({...r, state: r.hit ? "hit" : "miss"}))
+      .concat(PENDING.map(d => ({d, state: "pend"})));
+    marks.forEach((m, i) => {
+      const d = document.createElement("div");
+      d.className = "dot " + m.state;
+      d.tabIndex = 0;
+      const label = m.state === "pend"
+        ? `${m.d} — awaiting outcome`
+        : `${m.d} — ${m.state === "hit" ? "HIT" : "MISS"} · ${m.h}`;
+      d.setAttribute("aria-label", label);
+      const show = () => { tip.textContent = label; };
+      d.addEventListener("mouseenter", show);
+      d.addEventListener("focus", show);
+      d.addEventListener("mouseleave", () => { tip.textContent = ""; });
+      d.addEventListener("blur", () => { tip.textContent = ""; });
+      if(!reduced) d.style.transitionDelay = (i * 45) + "ms";
+      cf.appendChild(d);
+    });
+  }
+
+  let systemsRun = false;
+  function revealSystems(){
+    if(systemsRun) return;
+    systemsRun = true;
+    buildFields();
+    requestAnimationFrame(() => {
+      document.querySelectorAll("#fieldJarvis .dot, #fieldCardamom .dot")
+        .forEach(d => d.classList.add("on"));
+    });
+    countTo(document.getElementById("jMade"), JARVIS_MADE, 1800);
+    countTo(document.getElementById("jGraded"), JARVIS_GRADED, 1800);
+    countTo(document.getElementById("cMade"), SCORED.length + PENDING.length, 1400);
+    countTo(document.getElementById("cGraded"), SCORED.length, 1400);
+  }
+
   // ---- reveal-on-scroll ----
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{
@@ -535,6 +679,9 @@ section:last-of-type{ border-bottom:none; }
       if(e.target.classList.contains('trial-card')) e.target.classList.add('in');
       if(e.target.id === 'ledgerLog'){ scrambleReveal(); io.unobserve(e.target); }
       if(e.target.id === 'hitRateNum' || e.target.classList.contains('meter-block')){ animateMeter(); }
+      // .sys-grid, not the whole section: 25% of a tall section can exceed the
+      // viewport, so the threshold would never be met on a short screen.
+      if(e.target.classList.contains('sys-grid')){ revealSystems(); io.unobserve(e.target); }
     });
   }, {threshold:0.25});
 
@@ -542,6 +689,7 @@ section:last-of-type{ border-bottom:none; }
   document.querySelectorAll('.trial-card').forEach(c=>io.observe(c));
   io.observe(document.getElementById('ledgerLog'));
   io.observe(document.querySelector('.meter-block'));
+  io.observe(document.querySelector('.sys-grid'));
 
   // ---- ambient rain (single canvas, restrained) ----
   const rc = document.getElementById('rainCanvas');
